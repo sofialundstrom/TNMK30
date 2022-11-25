@@ -8,5 +8,5 @@
                 <button type="submit">?</button>
             </form>
     </div>
-</body>
-</html>
+
+<?php include('../txt/footer.txt'); ?>
