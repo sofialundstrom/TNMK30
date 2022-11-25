@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../css/style.css" media="screen" rel="stylesheet" type="text/css">
+    <script src="../js/main.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupp 4</title>
+    </head>
+<body>
+    <div class="header">
+        <a href="" class="logo"><img src="" alt="LOGO"></a>
+        <div class="header-right">
+          <a href="">HELP</a>
+          <a href="">ABOUT US</a>
+        </div>
+    </div>
