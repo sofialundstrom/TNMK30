@@ -8,6 +8,5 @@
                 <button type="submit">?</button>
             </form>
     </div>
-    <p>HEJ</p>
 </body>
 </html>
