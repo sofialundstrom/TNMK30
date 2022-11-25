@@ -1,10 +1,8 @@
 <?php include('../txt/header.txt'); ?>
 <h1> HOW TO SEARCH</h1>
 <div class="ruta1">
-    <div>
-        <img src="" alt="bild">
-    </div>
-    <div>
+    <img src="../bilder/donkey.jpg" class="helppic1" alt="bild1">
+    <div class="helplist1">
         <ol>
             <li> hej</li>
             <li> hej</li>
@@ -14,10 +12,8 @@
     </div>
 </div>
 <div class="ruta2">
-    <div>
-        <img src="" alt="bild">
-    </div>
-    <div>
+        <img src="../bilder/donkey.jpg" class="helppic1" alt="bild">
+    <div class="helplist2">
         <ol>
             <li> hej</li>
             <li> hej</li>

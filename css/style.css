@@ -1,5 +1,6 @@
 body{
     background-color: rgb(221, 162, 194);
+    margin: 0px;
 }
 
 h1, p{
@@ -11,6 +12,7 @@ h1, p{
     overflow: hidden;
     background-color: #f1f1f1;
     padding: 20px 10px;
+    border-bottom: solid 1px black;
   }
   
   /* Style the header links */
@@ -89,7 +91,30 @@ button:hover {
     background: rgb(139, 86, 86);
   }
   
-.ruta1 {
-    background-color: aqua;
+.ruta1, .ruta2{
+  background-color: aqua;
+  border-radius: 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70vw;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 3vw;
+  border: solid 1px black;
 }
+
+.helppic1, .helppic2 {
+  margin: 0px;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  width: 10vw;
+  border: solid 1px black;
+}
+
+.helplist1, .helplist2 {
+  margin: right;
+}
+
+
   /*https://www.w3schools.com/howto/howto_css_fullscreen_search.asp*/
