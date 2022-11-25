@@ -1,6 +1,6 @@
 <?php include('../txt/header.txt'); ?>
     <h1>LEGO BANK</h1>
-    <p>Hej</p>
+    <p class="undertext">Hej</p>
     
     <div id="overlay-search">
             <form action="" method="GET">

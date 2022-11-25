@@ -2,9 +2,18 @@ body{
     background-color: rgb(221, 162, 194);
     margin: 0px;
 }
+.logo{
+  width: 3vw;
+  border: solid 1px black;
+}
 
-h1, p{
+h1{
     text-align:center;
+    text-shadow: 2px 2px greenyellow ;
+}
+
+p{
+  text-align: center;
 }
 
 /* Style the header with a grey background and some padding */
@@ -25,6 +34,7 @@ h1, p{
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
+   
   }
   
   /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -93,7 +103,7 @@ button:hover {
   
 .ruta1, .ruta2{
   background-color: aqua;
-  border-radius: 10vw;
+  border-radius: 3vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -105,6 +115,7 @@ button:hover {
 }
 
 .helppic1, .helppic2 {
+  border-radius: 2vw;
   margin: 0px;
   margin-top: 1vw;
   margin-bottom: 1vw;
@@ -116,5 +127,16 @@ button:hover {
   margin: right;
 }
 
+.footer{
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  border-top: solid 1px black;
+}
+
+.pfoot{
+  text-align: left;
+  padding: 20px 10px;
+}
 
   /*https://www.w3schools.com/howto/howto_css_fullscreen_search.asp*/

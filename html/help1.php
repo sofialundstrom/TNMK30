@@ -1,5 +1,7 @@
 <?php include('../txt/header.txt'); ?>
+<br>
 <h1> HOW TO SEARCH</h1>
+<br>
 <div class="ruta1">
     <img src="../bilder/donkey.jpg" class="helppic1" alt="bild1">
     <div class="helplist1">
