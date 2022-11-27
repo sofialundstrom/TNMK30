@@ -85,6 +85,10 @@ input[type=text] {
 input[type=text]:hover {
     background: #f1f1f1;
   }
+
+.overlay-search {
+    justify-content: center;
+  }
   
   /* Style the submit button */
 button {
