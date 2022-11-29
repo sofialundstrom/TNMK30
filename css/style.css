@@ -25,6 +25,7 @@ p{
     background-color: #f1f1f1;
     padding: 10px 10px;
     border-bottom: solid 1px black;
+    position: relative;
   }
   
   /* Style the header links */
@@ -44,6 +45,7 @@ p{
   .header a.logo {
     font-size: 25px;
     font-weight: bold;
+
   }
   
   /* Change the background color on mouse-over */
@@ -61,7 +63,6 @@ p{
   /* Float the link section to the right */
   .header-right {
     float: right;
-
   }
   
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -77,6 +78,7 @@ p{
   }
 
 
+
 input[type=text] {
   margin-left:30vw;
     padding: 15px;
@@ -90,6 +92,7 @@ input[type=text] {
   
 input[type=text]:hover {
     background: #f1f1f1;
+
   }
 
 .overlay-search {
@@ -98,7 +101,6 @@ input[type=text]:hover {
   
   /* Style the submit button */
 button {
-    
     width: 5%;
     padding: 15px;
     background: #ddd;
@@ -111,6 +113,9 @@ button:hover {
     background: rgb(139, 86, 86);
   }
   
+
+
+
 .ruta1, .ruta2{
   background-color: aqua;
   border-radius: 3vw;
