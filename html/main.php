@@ -3,7 +3,7 @@
     <p class="undertext">Hej</p>
     
     <div id="overlay-search">
-            <form action="" method="GET">
+            <form action="" method="POST">
                 <input type="text" name="searchbar" id="searchbar" placeholder="Search your lego piece">
                 <button type="submit">?</button>
             </form>
