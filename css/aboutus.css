@@ -1,0 +1,28 @@
+.aboutus{
+    width: 10vw;
+    height: 30vw;
+    float: left;
+    margin: 2vw;
+    border-radius: 2vw;
+    border: solid 2px #fff;
+    padding: 5px;
+    justify-content: center;
+    min-width: 100px;
+    min-height: 200px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+h2, h3{
+    text-align: center;
+}
+
+.lego {
+    border-radius: 2vw;
+    width: 10vw;
+    
+}
