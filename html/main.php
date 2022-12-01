@@ -1,15 +1,15 @@
 <?php include('../txt/header.txt'); ?>
     <h1>LEGO BANK</h1>
     <p class="undertext">Hej</p>
-    
+    <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
     <div id="overlay-search">
             <form action="main.php" method="POST">
                 <input type="text" name="searchbar" id="searchbar" placeholder="Search your lego piece">
                 <button type="submit">Search</button>
             </form>
- 
+        <button id="help_btn">?</button>
     </div>
-           <button id="help_btn">?</button>
+           
 
     <div id="mymodal" class="modal">
         <div class="modal-content">
@@ -18,7 +18,7 @@
             <img src="../bilder/pil.png" alt="bil">
         </div>
     </div>
-    <script src="../js/main.js"></script>
+    
 <?php
 
 
