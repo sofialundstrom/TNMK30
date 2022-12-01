@@ -1,5 +1,5 @@
 <?php include('../txt/header.txt'); ?>
-<link href="../css/aboutus.css" media="screen" rel="stylesheet" type="text/css">
+<link href="../css/style.css" media="screen" rel="stylesheet" type="text/css">
     <h1>LEGO BANK</h1>
     <h2>ABOUT US</h2>
 
@@ -35,6 +35,7 @@
         <p>FAVORIT SET</p>
     </div>
     </div>
+    <?php include('../txt/footer.txt'); ?>
     
 
     
