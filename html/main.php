@@ -1,24 +1,24 @@
 <?php include('../txt/header.txt'); ?>
     <h1>LEGO BANK</h1>
     <p class="undertext">Hej</p>
-    
+    <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
     <div id="overlay-search">
             <form action="searchpage.php" method="POST">
                 <input type="search" name="search" id="search" placeholder="Search your lego piece">
                 <button type="submit">Search</button>
             </form>
- 
+        <button id="help_btn">?</button>
     </div>
-           <button id="help_btn">?</button>
+           
 
     <div id="mymodal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Press help for help</h2>
+            <p class="helpbox">Press help for help</p>
             <img src="../bilder/pil.png" alt="bil">
         </div>
     </div>
-    <script src="../js/main.js"></script>
+    
 <?php
 
 

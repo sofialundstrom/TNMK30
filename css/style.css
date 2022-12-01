@@ -1,5 +1,6 @@
 body{
-  background-color: rgb(221, 162, 194);
+  
+  background-color: #FCDFCE;
   margin: 0px;
   display:flex;
   flex-direction: column;
@@ -77,6 +78,12 @@ text-align: center;
   }
 }
 
+#pil {
+  width: 20px;
+  height: 40px;
+}
+
+
 
 input[type=text] {
 margin-left:30vw;
@@ -88,19 +95,19 @@ margin-left:30vw;
   float:left;
 }
 
-h2 {
+.helpbox {
   text-align: center;
   font-size: 30px;
+  font-weight: 230;
 }
 
 
 input[type=text]:hover {
   background: #f1f1f1;
-
 }
 
 .overlay-search {
-justify-content: center;
+  justify-content: center;
 }
 
 
@@ -192,11 +199,9 @@ color: #aaaaaa;
 float: right;
 font-size: 30px;
 font-weight: bold;
-
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
 color: #000;
 text-decoration: none;
 cursor: pointer;
