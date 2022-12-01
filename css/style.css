@@ -7,7 +7,7 @@ body{
 }
 .logo{
 width: 3vw;
-border: solid 1px black;
+border: solid 3px black;
 }
 
 h1{
@@ -24,7 +24,7 @@ text-align: center;
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 10px 10px;
-  border-bottom: solid 1px black;
+  border-bottom: solid 3px black;
   position: relative;
 }
 
@@ -76,11 +76,6 @@ text-align: center;
     float: none;
   }
 }
-
-#pil {
-  width: 20vw;
-}
-
 
 
 input[type=text] {
@@ -137,7 +132,7 @@ width: 70vw;
 align-items: center;
 margin: auto;
 margin-bottom: 3vw;
-border: solid 1px black;
+border: solid 3px black;
 }
 
 .helppic1, .helppic2 {
@@ -146,7 +141,7 @@ margin: 0px;
 margin-top: 1vw;
 margin-bottom: 1vw;
 width: 10vw;
-border: solid 1px black;
+border: solid 3px black;
 }
 
 .helplist1, .helplist2 {
@@ -157,7 +152,7 @@ margin: right;
 margin-top: auto;
 background-color: #f1f1f1;
 padding: 20px 10px;
-border-top: solid 1px black;
+border-top: solid 3px black;
 margin-bottom: 0;
 overflow:auto;
 }
@@ -187,7 +182,7 @@ background-color: #fefefe;
 margin: auto;
 margin-top: 10vw;
 padding: 20px;
-border: 1px solid #888;
+border: 3px solid #888;
 width: 50%;
 }
 
@@ -212,9 +207,24 @@ cursor: pointer;
   flex-wrap: wrap;
   }
 .part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   margin: 50px;
-  flex-basis: 300px;
+  flex-basis: 70%;
+  height: 150px;
+  background-color:rgb(139, 86, 86);
   flex-grow: 0;
   flex-shrink: 0;
+  border: solid 3px black;
+  border-radius: 2vw;
+  width: 10vw;
+  text-align: center;
+  }
+
+  .legopartpic{
+    width:150px;
+    border: solid 3px black;
   }
 /*https://www.w3schools.com/howto/howto_css_fullscreen_search.asp*/

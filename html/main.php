@@ -3,8 +3,8 @@
     <p class="undertext">Hej</p>
     
     <div id="overlay-search">
-            <form action="main.php" method="POST">
-                <input type="text" name="searchbar" id="searchbar" placeholder="Search your lego piece">
+            <form action="searchpage.php" method="POST">
+                <input type="search" name="search" id="search" placeholder="Search your lego piece">
                 <button type="submit">Search</button>
             </form>
  

@@ -10,18 +10,54 @@ $connection = mysqli_connect("mysql.itn.liu.se","lego","","lego");
 if(!$connection){
     die('MySQL connection error');
 }
-$contents = mysqli_query ($connection, "SELECT parts.Partname, parts.PartID FROM parts WHERE Partname LIKE '%".$search."%' OR PartID LIKE '%".$search."%' ORDER BY LENGTH(Partname) ASC, PartID ASC LIMIT 5");
+$prefix = 'https://weber.itn.liu.se/~stegu/img.bricklink.com/';
+$search = "Brick";
+
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
+    $search = mysqli_real_escape_string($connection, $_POST['search']);
+}
+$sql_qurry = "SELECT inventory.SetID, inventory.Quantity, colors.Colorname, parts.Partname, inventory.ColorID, inventory.ItemtypeID, inventory.ItemID 
+FROM inventory, colors, parts WHERE (Partname LIKE '%".$search."%' OR PartID LIKE '%".$search."%') AND inventory.ItemtypeID='P' AND colors.ColorID=inventory.ColorID AND parts.PartID=inventory.ItemID 
+ORDER BY length(Partname) ASC, ColorID ASC LIMIT 5";
+// "SELECT parts.Partname, parts.PartID FROM parts WHERE Partname LIKE '%".$search."%' OR PartID LIKE '%".$search."%' ORDER BY LENGTH(Partname) ASC, PartID ASC LIMIT 5"
+$contents = mysqli_query ($connection, $sql_qurry );
+
+// print("<p>$sql_qurry</p>");
+
+
 
 print "<div class='container'>";
 while($row = mysqli_fetch_array($contents)) {
-
+    $imagecolor = $row['ColorID'];
+    $itemtype = $row['ItemtypeID'];
+    $item = $row['ItemID'];
     $parts = $row['PartID'];
     $partname = $row['Partname'];
-    print("<div class='part'>$parts$partname</div>");
+    $sqlImg = "SELECT * FROM images WHERE ItemtypeID = 'P' AND ItemID = '$item' AND ColorID = '$imagecolor'";
+
+    $imagesearch = mysqli_query($connection, $sqlImg);
+
+    $info = mysqli_fetch_array($imagesearch);
+
+    if($info['has_jpg'] == 1) {
+    
+        $filename = "$itemtype/$imagecolor/$item.jpg";
+    }
+    else if($info['has_gif'] == 1) {
+        $filename = "$itemtype/$imagecolor/$item.gif";
+    }
+    else {
+        $filename = "noimage_small.png";
+    } 
+    
+    
+
+    print("<div class='part'><img src='$prefix$filename' alt='leogpart' class='legopartpic'>$parts$partname<br>$item</div>");
         
 }
 print "</div>";
 mysqli_close($connection);
+
 
 include('../txt/footer.txt'); ?>
  
