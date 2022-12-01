@@ -3,50 +3,12 @@
     <p class="undertext">Hej</p>
     
     <div id="overlay-search">
-            <form action="main.php" method="POST">
+            <form action="searchpage.php" method="POST">
                 <input type="text" name="searchbar" id="searchbar" placeholder="Search your lego piece">
                 <button type="submit">?</button>
             </form>
     </div>
 
 
-    <?php
 
-
-$connection = mysqli_connect("mysql.itn.liu.se","lego","","lego");
-if(!$connection){
-    die('MySQL connection error');
-}
-$contents = mysqli_query ($connection, "SELECT parts.Partname, parts.PartID FROM parts WHERE Partname LIKE '%".$searchWord."%' OR PartID LIKE '%".$searchWord."%' ORDER BY LENGTH(Partname) ASC, PartID ASC LIMIT 5");
-
-print ("<table>\n<tr>");
-
-    print("<th>Part ID</th>");
-    print("<th>Part name</th>");
-
-print "</tr>\n";
-
-while($row = mysqli_fetch_array($contents)) {
-
-    $parts = $row['PartID'];
-    $partname = $row['Partname'];
-    
-     print "<tr>";
-    
-        print("<td>$parts</td>");
-        print("<td>$partname</td>");
-        
-    print "</tr>\n";
-}
-mysqli_close($connection);
-// $contents = mysqli_query ($connection, "SELECT inventory.Quantity, colors.Colorname, parts.Partname, inventory.ColorID, inventory.ItemtypeID, inventory.ItemID FROM inventory, colors, parts WHERE inventory.SetID='5891-1' AND inventory.ItemtypeID='P' AND colors.ColorID=inventory.ColorID AND parts.PartID=inventory.ItemID");
-
-    
-  //  $contents = "  SELECT parts.Partname, parts.PartID
-      //          FROM parts
-        //        WHERE Partname LIKE '%".$searchWord."%' OR PartID LIKE '%".$searchWord."%'
-          //      ORDER BY LENGTH(Partname) ASC, PartID ASC LIMIT 5";
- 
-
- include('../txt/footer.txt'); 
- ?>
+ <?php include('../txt/footer.txt');?>
