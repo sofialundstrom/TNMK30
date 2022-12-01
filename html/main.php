@@ -14,7 +14,7 @@
     <div id="mymodal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Press help for help</h2>
+            <p class="helpbox">Press help for help</p>
             <img src="../bilder/pil.png" alt="bil">
         </div>
     </div>
