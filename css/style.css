@@ -217,6 +217,7 @@ cursor: pointer;
   justify-content: center;
   flex-wrap: wrap;
   }
+  
 .part {
   display: flex;
   flex-direction: row;

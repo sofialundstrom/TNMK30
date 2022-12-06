@@ -28,25 +28,7 @@ if(!$connection){
 }
 $contents = mysqli_query ($connection, "SELECT SELECT parts.Partname, parts.PartID FROM parts WHERE Partname LIKE '%".$searchWord."%' OR PartID LIKE '%".$searchWord."%' ORDER BY LENGTH(Partname) ASC, PartID ASC LIMIT 5");
 
-print ("<table>\n<tr>");
 
-    print("<th>Part ID</th>");
-    print("<th>Part name</th>");
-
-print "</tr>\n";
-
-while($row = mysqli_fetch_array($contents)) {
-
-    $parts = $row['PartID'];
-    $partname = $row['Partname'];
-    
-     print "<tr>";
-    
-        print("<td>$parts</td>");
-        print("<td>$partname</td>");
-        
-    print "</tr>\n";
-}
 mysqli_close($connection);
 // $contents = mysqli_query ($connection, "SELECT inventory.Quantity, colors.Colorname, parts.Partname, inventory.ColorID, inventory.ItemtypeID, inventory.ItemID FROM inventory, colors, parts WHERE inventory.SetID='5891-1' AND inventory.ItemtypeID='P' AND colors.ColorID=inventory.ColorID AND parts.PartID=inventory.ItemID");
 
