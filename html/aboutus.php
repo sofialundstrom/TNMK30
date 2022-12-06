@@ -3,7 +3,7 @@
     <h1>LEGO BANK</h1>
     <h2>ABOUT US</h2>
 
-    <div class="container">
+    <div class="container-aboutus">
     <div class="aboutus">
     <img src="../bilder/legogubbe.jpg" class="lego" alt = "scary lego">
         <h3>PERSON 1</h3>
