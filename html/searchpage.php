@@ -18,11 +18,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 }
 $sql_qurry = "SELECT inventory.SetID, inventory.Quantity, colors.Colorname, parts.Partname, inventory.ColorID, inventory.ItemtypeID, inventory.ItemID 
 FROM inventory, colors, parts WHERE (Partname LIKE '%".$search."%' OR PartID LIKE '%".$search."%') AND inventory.ItemtypeID='P' AND colors.ColorID=inventory.ColorID AND parts.PartID=inventory.ItemID 
-ORDER BY length(Partname) ASC, ColorID ASC LIMIT 5";
-// "SELECT parts.Partname, parts.PartID FROM parts WHERE Partname LIKE '%".$search."%' OR PartID LIKE '%".$search."%' ORDER BY LENGTH(Partname) ASC, PartID ASC LIMIT 5"
-$contents = mysqli_query ($connection, $sql_qurry );
+ORDER BY length(Partname) ASC, PartID ASC LIMIT 5";
 
-// print("<p>$sql_qurry</p>");
+$contents = mysqli_query ($connection, $sql_qurry );
 
 
 
@@ -52,8 +50,12 @@ while($row = mysqli_fetch_array($contents)) {
     
     
 
-    print("<div class='part'><img src='$prefix$filename' alt='leogpart' class='legopartpic'>$parts$partname<br>$item</div>");
-        
+    print("
+        <a href='searchset.php'>
+            <div class='part'>
+                <img src='$prefix$filename' alt='legopart' class='legopartpic'>$parts$partname<br>$item  
+            </div>
+        </a>");
 }
 print "</div>";
 mysqli_close($connection);
