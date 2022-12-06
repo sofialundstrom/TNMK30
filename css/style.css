@@ -111,11 +111,6 @@ input[type=text]:hover {
   justify-content: center;
 }
 
-/*ändra till bakgrund för searchar*/
-#overlay-search, #mymodal {
-  border-color: #b1d7db;
-  border-bottom: #b1d7db 5px solid;
-}
 
 /* Style the submit button */
 .button{
@@ -125,6 +120,7 @@ input[type=text]:hover {
   font-size: 17px;
   border: none;
   cursor: pointer;
+  text-align: center;
 }
 
 #help_btn{
@@ -139,6 +135,15 @@ input[type=text]:hover {
   display:flex;
 }
 
+.hej{
+  background-color: azure;
+  width: 500px;
+  height: 300px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin:auto;
+}
 
 .ruta1, .ruta2{
 background-color: #b1d7db;
