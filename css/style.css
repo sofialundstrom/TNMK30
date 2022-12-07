@@ -1,28 +1,7 @@
-body{
-  
-  background-color: #feb6b9;
-  margin: 0px;
-  display:flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-image: url(../bilder/lego_background.jpg);
-}
-.logo{
-width: 3vw;
-border: solid 2px black;
-border-radius: 3px;
-}
+/*********************************/
+/* HEADER AND CONTENTS INSIDE IT */
+/*********************************/
 
-h1{
-  text-align:center;
-  text-shadow: 2px 2px greenyellow ;
-}
-
-p{
-text-align: center;
-}
-
-/* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
   background-color: #8fbbd2;
@@ -31,7 +10,7 @@ text-align: center;
   position: relative;
 }
 
-/* Style the header links */
+/* header links */
 .header a {
   float: left;
   color: black;
@@ -41,14 +20,19 @@ text-align: center;
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
- 
+}
+
+.logo{
+  width: 5vw;
+  border: solid 2px black;
+  border-radius: 1vw;
+  margin-left: 0.5vw;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
-
 }
 
 /* Change the background color on mouse-over */
@@ -66,6 +50,7 @@ text-align: center;
 /* Float the link section to the right */
 .header-right {
   float: right;
+  margin-right: 0.5vw;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -80,9 +65,50 @@ text-align: center;
   }
 }
 
-#pil {
-  width: 20px;
-  height: 40px;
+/*********************************/
+/* FOOTER AND CONTENTS INSIDE IT */
+/*********************************/
+
+.footer{
+    margin-top: auto;
+    background-color: #8fbbd2;
+    padding: 20px 10px;
+    border-top: solid 2px black;
+    margin-bottom: 0;
+    overflow:auto;
+  }
+  
+  .pfoot{
+    text-align: left;
+    padding: 10px 10px;
+  }
+
+/*********************************/
+/* MAIN PAGE */
+/*********************************/
+
+/*include fon for header*/
+@font-face {
+  font-family: legofont;
+  src: url(../fonts/lego_brix-webfont.woff);
+}
+
+
+
+body{
+  margin: 0px;
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../bilder/lego_background.jpg);
+}
+
+h1{
+  text-align:center;
+  text-shadow: 2px 2px rgb(255, 255, 255) ;
+  font-size: 3.5vw;
+  font-family: legofont;
+  margin-bottom: 0;
 }
 
 input[type=text] {
@@ -95,14 +121,16 @@ margin-left:30vw;
   float:left;
 }
 
+/* style pop up help box */
 .helpbox {
   text-align: center;
-  font-size: 30px;
+  font-size: 3vw;
   font-weight: 230;
 }
 
+
 input[type=text]:hover {
-  background: #f1f1f1;
+  background: #d4d4d4;
 }
 
 #overlay-search {
@@ -114,8 +142,8 @@ input[type=text]:hover {
 
 /* Style the submit button */
 .button{
-  width: 80px;
-  padding: 15px;
+  width: 5vw;
+  height: 2.5vw;
   background: #ddd;
   font-size: 17px;
   border: none;
@@ -123,10 +151,14 @@ input[type=text]:hover {
   text-align: center;
 }
 
-#help_btn{
-  width: 50px;
+/* questionmark button */
+#help_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* style when hovering over button beside search bar */
 .button:hover{
   background: rgb(139, 86, 86);
 }
@@ -135,16 +167,67 @@ input[type=text]:hover {
   display:flex;
 }
 
-.hej{
-  background-color: azure;
-  width: 500px;
-  height: 300px;
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  margin:auto;
+/* style searchbar */
+#search {
+  width: 15vw;
+  height: 2.5vw;
 }
 
+/* background of the searchbar + header */
+.searchbackground{
+  background-color: #b1d7db;
+  width: 40vw;
+  height: 15vw;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  border-radius: 2vw;
+  border: solid 2px black;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  margin-top: 10vw;
+  padding: 20px;
+  border: 3px solid #888;
+  width: 50%;
+  }
+  
+  /* The Close Button */
+  .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  }
+  
+  .close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  }
+
+/*********************************/
+/* HELP PAGE */
+/*********************************/
+
+/* boxes describing how to use to site */
 .ruta1, .ruta2{
 background-color: #b1d7db;
 border-radius: 2vw;
@@ -159,75 +242,30 @@ border: solid 2px black;
 font-size: 15px;
 }
 
+/* pictures inside the help boxes */
 .helppic1, .helppic2 {
 border-radius: 2vw;
 margin: 0px;
 margin-top: 1vw;
 margin-bottom: 1vw;
 width: 10vw;
-border: solid 3px black;
+border: solid 2px black;
 }
 
+/* text inside the help box */
 .helplist1, .helplist2 {
 margin: right;
 }
 
-.footer{
-margin-top: auto;
-background-color: #8fbbd2;
-padding: 20px 10px;
-border-top: solid 2px black;
-margin-bottom: 0;
-overflow:auto;
-}
+/*********************************/
+/* SEARCH PAGE */
+/*********************************/
 
-.pfoot{
-text-align: left;
-padding: 10px 10px;
-}
-
-.modal {
-display: none; /* Hidden by default */
-position: fixed; /* Stay in place */
-z-index: 1; /* Sit on top */
-padding-top: 100px; /* Location of the box */
-left: 0;
-top: 0;
-width: 100%; /* Full width */
-height: 100%; /* Full height */
-overflow: auto; /* Enable scroll if needed */
-background-color: rgb(0,0,0); /* Fallback color */
-background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-background-color: #fefefe;
-margin: auto;
-margin-top: 10vw;
-padding: 20px;
-border: 3px solid #888;
-width: 50%;
-}
-
-/* The Close Button */
-.close {
-color: #aaaaaa;
-float: right;
-font-size: 30px;
-font-weight: bold;
-}
-
-.close:hover, .close:focus {
-color: #000;
-text-decoration: none;
-cursor: pointer;
-}
 .container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  }
+}
 
 .part {
   display: flex;
@@ -244,12 +282,18 @@ cursor: pointer;
   border-radius: 2vw;
   width: 70vw;
   text-align: center;
-  }
+}
 
   .legopartpic{
     width: 150px;
     border: solid 2px black;
   }
+
+
+/*********************************/
+/* ABOUT US */
+/*********************************/
+
   .aboutus{
     width: 10vw;
     height: 30vw;
@@ -274,8 +318,8 @@ h2, h3{
 }
 
 .lego {
-    border-radius: 2vw;
-    width: 10vw;
-    
+  border-radius: 2vw;
+  width: 10vw;
 }
+
 /*https://www.w3schools.com/howto/howto_css_fullscreen_search.asp*/
