@@ -11,7 +11,6 @@ if(!$connection){
     die('MySQL connection error');
 }
 $prefix = 'https://weber.itn.liu.se/~stegu/img.bricklink.com/';
-$search = "Brick";
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $search = mysqli_real_escape_string($connection, $_POST['search']);
@@ -26,6 +25,7 @@ $contents = mysqli_query ($connection, $sql_qurry );
 
 print "<div class='container'>";
 while($row = mysqli_fetch_array($contents)) {
+    $quantity = $row['Quantity'];
     $imagecolor = $row['ColorID'];
     $itemtype = $row['ItemtypeID'];
     $item = $row['ItemID'];
@@ -51,9 +51,9 @@ while($row = mysqli_fetch_array($contents)) {
     
 
     print("
-        <a href='searchset.php'>
+        <a href='searchset.php?part=$parts&color=$imagecolor'>
             <div class='part'>
-                <img src='$prefix$filename' alt='legopart' class='legopartpic'>$parts$partname<br>$item  
+                <img src='$prefix$filename' alt='legopart' class='legopartpic'>$partname<br>$item  
             </div>
         </a>");
 }
