@@ -145,31 +145,37 @@ input[type=text]:hover {
   margin:auto;
 }
 
-.ruta1, .ruta2{
+.ruta1, .ruta2, .ruta3, .ruta4{
 background-color: #b1d7db;
 border-radius: 2vw;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
-width: 70vw;
+width: 61vw;
+height: 10vw;
 align-items: center;
 margin: auto;
 margin-bottom: 3vw;
 border: solid 2px black;
-font-size: 15px;
+font-size: 20px;
+
+
+
 }
 
-.helppic1, .helppic2 {
+.helppic1, .helppic2, .helppic3, .helppic4 {
 border-radius: 2vw;
 margin: 0px;
 margin-top: 1vw;
 margin-bottom: 1vw;
 width: 10vw;
+height: 9vw;
 border: solid 3px black;
 }
 
-.helplist1, .helplist2 {
+.helplist1, .helplist2, .helplist3, .helplist4 {
 margin: right;
+flex-basis: 80%
 }
 
 .footer{
