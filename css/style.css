@@ -26,7 +26,9 @@
   width: 5vw;
   border: solid 2px black;
   border-radius: 1vw;
+  margin-left: 0.5vw;
 }
+
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
   font-size: 25px;
@@ -48,6 +50,7 @@
 /* Float the link section to the right */
 .header-right {
   float: right;
+  margin-right: 0.5vw;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -84,6 +87,14 @@
 /* MAIN PAGE */
 /*********************************/
 
+/*include fon for header*/
+@font-face {
+  font-family: legofont;
+  src: url(../fonts/lego_brix-webfont.woff);
+}
+
+
+
 body{
   margin: 0px;
   display:flex;
@@ -95,7 +106,9 @@ body{
 h1{
   text-align:center;
   text-shadow: 2px 2px rgb(255, 255, 255) ;
-  font-size: 4vw;
+  font-size: 3.5vw;
+  font-family: legofont;
+  margin-bottom: 0;
 }
 
 input[type=text] {
