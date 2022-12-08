@@ -17,16 +17,17 @@
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 2vw;
+  font-weight: 230;
   line-height: 25px;
   border-radius: 4px;
+ 
 }
 
 .logo{
   width: 5vw;
   border: solid 2px black;
   border-radius: 1vw;
-  margin-left: 0.5vw;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -51,6 +52,8 @@
 .header-right {
   float: right;
   margin-right: 0.5vw;
+  margin-top: 40px;
+
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -63,6 +66,52 @@
   .header-right {
     float: none;
   }
+}
+
+/*********************************/
+/* The Modal */
+/*********************************/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* help box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 2px solid rgb(0, 0, 0);
+  width: 80%; 
+}
+
+/* style pop up help box text*/
+.helpbox {
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 230;
+}
+
+
+.close {
+  color: rgb(0, 0, 0);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*********************************/
@@ -100,8 +149,9 @@ body{
   display:flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(../bilder/lego_background.jpg);
+ background-image: url(../bilder/lego_background.jpg);
 }
+
 
 h1{
   text-align:center;
@@ -121,13 +171,6 @@ margin-left:30vw;
   float:left;
 }
 
-/* style pop up help box */
-.helpbox {
-  text-align: center;
-  font-size: 3vw;
-  font-weight: 230;
-}
-
 
 input[type=text]:hover {
   background: #d4d4d4;
@@ -137,6 +180,7 @@ input[type=text]:hover {
   display:flex;
   flex-direction:row;
   justify-content: center;
+  border: 2px solid black;
 }
 
 
@@ -149,6 +193,7 @@ input[type=text]:hover {
   border: none;
   cursor: pointer;
   text-align: center;
+  border-left: 2px solid black
 }
 
 /* questionmark button */
@@ -156,6 +201,7 @@ input[type=text]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-left: 2px solid black;
 }
 
 /* style when hovering over button beside search bar */
@@ -173,6 +219,9 @@ input[type=text]:hover {
   height: 2.5vw;
 }
 
+/*********************************/
+/* HELP PAGE */
+/*********************************/
 .ruta1, .ruta2, .ruta3, .ruta4{
 background-color: #b1d7db;
 border-radius: 2vw;
@@ -186,9 +235,6 @@ margin: auto;
 margin-bottom: 3vw;
 border: solid 2px black;
 font-size: 20px;
-
-
-
 }
 
 .helppic1, .helppic2, .helppic3, .helppic4 {
@@ -202,9 +248,25 @@ border: solid 3px black;
 }
 
 .helplist1, .helplist2, .helplist3, .helplist4 {
-margin: right;
-flex-basis: 80%
+flex-basis: 80%;
+text-align: center;
 }
+
+/*********************************/
+/* SearchBackgroundBox */
+/*********************************/
+.searchbackgroundbox{
+  background-color:#b1d7db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 200px;
+  border: solid 3px black;
+  border-radius: 2vw;
+  margin:auto;
+  margin-top: 5vw;
+  }
 
 /*********************************/
 /* SEARCH PAGE */
@@ -249,11 +311,13 @@ flex-basis: 80%
     float: left;
     margin: 2vw;
     border-radius: 2vw;
-    border: solid 2px #fff;
+    border: solid 2px black;
     padding: 5px;
     justify-content: center;
     min-width: 100px;
     min-height: 200px;
+    background-color: #b1d7db;
+    
 }
 
 .container-aboutus{
