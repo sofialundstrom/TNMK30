@@ -1,6 +1,5 @@
 <?php include('../txt/header.txt'); ?>
 <link href="../css/style.css" media="screen" rel="stylesheet" type="text/css">
-    <h1>LEGO BANK</h1>
     <h2>ABOUT US</h2>
 
     <div class="container-aboutus">
