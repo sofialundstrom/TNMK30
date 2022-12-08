@@ -219,6 +219,9 @@ input[type=text]:hover {
   height: 2.5vw;
 }
 
+/*********************************/
+/* HELP PAGE */
+/*********************************/
 .ruta1, .ruta2, .ruta3, .ruta4{
 background-color: #b1d7db;
 border-radius: 2vw;
@@ -232,7 +235,6 @@ margin: auto;
 margin-bottom: 3vw;
 border: solid 2px black;
 font-size: 20px;
-
 }
 
 .helppic1, .helppic2, .helppic3, .helppic4 {
@@ -246,7 +248,8 @@ border: solid 3px black;
 }
 
 .helplist1, .helplist2, .helplist3, .helplist4 {
-flex-basis: 80%
+flex-basis: 80%;
+text-align: center;
 }
 
 /*********************************/
@@ -308,11 +311,13 @@ flex-basis: 80%
     float: left;
     margin: 2vw;
     border-radius: 2vw;
-    border: solid 2px #fff;
+    border: solid 2px black;
     padding: 5px;
     justify-content: center;
     min-width: 100px;
     min-height: 200px;
+    background-color: #b1d7db;
+    
 }
 
 .container-aboutus{
