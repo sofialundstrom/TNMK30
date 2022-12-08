@@ -51,7 +51,7 @@ while($row = mysqli_fetch_array($contents)) {
     
 
     print("
-        <a href='searchset.php?part=$parts&color=$imagecolor'>
+        <a href='searchset.php?part=$item&color=$imagecolor'>
             <div class='part'>
                 <img src='$prefix$filename' alt='legopart' class='legopartpic'>$partname<br>$item  
             </div>

@@ -7,11 +7,17 @@
 </div>
 
 
+
 <?php
+
+$connection = mysqli_connect("mysql.itn.liu.se","lego","","lego");
+if(!$connection){
+    die('MySQL connection error');
+}
 
 $prefix = 'https://weber.itn.liu.se/~stegu/img.bricklink.com/';
 
-$sql_qurry = "SELECT inventory.ColorID, inventory.SetID, inventory.Quantity, inventory.ItemtypeID, inventory.ItemID sets.Setname FROM inventory, sets WHERE $_GET['part']=inventory.ItemID AND $_GET['color']=inventory.ColorID AND inventory.ItemtypeID='SL'
+$sql_qurry = "SELECT inventory.ColorID, inventory.SetID, inventory.Quantity, inventory.ItemtypeID, inventory.ItemID sets.Setname FROM inventory, sets WHERE sets.SetID=inventory.SetId AND /* $_GET['part']=inventory.ItemID AND $_GET['color']=inventory.ColorID AND */ inventory.ItemtypeID='P'
 ORDER BY SetID ASC LIMIT 5";
 
 
@@ -21,7 +27,7 @@ print "<div class='container'>";
 while($row = mysqli_fetch_array($contents)) {
     $itemtype = $row['ItemtypeID'];
     $item = $row['ItemID'];
-    $sets = $row['SetÏD']
+    $sets = $row['SetID']
     $setname = $row['Setname']
     $sqlImg = "SELECT * FROM images WHERE ItemtypeID = 'SL' AND ItemID = '$item'";
 
@@ -30,7 +36,6 @@ while($row = mysqli_fetch_array($contents)) {
     $info = mysqli_fetch_array($imagesearch);
 
     if($info['has_jpg'] == 1) {
-    
         $filename = "$itemtype/$item.jpg";
     }
     else if($info['has_gif'] == 1) {
@@ -45,11 +50,13 @@ while($row = mysqli_fetch_array($contents)) {
     print("
         <a href='setpage.php'>
             <div class='part'>
-                <img src='$prefix$filename' alt='set' class='legopartpic'>$setname<br>Amount:$quantity<br>$item  
+                <img src='$prefix$filename' alt='set' class='legosetpic'>$setname<br>Amount:$quantity<br>$item  
             </div>
         </a>");
+    print "</div>";
 }
 print "</div>";
+
 mysqli_close($connection);
 
 
