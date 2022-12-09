@@ -295,9 +295,10 @@ text-align: center;
   text-align: center;
 }
 
-  .legopartpic{
+  #legopartpic, #setImg{
     width: 150px;
     border: solid 2px black;
+    height: 125px;
   }
 
 
