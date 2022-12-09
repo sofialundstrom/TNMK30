@@ -19,7 +19,19 @@
             <p class="helpbox">Press HELP for help</p>
         </div>
     </div>
+    <div class ="container-cookies">
+    <div id="Cookiebox">
+    <h2>We use cookies!</h2>
+    <p id="cookietext">To provide you with personalized and customized content, we want to use cookies.
+         We will also use cookies to be able to use and analyze the cookies we think you may use.
+          By clicking "Accept Cookies!", you are agreeing to our use of cookies.</p>
+    <div id="cookiebutton" class>
+    <button id="accept-cookies-btn">Accept Cookies!</button> 
+    </div>
+    </div>
+    </div>
    <?php
+
 
         
  include('../txt/footer.txt'); ?>
