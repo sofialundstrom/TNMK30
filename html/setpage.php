@@ -39,7 +39,7 @@ print("
         </div> 
     </div>
     <div class='setinfo'>
-    $setname<br>$set<br>$year<br>$catName<br>Amount of $partname needed: $quantity
+    <h4 class='settitle'> Set: $setname</h4><br><p> ID: $set</p><br><p> Relesed $year</p><br><p> Category: $catName</p><br><p> Amount of $partname pices needed: $quantity</p>
     </div>
     ");
 
