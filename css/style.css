@@ -27,9 +27,9 @@
   font-weight: 230;
   line-height: 25px;
   border-radius: 4px;
+  font-size: 1.8vw;
 
 }
-
 
 .logo{
   width: 5vw;
@@ -45,7 +45,7 @@
 
 /* Change the background color on mouse-over */
 .header a:hover {
-  background-color: #b1d7db;
+  background-color: rgb(189, 213, 226);
   color: black;
 }
 
@@ -211,7 +211,7 @@ input[type=text]:hover {
 
 /* style when hovering over button beside search bar */
 .button:hover{
-  background: rgb(139, 86, 86);
+  background: rgb(189, 213, 226);
 }
 
 .searchform{
@@ -253,7 +253,7 @@ input[type=text]:hover {
 /* COOKIE AND CONTENTS INSIDE IT */
 /*********************************/
 #accept-cookies-btn {
-  background-color: #b1d7db ; /* Green background */
+  background-color: #8fbbd2 ; /* Green background */
   border: none; /* Remove default border */
   color: white; /* White text on green background */
   padding: 15px 32px; /* Some padding */
@@ -291,7 +291,7 @@ input[type=text]:hover {
 /* HELP PAGE */
 /*********************************/
 .ruta1, .ruta2, .ruta3, .ruta4{
-background-color: #b1d7db;
+background-color: #8fbbd2;
 border-radius: 2vw;
 display: flex;
 flex-direction: row;
@@ -324,7 +324,7 @@ text-align: center;
 /* SearchBackgroundBox */
 /*********************************/
 .searchbackgroundbox{
-  background-color:#b1d7db;
+  background-color:#8fbbd2;
   display: flex;
   justify-content: center;
   align-items: center;
