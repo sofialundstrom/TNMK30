@@ -10,6 +10,12 @@
   position: relative;
 }
 
+/*include fonts used for links BYT FONT*/ 
+@font-face {
+  font-family: sublimalight;
+  src: url(../fonts/sublima/sublima-light-webfont.woff2);
+}
+
 /* header links */
 .header a {
   float: left;
@@ -21,7 +27,7 @@
   font-weight: 230;
   line-height: 25px;
   border-radius: 4px;
- 
+
 }
 
 .logo{
@@ -142,8 +148,6 @@
   src: url(../fonts/lego_brix-webfont.woff);
 }
 
-
-
 body{
   margin: 0px;
   display:flex;
@@ -151,7 +155,6 @@ body{
   min-height: 100vh;
  background-image: url(../bilder/lego_background.jpg);
 }
-
 
 h1{
   text-align:center;
@@ -180,7 +183,8 @@ input[type=text]:hover {
   display:flex;
   flex-direction:row;
   justify-content: center;
-  border: 2px solid black;
+  border: 0.05vw solid black;
+
 }
 
 
@@ -193,7 +197,7 @@ input[type=text]:hover {
   border: none;
   cursor: pointer;
   text-align: center;
-  border-left: 2px solid black
+  border-left: 0.05vw solid black
 }
 
 /* questionmark button */
@@ -201,7 +205,7 @@ input[type=text]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-left: 2px solid black;
+  border-left: 0.05vw solid black;
 }
 
 /* style when hovering over button beside search bar */
@@ -235,8 +239,6 @@ input[type=text]:hover {
   margin-top: auto; /* Push the button to the bottom of the container */
   transform: translate( 0px, -17px);
 }
-
-
 
 #Cookiebox{
   background-color:#ffffff;
@@ -305,11 +307,11 @@ text-align: center;
   align-items: center;
   width: 600px;
   height: 200px;
-  border: solid 3px black;
-  border-radius: 2vw;
+  border: solid 2px black;
+  border-radius: 1.5vw;
   margin:auto;
   margin-top: 5vw;
-  }
+}
 
 /*********************************/
 /* SEARCH PAGE */
