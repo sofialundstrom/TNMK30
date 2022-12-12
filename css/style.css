@@ -237,14 +237,14 @@ input[type=text]:hover {
   line-height: 25px;
   border-radius: 4px;
 }
-.dark-mode body{
+.dark-mode {
   background-image: url(../bilder/lego_background_dark.jpg);
 }
 
-.dark-mode header {
+.dark-mode .header {
   background-color: #6b0de6;
 }
-.dark-mode footer{
+.dark-mode .footer{
   background-color: #6b0de6;
 }
 

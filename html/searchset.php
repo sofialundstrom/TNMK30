@@ -1,7 +1,7 @@
 <?php include('../txt/header.txt'); ?>
 
 <div class="searchContainer">
-    <form action="searchpage.php" method="POST">
+    <form action="searchpagepart.php" method="POST">
         <input class="searchBox" type="search" name="search" placeholder="Search...">
     </form>
 </div>
@@ -40,11 +40,11 @@ while($row = mysqli_fetch_array($contents)) {
 
     $imagesearch = mysqli_query($connection, $sqlImg);
 
-    echo("$itemtype");
+
 
 
     $info = mysqli_fetch_array($imagesearch);
-    print("");
+
     if($info['has_jpg'] == 1) {
         $filename = "SL/$set.jpg";
         echo("$prefix$filename");
@@ -57,8 +57,6 @@ while($row = mysqli_fetch_array($contents)) {
     } 
     
     
-    //$filename2 = "SL/$sets.jpg";
-
     print("
         <a href='setpage.php?set=$set&quantity=$quantity&part=$part'>
             <div class='part'>
