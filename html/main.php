@@ -1,9 +1,17 @@
 <?php include('../txt/header.txt'); ?>
+<<<<<<< HEAD
+<script src="../js/questionmark.js"></script>
 
 <div class="searchbackgroundbox">
         <div>
-            <h1>LEGO BANK</h1>
+            <h1>LEGO BANK</h1> 
         </div>
+=======
+<div>
+            <h1>LEGO BANK</h1>
+</div>
+<div class="searchbackgroundbox">
+>>>>>>> ae1756cd6e6e8120fdc22a50181a93f5af7664d3
         <div id="overlay-search">
                 <form class="searchform" action="searchpagepart.php" method="POST">
                     <input type="search" name="search" id="search" placeholder="Search your lego piece">
