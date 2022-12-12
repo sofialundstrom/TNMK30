@@ -24,17 +24,6 @@
  
 }
 
-#toggle-mode-button {
-  float: left;
-  color: rgb(180, 36, 36);
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 2vw;
-  font-weight: 230;
-  line-height: 25px;
-  border-radius: 4px;
-}
 
 .logo{
   width: 5vw;
@@ -164,11 +153,6 @@ body{
  background-image: url(../bilder/lego_background.jpg);
 }
 
-.dark-mode body{
-  background-image: url(../bilder/lego_background_dark.jpg);
-}
-
-
 h1{
   text-align:center;
   text-shadow: 2px 2px rgb(255, 255, 255) ;
@@ -234,8 +218,35 @@ input[type=text]:hover {
   width: 15vw;
   height: 2.5vw;
 }
+  /*********************************/
+/* DARK/LIGHT MODE AND CONTENTS INSIDE IT */
+/*********************************/
+#toggle-mode-button {
+  float: left;
+  color: rgb(180, 36, 36);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 2vw;
+  font-weight: 230;
+  line-height: 25px;
+  border-radius: 4px;
+}
+.dark-mode body{
+  background-image: url(../bilder/lego_background_dark.jpg);
+}
 
-/* style COOKIES */
+.dark-mode header {
+  background-color: #6b0de6;
+}
+.dark-mode footer{
+  background-color: #6b0de6;
+}
+
+
+  /*********************************/
+/* COOKIE AND CONTENTS INSIDE IT */
+/*********************************/
 #accept-cookies-btn {
   background-color: #b1d7db ; /* Green background */
   border: none; /* Remove default border */
@@ -252,8 +263,6 @@ input[type=text]:hover {
   transform: translate( 0px, -17px);
 }
 
-
-
 #Cookiebox{
   background-color:#ffffff;
   display: flex;
@@ -266,17 +275,12 @@ input[type=text]:hover {
     display: flex;
     flex-direction: column;
     transform: translate(748px, -17px);
-/*
-top: 30%
-right: 60%
-*/
-  }
 
-  #cookietext{
+}
+
+#cookietext{
     padding: 15px;
-  }
-
-
+}
 
 /*********************************/
 /* HELP PAGE */
