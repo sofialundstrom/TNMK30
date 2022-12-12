@@ -32,7 +32,7 @@ $catName = $row2['Categoryname'];
 print("
     <div class='container-setpage'>
         <div class='setimage'>
-            <img src='$prefix/SL/$set.jpg' alt='Set picture'>
+            <img src='$prefix/SL/$set.jpg' class='setpic' alt='Set picture'>
         </div> 
     </div>
     <div class='setinfo'>
