@@ -24,24 +24,18 @@ window.onclick = function(event) {
   }
 }
 // When the user clics the dark mode button, it changes the color for the header and the footer and as well the background
-var button = document.getElementById("dark-mode-button");
+const button = document.getElementById('toggle-mode-button');
+button.addEventListener('click', toggleMode);
 
-function toggleDarkMode() {
-  var header = document.getElementById("header");
-  var footer = document.getElementById("footer");
-  var body = document.body;
-  var button = document.getElementById("dark-mode-button");
+function toggleMode() {
+  const body = document.body;
+  body.classList.toggle('dark-mode');
+  body.classList.toggle('light-mode');
 
-  if (body.classList.contains("dark-mode")) {
-    body.classList.remove("dark-mode");
-    header.classList.remove("dark-header");
-    footer.classList.remove("dark-footer");
-    button.innerHTML = "Dark Mode";
+  if (button.innerText === 'Dark Mode') {
+    button.innerText = 'Light Mode';
   } else {
-    body.classList.add("dark-mode");
-    header.classList.add("dark-header");
-    footer.classList.add("dark-footer");
-    button.innerHTML = "Light Mode";
+    button.innerText = 'Dark Mode';
   }
 }
 

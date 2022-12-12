@@ -24,9 +24,9 @@
  
 }
 
-#dark-mode-btn {
+#toggle-mode-button {
   float: left;
-  color: black;
+  color: rgb(180, 36, 36);
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -162,6 +162,10 @@ body{
   flex-direction: column;
   min-height: 100vh;
  background-image: url(../bilder/lego_background.jpg);
+}
+
+.dark-mode body{
+  background-image: url(../bilder/lego_background_dark.jpg);
 }
 
 
