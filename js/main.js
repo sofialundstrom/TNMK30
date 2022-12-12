@@ -23,6 +23,21 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+// When the user clics the dark mode button, it changes the color for the header and the footer and as well the background
+const button = document.getElementById('toggle-mode-button');
+button.addEventListener('click', toggleMode);
+
+function toggleMode() {
+  const body = document.body;
+  body.classList.toggle('dark-mode');
+  body.classList.toggle('light-mode');
+
+  if (button.innerText === 'Dark Mode') {
+    button.innerText = 'Light Mode';
+  } else {
+    button.innerText = 'Dark Mode';
+  }
+}
 
 // Get the cookie acceptance button
 const acceptCookiesBtn = document.getElementById("accept-cookies-btn");

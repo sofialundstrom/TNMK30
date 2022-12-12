@@ -12,7 +12,9 @@
     <div class="header">
         <a href="../html/main.php" ><img src="../bilder/donkey.jpg" class="logo" alt="LOGO"></a>
         <div class="header-right">
-          <a href="../html/help1.php">HELP</a>
+        <button id="toggle-mode-button">Dark Mode</button>
+         <a href="../html/help1.php">HELP</a>
           <a href="../html/aboutus.php">ABOUT US</a>
+         
         </div>
     </div>
