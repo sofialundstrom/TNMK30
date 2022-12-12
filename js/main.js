@@ -23,6 +23,27 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+// When the user clics the dark mode button, it changes the color for the header and the footer and as well the background
+var button = document.getElementById("dark-mode-button");
+
+function toggleDarkMode() {
+  var header = document.getElementById("header");
+  var footer = document.getElementById("footer");
+  var body = document.body;
+  var button = document.getElementById("dark-mode-button");
+
+  if (body.classList.contains("dark-mode")) {
+    body.classList.remove("dark-mode");
+    header.classList.remove("dark-header");
+    footer.classList.remove("dark-footer");
+    button.innerHTML = "Dark Mode";
+  } else {
+    body.classList.add("dark-mode");
+    header.classList.add("dark-header");
+    footer.classList.add("dark-footer");
+    button.innerHTML = "Light Mode";
+  }
+}
 
 // Get the cookie acceptance button
 const acceptCookiesBtn = document.getElementById("accept-cookies-btn");
