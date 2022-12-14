@@ -1,5 +1,12 @@
-<?php include('../txt/header.txt');
+<?php include('../txt/header.txt');?>
 
+<div class="searchContainer">
+    <form action="searchpagepart.php" method="POST">
+        <input class="searchBox" type="search" name="search" placeholder="Search...">
+    </form>
+</div>
+
+<?php
 $connection = mysqli_connect("mysql.itn.liu.se","lego","","lego");
 if(!$connection){
     die('MySQL connection error');
