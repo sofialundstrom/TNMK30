@@ -1,36 +1,26 @@
-// When the user clics the dark mode button, it changes the color for the header and the footer and as well the background
-const button = document.getElementById('toggle-mode-button');
-button.addEventListener('click', toggleMode);
+var toggleModeButton = document.getElementById('toggle-mode-button');
+var darkMode = localStorage.getItem('darkMode');
 
-function toggleMode() {
-  const body = document.body;
-
-  body.classList.toggle('dark-mode');
-
-  if (button.innerText === 'Dark Mode') {
-    button.innerText = 'Light Mode';
-  } else {
-    button.innerText = 'Dark Mode';
-  }
-
-  var currentMode = Cookies.get("mode");
-  if (!currentMode) {
-    currentMode = "light-mode";
-
-  }
-
-    // Set the body's class based on the current mode
-    document.body.className = currentMode;
-
-    // Toggle the mode and set the new value in the cookie
-    var newMode = currentMode == "dark-mode" ? "light-mode" : "dark-mode";
-    Cookies.set("mode", newMode);
+if (darkMode === 'true') {
+  document.body.classList.add('dark-mode');
+  toggleModeButton.innerText = 'Light Mode';
 }
 
+toggleModeButton.addEventListener('click', function() {
+  if (darkMode === 'true') {
+    document.body.classList.remove('dark-mode');
+    toggleModeButton.innerText = 'Dark Mode';
+    darkMode = 'false';
+    localStorage.setItem('darkMode', 'false');
+  } else {
+    document.body.classList.add('dark-mode');
+    toggleModeButton.innerText = 'Light Mode';
+    darkMode = 'true';
+    localStorage.setItem('darkMode', 'true');
+  }
+});
 
-
-
-// Get the cookie acceptance button
+/*// Get the cookie acceptance button
 const acceptCookiesBtn = document.getElementById("accept-cookies-btn");
 
 // Add an event listener to the button to handle clicks
@@ -47,9 +37,4 @@ acceptCookiesBtn.addEventListener("click", function() {
       // Hide the cookie box
       cookieBox.style.display = "none";
 });
-
-
-//if (cookie) {
-  //  body.classList.toggle('dark-mode');
-  //  button.innerText = 'Light Mode';
-  //}
+*/

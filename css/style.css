@@ -12,8 +12,8 @@
 
 /*include fonts used for links BYT FONT*/ 
 @font-face {
-  font-family: sublimalight;
-  src: url(../fonts/sublima/sublima-light-webfont.woff2);
+  font-family: funwork2;
+  src: url(../fonts/funwork-webfont.woff2);
 }
 
 /* header links */
@@ -24,11 +24,11 @@
   padding: 12px;
   text-decoration: none;
   font-size: 2vw;
-  font-weight: 230;
+  font-weight: bold;
   line-height: 25px;
   border-radius: 4px;
   font-size: 1.8vw;
-
+  font-family: funwork2;
 }
 
 .logo{
@@ -96,15 +96,16 @@
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
-  border: 2px solid rgb(0, 0, 0);
+  border: 1.5px solid rgb(0, 0, 0);
   width: 80%; 
+  font-family: funwork2;
 }
 
 /* style pop up help box text*/
 .helpbox {
   text-align: center;
   font-size: 3vw;
-  font-weight: 230;
+  font-family: funwork2;
 }
 
 
@@ -113,6 +114,7 @@
   float: right;
   font-size: 28px;
   font-weight: bold;
+  font-family: funwork2;
 }
 
 .close:hover, .close:focus {
@@ -137,11 +139,20 @@
   .pfoot{
     text-align: left;
     padding: 10px 10px;
+    font-family: funwork2;
   }
 
 /*********************************/
 /* MAIN PAGE */
 /*********************************/
+
+.legotext {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 23%;
+  height: 50px;
+}
 
 /*include fon for header*/
 @font-face {
@@ -154,7 +165,7 @@ body{
   display:flex;
   flex-direction: column;
   min-height: 100vh;
- background-image: url(../bilder/lego_background.jpg);
+  background-image: url(../bilder/lego_background.jpg);
 }
 
 h1{
@@ -166,7 +177,7 @@ h1{
 }
 
 input[type=text] {
-margin-left:30vw;
+  margin-left:30vw;
   padding: 15px;
   font-size: 17px;
   border: none;
@@ -198,7 +209,8 @@ input[type=text]:hover {
   border: none;
   cursor: pointer;
   text-align: center;
-  border-left: 0.05vw solid black
+  border-left: 0.05vw solid black;
+  font-family: funwork2;
 }
 
 /* questionmark button */
@@ -222,23 +234,27 @@ input[type=text]:hover {
 #search {
   width: 15vw;
   height: 2.5vw;
+  font-family: funwork2;
+
 }
   /*********************************/
 /* DARK/LIGHT MODE AND CONTENTS INSIDE IT */
 /*********************************/
 #toggle-mode-button {
   float: left;
-  color: rgb(180, 36, 36);
+  color: black;
   text-align: center;
   padding: 12px;
   text-decoration: none;
   font-size: 2vw;
-  font-weight: 230;
+  font-weight: bold;
   line-height: 25px;
   border-radius: 4px;
+  font-size: 1.8vw;
+  font-family: funwork2;
 }
 .dark-mode {
-  background-image: url(../bilder/lego_background_dark.jpg);
+  background-image: url(../bilder/lego_background_dark.pdf);
 }
 
 .dark-mode .header {
@@ -266,20 +282,21 @@ input[type=text]:hover {
   /*font-family: sublima; */
   margin-top: auto; /* Push the button to the bottom of the container */
   transform: translate( 0px, -17px);
+  font-family: funwork2;
 }
 
 #Cookiebox{
   background-color:#ffffff;
   display: flex;
   justify-content: center;
-    align-items: center;
-    width: 315px;
-    height: 279px;
-    margin: auto;
-    margin-top: 5vw;
-    display: flex;
-    flex-direction: column;
-    transform: translate(748px, -17px);
+  align-items: center;
+  width: 315px;
+  height: 279px;
+  margin: auto;
+  margin-top: 5vw;
+  display: flex;
+  flex-direction: column;
+  transform: translate(748px, -17px);
 
 }
 
@@ -328,8 +345,8 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  height: 200px;
+  width: 33vw;
+  height: 18vw;
   border: solid 2px black;
   border-radius: 1.5vw;
   margin:auto;
@@ -344,6 +361,32 @@ text-align: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  
+}
+
+#legopartpic, #setImg{
+  width: 150px;
+  border: solid 1px black;
+  height: 125px;
+  border-radius: 1vw;
+}
+
+.set {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px;
+  flex-basis: 70%;
+  height: 150px;
+  background-color:#8fbbd2;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border: solid 2px black;
+  border-radius: 1.5vw;
+  width: 70vw;
+  text-align: center;
+  margin: 1.5vw;
 }
 
 .part {
@@ -377,34 +420,68 @@ text-align: center;
 /* ABOUT US */
 /*********************************/
 
-  .aboutus{
-    width: 10vw;
-    height: 30vw;
-    float: left;
-    margin: 2vw;
-    border-radius: 2vw;
-    border: solid 2px black;
-    padding: 5px;
-    justify-content: center;
-    min-width: 100px;
-    min-height: 200px;
-    background-color: #8fbbd2;
+  .aboutus {
+  width: 10vw;
+  height: 27vw;
+  float: left;
+  margin: 2vw;
+  border-radius: 2vw;
+  border: solid 2px black;
+  padding: 5px;
+  justify-content: center;
+  min-width: 100px;
+  min-height: 200px;
+  background-color: #8fbbd2;
     
 }
 
 .container-aboutus{
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 25%;
 }
 
 h2, h3{
-    text-align: center;
+  text-align: center;
+  font-family: funwork2;
+}
+
+.container-header {
+  background-color: #8fbbd2;
+  width: 20vw;
+  height: 4vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin:auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 18%;
+  border: solid black 2px;
+  border-radius: 1.5vw;
+}
+
+.aboutus-header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 10vw;
 }
 
 .lego {
-  border-radius: 2vw;
+  border-radius: 1.5vw;
   width: 10vw;
+}
+
+.aboutus p {
+  font-family: funwork2;
+  font-size: 120%;
+  padding-left: 5%;
 }
 
 /*********************************/
@@ -422,7 +499,7 @@ h2, h3{
 
 .setinfo {
   width: 20vw;
-  height: 30vw;
+  height: 20vw;
   float: left;
   border-radius: 2vw;
   border: solid 2px black;
@@ -436,13 +513,18 @@ h2, h3{
 h4 {
   margin-top: 1vw;
   font-size: 1.5vw;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: funwork2;
+  text-align: center;
+  border-bottom: solid black 2px;
+  margin-bottom: 6px;
+  margin-top: 20px;
 }
 
 .setinfo p {
   margin:auto;
   font-size: 1vw;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: funwork2;
+  padding-left: 1vw;
 }
 
 
