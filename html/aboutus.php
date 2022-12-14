@@ -1,7 +1,7 @@
 <?php include('../txt/header.txt'); ?>
 <link href="../css/style.css" media="screen" rel="stylesheet" type="text/css">
     <div class="container-header">
-        <h2 class="about-us-header">ABOUT US</h2>
+        <h2 class="aboutus-header">ABOUT US</h2>
     </div>
 
     <div class="container-aboutus">

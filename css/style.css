@@ -324,7 +324,7 @@ font-size: 20px;
 
 .helppic1, .helppic2, .helppic3, .helppic4 {
 border-radius: 2vw;
-margin: 0px;
+margin: 0.2vw;
 margin-top: 1vw;
 margin-bottom: 1vw;
 width: 10vw;
@@ -335,6 +335,7 @@ border: solid 2px black;
 .helplist1, .helplist2, .helplist3, .helplist4 {
 flex-basis: 80%;
 text-align: center;
+font-family: funwork2;
 }
 
 /*********************************/
@@ -357,6 +358,21 @@ text-align: center;
 /* SEARCH PAGE */
 /*********************************/
 
+a:link, a:hover, a:visited {
+  font-family: funwork2;
+  font-size: 2vw;
+  margin: auto;
+  display: block; 
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+.partname {
+  position: absolute;
+  left: 50%;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -365,10 +381,12 @@ text-align: center;
 }
 
 #legopartpic, #setImg{
-  width: 150px;
+  width: 8vw;
   border: solid 1px black;
-  height: 125px;
+  height: 6vw;
   border-radius: 1vw;
+  position: absolute;
+  left: 18%;
 }
 
 .set {
@@ -376,15 +394,15 @@ text-align: center;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 50px;
+  margin: 4vw;
   flex-basis: 70%;
-  height: 150px;
+  height: 7.5vw;
   background-color:#8fbbd2;
   flex-grow: 0;
   flex-shrink: 0;
   border: solid 2px black;
   border-radius: 1.5vw;
-  width: 70vw;
+  width: 65vw;
   text-align: center;
   margin: 1.5vw;
 }
@@ -394,25 +412,26 @@ text-align: center;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 50px;
+  margin: 4vw;
   flex-basis: 70%;
-  height: 150px;
+  height: 7.5vw;
   background-color:#8fbbd2;
   flex-grow: 0;
   flex-shrink: 0;
   border: solid 2px black;
   border-radius: 1.5vw;
-  width: 70vw;
+  width: 65vw;
   text-align: center;
   margin: 1.5vw;
 }
 
   #legopartpic, #setImg{
-    width: 150px;
+    width: 8vw;
     border: solid 1px black;
-    height: 125px;
+    height: 6vw;
     border-radius: 1vw;
-    
+    position: absolute;
+    left: 18%;
   }
 
 
@@ -445,14 +464,14 @@ text-align: center;
   top: 25%;
 }
 
-h2, h3{
+h3{
   text-align: center;
   font-family: funwork2;
 }
 
 .container-header {
   background-color: #8fbbd2;
-  width: 20vw;
+  width: 10vw;
   height: 4vw;
   display: flex;
   justify-content: center;
@@ -470,7 +489,10 @@ h2, h3{
   text-align: center;
   display: flex;
   justify-content: center;
-  font-size: 10vw;
+  font-size: 2vw;
+  margin:auto;
+  font-family: legofont;
+  text-align: center;
 }
 
 .lego {
