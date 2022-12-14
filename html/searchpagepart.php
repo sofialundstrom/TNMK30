@@ -68,9 +68,9 @@ while($row = mysqli_fetch_array($contents)) {
     
 
     print("
-        <a class='part-link' href='searchpagecolor.php?part=$parts'>
+        <a href='searchpagecolor.php?part=$parts'>
             <div class='part'>
-                <img src='$prefix$filename' alt='legopart' id='legopartpic'>$partname<br><p>ID: </p>$parts  
+                <img src='$prefix$filename' alt='legopart' id='legopartpic'><br><div class='partname'>$partname<br></div><p>ID: $parts</p>  
             </div>
         </a>");
 }
