@@ -78,40 +78,7 @@ while($colorRow = mysqli_fetch_array($colorContents)) {
     }
 
 print "</div>";
-/*
-$limit= 4;
 
-$total_rows = $colorRow[0];
-$total_pages = ceil($total_rows / $limit);
-
-$pageURL="";
-
-if(isset($_GET["page"])) {
-    $page_number= $_GET["page"];
-}
-else {
-    $page_number = 1;
-}
-
-if($page_number >= 2) {
-    echo "<a href='searchpagecolor.php?page=''.($page_number-1).'> Prev </a>";
-}
-for($i=1;$i<$total_pages; $i++){
-    if($i == $page_number) {
-        $pageURL .="<a class='active' href='searchpagecolor.php?page=".$i.'">'.$i."</a>";
-    }
-
-    else {
-        $pageURL .="<a href='searchpagecolor.php?page=".$i.'">'.$i."</a>";
-    }
-};
-
-echo $pageURL;
-
-if($page_number<$total_pages) {
-    echo "<a href= 'searchpagecolor.php?page=".($page_number+1).'"> Next </a>';
-}
-*/
 mysqli_close($connection);
 
 

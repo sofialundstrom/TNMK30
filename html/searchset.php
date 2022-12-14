@@ -63,7 +63,7 @@ while($row = mysqli_fetch_array($contents)) {
                 <img id='setImg' src='$prefix/SL/$set.jpg' alt='image'>$setname<br>Amount:$quantity<br>$item  
             </div>
         </a>");
-    print "</div>";
+  
 }
 print "</div>";
 

@@ -1,14 +1,16 @@
-<?php include('../txt/header.txt'); ?>
-    <div class="searchContainer">
-        <form action="debug.php" method="POST">
-            <input class="searchBox" type="search" name="search" placeholder="Search...">
-        </form>
-    </div>
-
 <?php
+$tableName = htmlspecialchars($_GET['table']);
+if (isset($_GET['page'])) {
+  $currentPage = htmlspecialchars($_GET['page']);
+}else {
+  $currentPage = 1;//default page
+}
 
-
-  
+if (isset($_GET['itemsperpage'])) {
+  $itemsPerPage = htmlspecialchars($_GET['itemsperpage']);
+}else {
+  $itemsPerPage = 5;//default limit
+}
 
 $connection = mysqli_connect("mysql.itn.liu.se","lego","","lego");
 if(!$connection){
@@ -20,9 +22,22 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $search = mysqli_real_escape_string($connection, $_POST['search']);
 }
 
+?>
+
+
+<?php include('../txt/header.txt'); ?>
+    <div class="searchContainer">
+        <form action="debug.php" method="POST">
+            <input class="searchBox" type="search" name="search" placeholder="Search...">
+        </form>
+    </div>
+
+<?php
+
+
 
 $sql_qurry = "SELECT * FROM parts WHERE (Partname LIKE '%".$search."%' OR PartID LIKE '%".$search."%')
-ORDER BY length(Partname) ASC LIMIT 5";
+ORDER BY length(Partname) ASC LIMIT $itemsPerPage";
 
 
 $contents = mysqli_query ($connection, $sql_qurry );
@@ -75,47 +90,6 @@ while($row = mysqli_fetch_array($contents)) {
         </a>");
 }
 print "</div>";
-
-/*$limit= 4;
-
-      
-$total_rows = $contents[0];
-$total_pages = ceil($total_rows / $limit);
-
-$pageURL="";
-
-if(isset($_GET["page"])) {
-    $page_number= $_GET["page"];
-}
-else {
-    $page_number = 1;
-}
-
-$initial_page = ($page_number-1) * $limit; 
-
-
-
-if($page_number >= 2) {
-    echo "<a href='searchpagepart.php?page=".($page_number-1)."'> Prev </a>";
-}
-for($i=1;$i<=$total_pages; $i++){
-
-    if($i == $page_number) {
-        $pageURL ="<a class='active' href='searchpagepart.php?page=".$i.'">'.$i."</a>";
-    }
-
-    else {
-        $pageURL = "<a href='searchpagepart.php?page=".$i."'>".$i." </a>";     
-    }
-};
-
-echo $pageURL;
-
-if($page_number<$total_pages) {
-    echo "<a href='searchpagepart.php?page=".($page_number+1)."'>  Next </a>";   
-}
-*/
-
 
 mysqli_close($connection);
 
