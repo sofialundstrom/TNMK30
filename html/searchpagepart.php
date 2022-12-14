@@ -85,7 +85,7 @@ while($row = mysqli_fetch_array($contents)) {
     print("
         <a href='searchpagecolor.php?part=$parts'>
             <div class='part'>
-                <img src='$prefix$filename' alt='legopart' id='legopartpic'>$partname<br>$parts  
+                <img src='$prefix$filename' alt='legopart' id='legopartpic'><br><div class='partname'>$partname<br></div><p>ID: $parts</p>  
             </div>
         </a>");
 }
