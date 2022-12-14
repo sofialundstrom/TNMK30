@@ -228,7 +228,7 @@ input[type=text]:hover {
 /*********************************/
 #toggle-mode-button {
   float: left;
-  color: rgb(180, 36, 36);
+  color: rgb(5, 0, 0);
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -238,7 +238,7 @@ input[type=text]:hover {
   border-radius: 4px;
 }
 .dark-mode {
-  background-image: url(../bilder/lego_background_dark.jpg);
+  background-image: url(../bilder/lego_background_dark.pdf);
 }
 
 .dark-mode .header {
