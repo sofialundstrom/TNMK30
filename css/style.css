@@ -206,11 +206,7 @@ body{
   display:flex;
   flex-direction: column;
   min-height: 100vh;
-<<<<<<< Updated upstream
   background-image: url(../bilder/lego_background.png);
-=======
-  /*background-image: url(../bilder/lego_background.jpg);*/
->>>>>>> Stashed changes
 }
 
 .legotext {
