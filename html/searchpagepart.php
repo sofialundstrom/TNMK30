@@ -26,8 +26,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 <?php include('../txt/header.txt'); ?>
     <div class="searchContainer">
-        <form action="searchpagepart.php" method="POST">
-            <input class="searchBox" type="search" name="search" placeholder="Search...">
+        <form class="searchform" action="searchpagepart.php" method="POST">
+            <input class="search" type="search" name="search" placeholder="Search...">
+            <button class="button" type="submit">Search</button>
         </form>
     </div>
 
@@ -89,6 +90,8 @@ while($row = mysqli_fetch_array($contents)) {
         </a>");
 }
 print "</div>";
+
+
 
 mysqli_close($connection);
 

@@ -1,10 +1,11 @@
 <?php include('../txt/header.txt');?>
 
 <div class="searchContainer">
-    <form action="searchpagepart.php" method="POST">
-        <input class="searchBox" type="search" name="search" placeholder="Search...">
-    </form>
-</div>
+        <form class="searchform" action="searchpagepart.php" method="POST">
+            <input class="search" type="search" name="search" placeholder="Search...">
+            <button class="button" type="submit">Search</button>
+        </form>
+    </div>
 
 <?php
 $connection = mysqli_connect("mysql.itn.liu.se","lego","","lego");
@@ -40,13 +41,14 @@ $contents3 = mysqli_query ($connection, $sql_qurry3 );
 $row3 = mysqli_fetch_array($contents3);
 $partname = $row3['Partname'];
 print("
+    <div id='overallcontainer'>
     <div class='container-setpage'>
         <div class='setimage'>
             <img src='$prefix/SL/$set.jpg' class='setpic' alt='Set picture'>
         </div> 
     <div class='setinfo'>
     <h4 class='settitle'> Set: $setname</h4><br><p> ID: $set</p><br><p> Released $year</p><br><p> Category: $catName</p><br><p> Amount of $partname pieces needed: $quantity</p>
-    
+    </div>
     </div>
     </div>
     ");

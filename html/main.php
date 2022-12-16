@@ -1,10 +1,11 @@
 <?php include('../txt/header.txt'); ?>
 
 <div class="searchbackgroundbox">
-    <div class="legotext">
-        <h1>LEGO BANK</h1>
-    </div>
+    
      <div id="overlay-search">
+        <div class="legotext">
+          <h1 id="header_main">LEGO BANK</h1>
+        </div>
             <form class="searchform" action="searchpagepart.php" method="POST">
                 <input type="search" name="search" id="search" placeholder="Search your lego piece">
                 <button class="button" type="submit">Search</button>
@@ -19,17 +20,7 @@
             <p class="helpbox">Press HELP for help</p>
         </div>
     </div>
-    <div class ="container-cookies">
-    <div id="Cookiebox">
-    <h2>We use cookies!</h2>
-    <p id="cookietext">To provide you with personalized and customized content, we want to use cookies.
-         We will also use cookies to be able to use and analyze the cookies we think you may use.
-          By clicking "Accept Cookies!", you are agreeing to our use of cookies.</p>
-    <div id="cookiebutton" class>
-    <button id="accept-cookies-btn">Accept Cookies!</button> 
-    </div>
-    </div>
-    </div>
+        
    <?php
 
 
