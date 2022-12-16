@@ -1,3 +1,7 @@
+/*********************************/
+/* TOGGLE MODE BUTTON */
+/*********************************/
+
 var toggleModeButton = document.getElementById('toggle-mode-button');
 var darkMode = localStorage.getItem('darkMode');
 
@@ -20,7 +24,45 @@ toggleModeButton.addEventListener('click', function() {
   }
 });
 
-/*// Get the cookie acceptance button
+/*********************************/
+/* AUTOCOMPLETE SEARCH BOX */
+/*********************************/
+// The search input element
+const searchInput = document.getElementById('search');
+console.log(searchInput)
+// Add an event listener to the search input element
+// to listen for when the user inputs text
+searchInput.addEventListener('input', ASB);
+  // Get the value of the search input
+ function ASB (evt){ 
+  let value = this.value.trim();
+  console.log(value)
+  // If the search input is empty, reset the list of suggestions
+  if (value.length === 0) {
+    //searchInput;
+    return;
+  }
+
+  
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", 'autocompletesearchbox.php?SearchInput=' + value, true);
+  xhttp.onload = function(){
+    const searchdata = xhttp.response;
+    
+    $("#search").autocomplete({
+      source: JSON.parse(searchdata),
+      minLength: 1,
+      delay: 600
+    });
+  };
+  xhttp.send();
+};
+
+
+
+
+
+/*/ Get the cookie acceptance button
 const acceptCookiesBtn = document.getElementById("accept-cookies-btn");
 
 // Add an event listener to the button to handle clicks

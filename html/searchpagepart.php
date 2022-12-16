@@ -24,7 +24,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 ?>
 
-
 <?php include('../txt/header.txt'); ?>
     <div class="searchContainer">
         <form action="searchpagepart.php" method="POST">
