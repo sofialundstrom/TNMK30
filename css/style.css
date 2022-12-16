@@ -11,14 +11,7 @@
   position: relative;
 }
 
-.bg-image{
-  background-image: url(../bilder/lego_background.jpg);
-  filter: blur(3px);
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  z-index: -1;
-}
+
 
 /*include fonts used for links BYT FONT*/ 
 @font-face {
@@ -206,13 +199,16 @@ body{
   display:flex;
   flex-direction: column;
   min-height: 100vh;
-<<<<<<< Updated upstream
-  background-image: url(../bilder/lego_background.png);
-=======
-  /*background-image: url(../bilder/lego_background.jpg);*/
->>>>>>> Stashed changes
 }
 
+.bg-image{
+  background-image: url(../bilder/lego_background.png);
+  filter: blur(3px);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
 .legotext {
   display: flex;
   justify-content: center;
@@ -644,8 +640,14 @@ h4 {
   background-color: #615fad;
 }
 
-.dark-mode {
+.Dbg-image{
   background-image: url(../bilder/lego_background_dark.jpg);
+  filter: blur(3px);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  
 }
 
 .dark-mode .header, .dark-mode .footer{

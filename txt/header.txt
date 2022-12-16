@@ -26,3 +26,6 @@
           <a class="headerButton" id="headerlink2" href="../html/aboutus.php">ABOUT US</a>
         </div>
     </div>
+
+        <div class="bg-image"></div> 
+        <div class="Dbg-image"></div> 
