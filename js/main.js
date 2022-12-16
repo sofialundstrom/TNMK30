@@ -19,22 +19,3 @@ toggleModeButton.addEventListener('click', function() {
     localStorage.setItem('darkMode', 'true');
   }
 });
-
-/*// Get the cookie acceptance button
-const acceptCookiesBtn = document.getElementById("accept-cookies-btn");
-
-// Add an event listener to the button to handle clicks
-acceptCookiesBtn.addEventListener("click", function() {
-  // Set a cookie to indicate that the user has accepted cookies
-  document.cookie = "accepts-cookies=true";
-  
- // Get the cookie box element
-  const cookieBox = document.getElementById("Cookiebox");
-
-  // Hide the cookie acceptance button
-  //acceptCookiesBtn.style.display = "none";
-
-      // Hide the cookie box
-      cookieBox.style.display = "none";
-});
-*/
