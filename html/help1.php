@@ -1,6 +1,6 @@
 <?php include('../txt/header.txt'); ?>
 <br>
-<h1> HOW TO SEARCH</h1>
+<h1 class="help-header"> HOW TO SEARCH</h1>
 <br>
 <div class="ruta1">
     <img src="../bilder/donkey.jpg" class="helppic1" alt="bild1">

@@ -55,7 +55,7 @@
   justify-content: space-between;
 }
 
-#toggle-mode-button, .aboutusbutton, .helpbutton {
+#toggle-mode-button, .headerButton {
   float: left;
   background-color: #79a3b9;
   color: black;
@@ -127,6 +127,20 @@ background-color: rgb(189, 213, 226);
   font-family: funwork2;
 }
 
+.help-header {
+  background-color: #8fbbd2;
+  width: 40vw;
+  height: 4,7vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin:auto;
+  margin-top: 1vw;
+  margin-bottom: 1.5vw;
+  border: solid black 2px;
+  border-radius: 1.5vw;
+}
+
 /* style pop up help box text*/
 .helpbox {
   text-align: center;
@@ -183,7 +197,7 @@ body{
   display:flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(../bilder/lego_background.jpg);
+  background-image: url(../bilder/lego_background.png);
 }
 
 .legotext {
@@ -229,12 +243,14 @@ input[type=text]:hover {
   width: 5vw;
   height: 2.5vw;
   background: #ddd;
-  font-size:1vw;
+  font-size: 1vw;
+  font-weight: ;
   border: none;
   cursor: pointer;
   text-align: center;
   border-left: 0.05vw solid black;
   font-family: funwork2;
+  font-weight: bold;
 }
 
 /* questionmark button */
@@ -308,17 +324,20 @@ input[type=text]:hover {
 
 .help-header {
   background-color: #8fbbd2;
-  width: 40vw;
-  height: 4,7vw;
+  width: 30vw;
+  height: 5vw;
   display: flex;
-  justify-content: center;
-  text-align: center;
   margin:auto;
-  margin-top: 1vw;
-  margin-bottom: 1.5vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
   border: solid black 2px;
   border-radius: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  font-family: legofont;
+  font-size: 2vw;
 }
+
 .ruta1, .ruta2, .ruta3, .ruta4{
   background-color: #8fbbd2;
   border-radius: 2vw;
@@ -436,10 +455,6 @@ a:link, a:hover, a:visited {
 /* ABOUT US */
 /*********************************/
 
-.container-aboutus{
-margin: 200px 0 0 0;
-}
-
 #box1, #box2, #box3, #box4, #box5 {
 background-color: #8fbbd2;
 border-radius: 2vw;
@@ -452,7 +467,7 @@ align-items: center;
 margin: auto;
 margin-bottom: 3vw;
 border: solid 2px black;
-font-size: 20px;
+font-size: 1.2vw;
 box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -470,18 +485,18 @@ h3{
 
 .container-header {
   background-color: #8fbbd2;
-  width: 40vw;
-  height: 6vw;
+  width: 30vw;
+  height: 5vw;
   display: flex;
   margin:auto;
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 18%;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
   border: solid black 2px;
   border-radius: 1.5vw;
   display: flex;
   flex-direction: column;
+  font-family: legofont;
+  font-size: 2vw;
 }
 
 .aboutus-header {
@@ -574,7 +589,7 @@ h4 {
 /*********************************/
 
 /**** MAIN PAGE DARK ****/
-.dark-mode #toggle-mode-button, .dark-mode .headerButton  {
+.dark-mode #toggle-mode-button, .dark-mode .headerButton {
   float: left;
   background-color: #8381df;
   color: black;
@@ -590,7 +605,11 @@ h4 {
   font-family: funwork2;
 }
 
-.dark-mode .header a:hover, .dark-mode .button:hover, .dark-mode #toggle-mode-button:hover {
+.dark-mode #headerlink1, .dark-mode #headerlink2 {
+  background-color: #8381df
+}
+
+.dark-mode .header a:hover, .dark-mode .headerButton:hover, .dark-mode #toggle-mode-button:hover {
   background-color: #615fad;
 }
 
