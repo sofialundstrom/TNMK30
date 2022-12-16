@@ -479,7 +479,7 @@ h3{
 .container-setpage{
   display:flex;
   justify-content:center;
-  margin:auto;
+ 
   background-color: #79a3b9;
   width: 65vw;
   height: 30vw;
@@ -489,6 +489,12 @@ h3{
   border-radius: 2vw;
   justify-content: space-evenly;
 }
+#overallcontainer{
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
 .setpic {
   border-radius: 2vw;
   border: solid 2px black;
