@@ -1,10 +1,11 @@
 <?php include('../txt/header.txt'); ?>
 
 <div class="searchbackgroundbox">
-    <div class="legotext">
+    
+     <div id="overlay-search">
+        <div class="legotext">
           <h1 id="header_main">LEGO BANK</h1>
         </div>
-     <div id="overlay-search">
             <form class="searchform" action="searchpagepart.php" method="POST">
                 <input type="search" name="search" id="search" placeholder="Search your lego piece">
                 <button class="button" type="submit">Search</button>
