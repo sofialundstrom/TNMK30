@@ -13,8 +13,9 @@ if(!$connection){
 }
 $prefix = 'https://weber.itn.liu.se/~stegu/img.bricklink.com/';
 
-if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $search = mysqli_real_escape_string($connection, $_POST['search']);
+$offset = 0;
+if(isset($_GET["offset"])){
+    $offset = $_GET["offset"];
 }
 
 if(isset($_GET["part"])) {
@@ -24,7 +25,7 @@ if(isset($_GET["part"])) {
 
 $sql_qurry = "SELECT inventory.Quantity, colors.Colorname, parts.Partname, inventory.ColorID, inventory.ItemtypeID, inventory.ItemID
 FROM inventory, colors, parts WHERE inventory.ItemID='$part' AND inventory.ItemtypeID='P' AND parts.PartID=inventory.ItemID
-ORDER BY Colorname ASC, ColorID ASC LIMIT 5";
+ORDER BY ColorID ASC";
 
 
 $contents = mysqli_query ($connection, $sql_qurry );
@@ -39,7 +40,7 @@ $partname = $row['Partname'];
 
 print "<div class='container'>";
 
-$sqlColor = "SELECT DISTINCT ColorID FROM inventory WHERE ItemID = '$part' LIMIT 5";
+$sqlColor = "SELECT DISTINCT ColorID FROM inventory WHERE ItemID = '$part' LIMIT $offset, 5";
 
 $colorContents = mysqli_query($connection, $sqlColor);
 
@@ -59,13 +60,13 @@ while($colorRow = mysqli_fetch_array($colorContents)) {
  
     if($info['has_jpg'] == 1) {
     
-        $filename = "$itemtype/$imagecolor/$item.jpg";
+        $filename = "$prefix$itemtype/$imagecolor/$item.jpg";
     }
     else if($info['has_gif'] == 1) {
-        $filename = "$itemtype/$imagecolor/$item.gif";
+        $filename = "$prefix$itemtype/$imagecolor/$item.gif";
     }
     else {
-        $filename = "noimage_small.png";
+        $filename = "../bilder/donkey.jpg";
     } 
     
    
@@ -73,14 +74,22 @@ while($colorRow = mysqli_fetch_array($colorContents)) {
     print("
         <a href='searchset.php?part=$item&color=$imagecolor'>
             <div class='part'>
-                <img src='$prefix$filename' alt='legopart' id='legopartpic'><br><div class='partinfo'>$partname</div><br><p> ID: $item</p>
+                <img src='$filename' alt='legopart' id='legopartpic'><br><div class='partinfo'>$partname</div><br><p> ID: $item</p>
             </div>
         </a>");
     }
 
 print "</div>";
 
+print "<div id='pagination'>";
+$offsetPrev = $offset - 5;
+print("<a id='prev' href='searchpagecolor.php?part=$item&offset=$offsetPrev'> Prev </a>");
+$offsetNext = $offset + 5;
+print("<a id='next' href='searchpagecolor.php?part=$item&offset=$offsetNext'> Next </a>");
+print "</div>";
 mysqli_close($connection);
+
+
 
 
 include('../txt/footer.txt'); ?>
