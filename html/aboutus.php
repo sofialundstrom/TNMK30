@@ -5,35 +5,50 @@
     </div>
 
     <div class="container-aboutus">
-    <div class="aboutus">
+    <div id="box1">
     <img src="../bilder/donkey.jpg" class="lego" alt = "scary lego">
-        <h3>PERSON 1</h3>
-        <p>ÅLDER</p>
-        <p>FAVORIT SET</p>
+        <h3>Sofia Lundström</h3>
+        <p>
+        Favorite set: ..
+        <break>
+        E-post: @student.liu.se
+        </p>
     </div>
-    <div class="aboutus">
+    <div id="box2">
     <img src="../bilder/donkey.jpg" class="lego" alt = "scary lego">
-        <h3>PERSON 2</h3>
-        <p>ÅLDER</p>
-        <p>FAVORIT SET</p>
+        <h3>Abdiladiif Musse</h3>
+        <p>
+        Favorite set: Bird of Paradise 
+        <break>
+        E-post: @student.liu.se
+        </p>
     </div>
-    <div class="aboutus">
+    <div id="box3">
     <img src="../bilder/donkey.jpg" class="lego" alt = "scary lego">
-        <h3>PERSON 3</h3>
-        <p>ÅLDER</p>
-        <p>FAVORIT SET</p>
+        <h3>Vanessa Ivarsson</h3>
+        <p>
+        Favorite set: Christmas
+        <break>
+        E-post: @student.liu.se
+        </p>
     </div>
-    <div class="aboutus">
+    <div id="box4">
     <img src="../bilder/donkey.jpg" class="lego" alt = "scary lego">
-        <h3>PERSON 4</h3>
-        <p>ÅLDER</p>
-        <p>FAVORIT SET</p>
+        <h3>Hanna Sjöström</h3>
+        <p>
+        Favorite set: The First Night
+        <break>
+        E-post: @student.liu.se
+        </p>
     </div>
-    <div class="aboutus">
+    <div id="box5">
     <img src="../bilder/donkey.jpg"class="lego" alt = "scary lego">
-        <h3>PERSON 5</h3>
-        <p>ÅLDER</p>
-        <p>FAVORIT SET</p>
+        <h3>Elsa Tärnbrant</h3>
+        <p>
+        Favorite set:
+        <break>
+        E-post: @student.liu.se
+        </p>
     </div>
     </div>
     <?php include('../txt/footer.txt'); ?>
