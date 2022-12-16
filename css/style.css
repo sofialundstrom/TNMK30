@@ -44,22 +44,12 @@
   font-weight: bold;
 }
 
-/* Change the background color on mouse-over */
-.header a:hover {
-  background-color: rgb(189, 213, 226);
-  color: black;
-}
-
-/* Style the active/current link*/
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
-}
 
 /* Float the link section to the right */
 .header-right {
+  position: block;
   float: right;
-  margin-right: 0.5vw;
+  margin-right: 5.5vw;
   margin-top: 40px;
   display:flex;
   justify-content: space-between;
@@ -81,6 +71,14 @@
   font-family: funwork2;
 
 }
+#headerlink1:hover, #headerlink2:hover{
+background-color: rgb(189, 213, 226);
+}
+
+#headerlink2{
+  background-color: #79a3b9;
+}
+
 
 .headerButton{
   border: solid 2px black;
@@ -170,14 +168,6 @@
 /* MAIN PAGE */
 /*********************************/
 
-.legotext {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 23%;
-  height: 50px;
-}
-
 /*include fon for header*/
 @font-face {
   font-family: legofont;
@@ -192,18 +182,24 @@ body{
   background-image: url(../bilder/lego_background.jpg);
 }
 
-h1{
+.legotext {
+  display: flex;
+  justify-content: center;
+}
+
+#header_main{
   text-align:center;
   text-shadow: 2px 2px rgb(255, 255, 255) ;
   font-size: 3.5vw;
   font-family: legofont;
-  margin-bottom: 0;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
 input[type=text] {
   margin-left:30vw;
   padding: 15px;
-  font-size: 17px;
+  font-size: 2vw;
   border: none;
   width: 35%;
   background: white;
@@ -219,7 +215,6 @@ input[type=text]:hover {
   display:flex;
   flex-direction:row;
   justify-content: center;
-  border: 0.05vw solid black;
 
 }
 
@@ -229,7 +224,7 @@ input[type=text]:hover {
   width: 5vw;
   height: 2.5vw;
   background: #ddd;
-  font-size: 17px;
+  font-size:1vw;
   border: none;
   cursor: pointer;
   text-align: center;
@@ -252,6 +247,8 @@ input[type=text]:hover {
 
 .searchform{
   display:flex;
+  margin-bottom: 0.05vw;
+  border: 0.05vw solid black;
 }
 
 /* style searchbar */
@@ -369,6 +366,7 @@ input[type=text]:hover {
 /* SEARCH PAGE */
 /*********************************/
 
+
 a:link, a:hover, a:visited {
   font-family: funwork2;
   font-size: 2vw;
@@ -446,10 +444,17 @@ font-size: 20px;
 box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+
 h3{
   text-align: center;
   font-family: funwork2;
 }
+
+.text-aboutus {
+  display: flex;
+  flex-direction: row;
+}
+
 
 .container-header {
   background-color: #8fbbd2;
