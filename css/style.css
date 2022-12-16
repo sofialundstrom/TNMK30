@@ -75,14 +75,17 @@
 background-color: rgb(189, 213, 226);
 }
 
-#headerlink2{
+#headerlink1, #headerlink2{
   background-color: #79a3b9;
+  border:solid 2px black;
+  
 }
 
 
-.headerButton{
-  border: solid 2px black;
+#headerlink1{
+  margin-right: 1vw;
   display:flex;
+  margin-left: 1vw;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -504,7 +507,6 @@ h3{
 .container-setpage{
   display:flex;
   justify-content:center;
- 
   background-color: #79a3b9;
   width: 65vw;
   height: 30vw;
@@ -514,6 +516,7 @@ h3{
   border-radius: 2vw;
   justify-content: space-evenly;
 }
+
 #overallcontainer{
   width:100%;
   display: flex;
