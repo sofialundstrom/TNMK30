@@ -1,3 +1,4 @@
+
 /*********************************/
 /* HEADER AND CONTENTS INSIDE IT */
 /*********************************/
@@ -29,7 +30,6 @@
   border-radius: 4px;
   font-size: 1.8vw;
   font-family: funwork2;
-
 }
 
 .logo{
@@ -63,13 +63,30 @@
   margin-top: 40px;
   display:flex;
   justify-content: space-between;
+}
+
+#toggle-mode-button, .aboutusbutton, .helpbutton {
+  float: left;
   background-color: #79a3b9;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 2vw;
+  border-radius: 4px;
+  font-weight: bold;
+  line-height: 25px;
+  border:solid 2px black;
+  font-size: 1.8vw;
+  font-family: funwork2;
+
 }
 
 .headerButton{
   border: solid 2px black;
-   display:flex;
+  display:flex;
 }
+
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
   .header a {
@@ -245,41 +262,6 @@ input[type=text]:hover {
 
 }
   /*********************************/
-/* DARK/LIGHT MODE AND CONTENTS INSIDE IT */
-/*********************************/
-#toggle-mode-button  {
-  float: left;
-  background-color: #79a3b9;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 2vw;
-  border-radius: 4px;
-  font-weight: bold;
-  line-height: 25px;
-  border:solid 2px black;
-  font-size: 1.8vw;
-  font-family: funwork2;
-}
-
-#toggle-mode-button:hover{
-  background:rgb(189, 213, 226);
-}
-
-.dark-mode {
-  background-image: url(../bilder/lego_background_dark.jpg);
-}
-
-.dark-mode .header {
-  background-color: #6b0de6;
-}
-.dark-mode .footer{
-  background-color: #6b0de6;
-}
-
-
-  /*********************************/
 /* COOKIE AND CONTENTS INSIDE IT */
 /*********************************/
 #accept-cookies-btn {
@@ -301,6 +283,7 @@ input[type=text]:hover {
 
 #Cookiebox{
   background-color:#ffffff;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 315px;
@@ -320,42 +303,56 @@ input[type=text]:hover {
 /*********************************/
 /* HELP PAGE */
 /*********************************/
+
+.help-header {
+  background-color: #8fbbd2;
+  width: 40vw;
+  height: 4,7vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin:auto;
+  margin-top: 1vw;
+  margin-bottom: 1.5vw;
+  border: solid black 2px;
+  border-radius: 1.5vw;
+}
 .ruta1, .ruta2, .ruta3, .ruta4{
-background-color: #8fbbd2;
-border-radius: 2vw;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-width: 61vw;
-height: 10vw;
-align-items: center;
-margin: auto;
-margin-bottom: 3vw;
-border: solid 2px black;
-font-size: 20px;
-box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #8fbbd2;
+  border-radius: 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 61vw;
+  height: 10vw;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 3vw;
+  border: solid 2px black;
+  font-size: 20px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .helppic1, .helppic2, .helppic3, .helppic4 {
-border-radius: 2vw;
-margin: 0.2vw;
-margin-top: 1vw;
-margin-bottom: 1vw;
-width: 10vw;
-height: 9vw;
-border: solid 2px black;
+  border-radius: 2vw;
+  margin: 0.2vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  width: 10vw;
+  height: 9vw;
+  border: solid 2px black;
 }
 
 .helplist1, .helplist2, .helplist3, .helplist4 {
-flex-basis: 80%;
-text-align: center;
-font-family: funwork2;
+  flex-basis: 80%;
+  text-align: center;
+  font-family: funwork2;
 }
 
 /*********************************/
 /* SearchBackgroundBox */
 /*********************************/
-.searchbackgroundbox{
+.searchbackgroundbox {
   background-color:#8fbbd2;
   display: flex;
   justify-content: center;
@@ -366,7 +363,6 @@ font-family: funwork2;
   border-radius: 1.5vw;
   margin:auto;
   margin-top: 5vw;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /*********************************/
@@ -383,18 +379,6 @@ a:link, a:hover, a:visited {
   color: black;
 }
 
-#setinfo, .partinfo{
-  border-radius: 4px;
-  font-weight: bold;
-  font-family: funwork2;
-  padding: 1vw;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-}
-
-#setinfo:hover, .partinfo:hover{
-  background:rgb(189, 213, 226);
-}
-
 .container {
   display: flex;
   justify-content: center;
@@ -406,17 +390,16 @@ a:link, a:hover, a:visited {
   border: solid 1px black;
   height: 6vw;
   border-radius: 1vw;
-  margin-left: 1vw;
-  
+  position: absolute;
+  left: 18%;
 }
 
 .part, .set {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 4vw;
-  padding: 1vw;
   flex-basis: 70%;
   height: 7.5vw;
   background-color:#8fbbd2;
@@ -430,9 +413,14 @@ a:link, a:hover, a:visited {
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.part p, .set p{
-  padding-right: 1vw;
-}
+  #legopartpic, #setImg{
+    width: 8vw;
+    border: solid 1px black;
+    height: 6vw;
+    border-radius: 1vw;
+    position: absolute;
+    left: 18%;
+  }
 
 /*********************************/
 /* ABOUT US */
@@ -465,8 +453,8 @@ h3{
 
 .container-header {
   background-color: #8fbbd2;
-  width: 10vw;
-  height: 4vw;
+  width: 40vw;
+  height: 6vw;
   display: flex;
   margin:auto;
   position: absolute;
@@ -503,35 +491,29 @@ h3{
 /*********************************/
 /* SET PAGE */
 /*********************************/
-.container-setpage{
-  display:flex;
-  justify-content:center;
-  margin:auto;
-  background-color: #79a3b9;
-  width: 65vw;
-  height: 30vw;
-  align-items: center;
-  border: solid 2px black;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 2vw;
-  justify-content: space-evenly;
-}
 .setpic {
+  position: absolute;
+  left: 15vw;
+  top: 12vw;
   border-radius: 2vw;
   border: solid 2px black;
   height: 20vw;
   width: 30vw;
-
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .setinfo {
-  width: 25vw;
-  height: 25vw;
+  width: 20vw;
+  height: 20vw;
+  float: left;
   border-radius: 2vw;
   border: solid 2px black;
   padding: 5px;
   background-color: #8fbbd2;
-
+  position: absolute;
+  left: 55vw;
+  top: 12vw;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 h4 {
@@ -551,6 +533,50 @@ h4 {
   padding-left: 1vw;
 }
 
+/*********************************/
+/* DARK/LIGHT MODE AND CONTENTS INSIDE IT */
+/*********************************/
+
+/**** MAIN PAGE DARK ****/
+.dark-mode #toggle-mode-button, .dark-mode .headerButton  {
+  float: left;
+  background-color: #8381df;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 2vw;
+  border-radius: 4px;
+  font-weight: bold;
+  line-height: 25px;
+  border:solid 2px black;
+  font-size: 1.8vw;
+  font-family: funwork2;
+}
+
+.dark-mode .header a:hover, .dark-mode .button:hover, .dark-mode #toggle-mode-button:hover {
+  background-color: #615fad;
+}
+
+.dark-mode {
+  background-image: url(../bilder/lego_background_dark.jpg);
+}
+
+.dark-mode .header, .dark-mode .footer{
+  background-color: #544aaf;
+}
+
+.dark-mode .aboutusbutton, .dark-mode .helpbutton, #overlay-search, .dark-mode #accept-cookies-btn {
+  background-color: #6f65ca;
+}
+
+.dark-mode .help-header, .dark-mode .setinfo, .dark-mode .aboutus, .dark-mode .container-header, .dark-mode .searchbackgroundbox, .dark-mode .ruta1, .dark-mode .ruta2, .dark-mode .ruta3, .dark-mode .ruta4, .dark-mode .part, .dark-mode .set{
+  background-color: #7865ca;
+}
+
+.dark-mode #box1, .dark-mode #box2, .dark-mode #box3, .dark-mode #box4, .dark-mode #box5{
+  background-color: #7865ca;
+}
 
 
 /*https://www.w3schools.com/howto/howto_css_fullscreen_search.asp*/
