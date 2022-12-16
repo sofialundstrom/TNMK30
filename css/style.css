@@ -458,10 +458,17 @@ font-size: 20px;
 box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+
 h3{
   text-align: center;
   font-family: funwork2;
 }
+
+.text-aboutus {
+  display: flex;
+  flex-direction: row;
+}
+
 
 .container-header {
   background-color: #8fbbd2;
