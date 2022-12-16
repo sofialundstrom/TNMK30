@@ -20,8 +20,9 @@
             <p class="helpbox">Press HELP for help</p>
         </div>
     </div>
-        
+    <div class="bg-image"></div> 
    <?php
+
 
 
         
