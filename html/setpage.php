@@ -1,10 +1,11 @@
 <?php include('../txt/header.txt');?>
 
 <div class="searchContainer">
-    <form action="searchpagepart.php" method="POST">
-        <input class="searchBox" type="search" name="search" placeholder="Search...">
-    </form>
-</div>
+        <form class="searchform" action="searchpagepart.php" method="POST">
+            <input class="search" type="search" name="search" placeholder="Search...">
+            <button class="button" type="submit">Search</button>
+        </form>
+    </div>
 
 <?php
 $connection = mysqli_connect("mysql.itn.liu.se","lego","","lego");
