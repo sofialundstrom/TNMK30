@@ -21,7 +21,7 @@
                             <break>
                             <p> E-post: adb543@student.liu.se</p>
                         </div>
-            <       </div>
+                   </div>
                     <div id="box3">
                     <img src="../bilder/donkey.jpg" class="lego" alt = "scary lego">
                         <div>
