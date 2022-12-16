@@ -21,10 +21,15 @@ if(isset($_GET["part"]) && isset($_GET["color"])) {
 }
 
 $prefix = 'https://weber.itn.liu.se/~stegu/img.bricklink.com/';
+$offset = 0;
+if(isset($_GET["offset"])){
+    $offset = $_GET["offset"];
+}
+
 
 $sql_qurry = "SELECT inventory.ColorID, inventory.SetID, inventory.Quantity, inventory.ItemtypeID, inventory.ItemID, sets.Setname FROM inventory, sets
 WHERE inventory.ItemID='$part' AND inventory.ColorID='$color' AND sets.SetID=inventory.SetID
-ORDER BY Quantity DESC LIMIT 5";
+ORDER BY Quantity DESC LIMIT $offset,  5";
 
 
 
@@ -61,13 +66,19 @@ while($row = mysqli_fetch_array($contents)) {
     print("
         <a href='setpage.php?set=$set&quantity=$quantity&part=$part'>
             <div class='set'>
-                <img id='setImg' src='$prefix/SL/$set.jpg' alt='image'><br><div id='setinfo'>$setname</div><br><p>Amount:$quantity<br> ID: $item</p>
+                <img id='setImg' src='$prefix/SL/$set.jpg' alt='image'><br><div id='setinfo'>$setname</div><br><p>Amount:$quantity<br> ID: $set</p>
             </div>
         </a>");
   
 }
 print "</div>";
 
+print "<div id='pagination'>";
+$offsetPrev = $offset - 5;
+print("<a id='prev' href='searchset.php?part=$item&color=$color&offset=$offsetPrev'> Prev </a>");
+$offsetNext = $offset + 5;
+print("<a id='next' href='searchset.php?part=$item&color=$color&offset=$offsetNext'> Next </a>");
+print "</div>";
 mysqli_close($connection);
 
 

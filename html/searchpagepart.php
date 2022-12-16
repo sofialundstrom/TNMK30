@@ -1,11 +1,12 @@
 <?php
+/*
 $tableName = htmlspecialchars($_GET['table']);
 if (isset($_GET['page'])) {
   $currentPage = htmlspecialchars($_GET['page']);
 }else {
   $currentPage = 1;//default page
 }
-
+*/
 if (isset($_GET['itemsperpage'])) {
   $itemsPerPage = htmlspecialchars($_GET['itemsperpage']);
 }else {
@@ -41,18 +42,17 @@ ORDER BY length(Partname) ASC LIMIT $itemsPerPage";
 
 
 $contents = mysqli_query ($connection, $sql_qurry );
-
-
+/*
+if(mysqli_fetch_array($contents) == null){
+    echo("<p>There is no result, check your spelling or check help!</p>");
+}
+ */
+$contents = mysqli_query ($connection, $sql_qurry );
 print "<div class='container'>";
 while($row = mysqli_fetch_array($contents)) {
-    //$quantity = $row['Quantity'];
-
-    //$imagecolor = $row['ColorID'];
-
-    //$itemtype = $row['ItemtypeID'];
-
-    //$item = $row['ItemID'];
     
+    
+
     $parts = $row['PartID'];
     $partname = $row['Partname'];
     $sqlImg = "SELECT * FROM images WHERE ItemtypeID = 'P' AND ItemID = '$parts'";
@@ -65,19 +65,21 @@ while($row = mysqli_fetch_array($contents)) {
 
 
     if($info['has_jpg'] == 1) {
-        $filename = "$itemtype/$imagecolor/$parts.jpg";
+        $filename = "$prefix$itemtype/$imagecolor/$parts.jpg";
     }
     else if($info['has_gif'] == 1) {
-        $filename = "$itemtype/$imagecolor/$parts.gif";
+        $filename = "$prefix$itemtype/$imagecolor/$parts.gif";
     }
+    /*
     else if($info['has_largejpg'] == 1) {
-        $filename = "$itemtype/$parts.jpg";
+        $filename = "$prefix$itemtype/$parts.jpg";
     }
     else if($info['has_largegif'] == 1) {
-        $filename = "$itemtype/$parts.gif";
+        $filename = "$prefix$itemtype/$parts.gif";
     }
+    */
     else {
-        $filename = "noimage_small.png";
+        $filename = "../bilder/donkey.jpg";
     } 
     
     
@@ -85,13 +87,11 @@ while($row = mysqli_fetch_array($contents)) {
     print("
         <a href='searchpagecolor.php?part=$parts'>
             <div class='part'>
-                <img src='$prefix$filename' alt='legopart' id='legopartpic'><br><div class='partinfo'>$partname</div><br><p>ID: $parts</p>  
+                <img src='$filename' alt='legopart' id='legopartpic'><br><div class='partinfo'>$partname</div><br><p>ID: $parts</p>  
             </div>
         </a>");
 }
 print "</div>";
-
-
 
 mysqli_close($connection);
 

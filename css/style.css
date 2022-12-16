@@ -396,18 +396,22 @@ a:link, a:hover, a:visited {
 
 
 #legopartpic, #setImg{
+
   width: 8vw;
   border: solid 1px black;
   height: 6vw;
   border-radius: 1vw;
-  position: absolute;
-  left: 18%;
+ margin-left: 1vw;
+}
+
+.set p, .part p{
+  margin-right: 1vw;
 }
 
 .part, .set {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 4vw;
   flex-basis: 70%;
@@ -423,14 +427,27 @@ a:link, a:hover, a:visited {
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-  #legopartpic, #setImg{
-    width: 8vw;
-    border: solid 1px black;
-    height: 6vw;
-    border-radius: 1vw;
-    position: absolute;
-    left: 18%;
-  }
+#pagination{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  padding: 2vw;
+
+}
+
+#prev{
+  margin-right: 100px;
+}
+
+#prev, #next{
+  background-color: #8fbbd2;
+  border-radius: 1vw;
+  border: solid 2px black;
+  display:flex;
+  width: 7vw;
+  box-shadow: 12px 12px 2px 1px rgb(0 0 0 / 20%)
+}
 
 /*********************************/
 /* ABOUT US */
@@ -568,6 +585,7 @@ h4 {
   font-family: funwork2;
   padding-left: 1vw;
 }
+
 
 /*********************************/
 /* DARK/LIGHT MODE AND CONTENTS INSIDE IT */
