@@ -301,7 +301,6 @@ input[type=text]:hover {
 
 #Cookiebox{
   background-color:#ffffff;
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 315px;
@@ -439,30 +438,24 @@ a:link, a:hover, a:visited {
 /* ABOUT US */
 /*********************************/
 
-  .aboutus {
-  width: 10vw;
-  height: 27vw;
-  float: left;
-  margin: 2vw;
-  border-radius: 2vw;
-  border: solid 2px black;
-  padding: 5px;
-  justify-content: center;
-  min-width: 100px;
-  min-height: 200px;
-  background-color: #8fbbd2;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+.container-aboutus{
+margin: 200px 0 0 0;
 }
 
-.container-aboutus{
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 25%;
-  
+#box1, #box2, #box3, #box4, #box5 {
+background-color: #8fbbd2;
+border-radius: 2vw;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+width: 61vw;
+height: 10vw;
+align-items: center;
+margin: auto;
+margin-bottom: 3vw;
+border: solid 2px black;
+font-size: 20px;
+box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 h3{
@@ -475,8 +468,6 @@ h3{
   width: 10vw;
   height: 4vw;
   display: flex;
-  justify-content: center;
-  text-align: center;
   margin:auto;
   position: absolute;
   right: 0;
@@ -484,6 +475,8 @@ h3{
   top: 18%;
   border: solid black 2px;
   border-radius: 1.5vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .aboutus-header {
@@ -498,7 +491,7 @@ h3{
 
 .lego {
   border-radius: 1.5vw;
-  width: 10vw;
+  width: 8vw;
 }
 
 .aboutus p {
