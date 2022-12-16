@@ -27,7 +27,7 @@
     <img src="../bilder/donkey.jpg" class="lego" alt = "scary lego">
         <h3>Vanessa Ivarsson</h3>
         <p>
-        Favorite set: Christmas
+        Favorite set: Flower Bouquet
         <break>
         E-post: @student.liu.se
         </p>
@@ -45,7 +45,7 @@
     <img src="../bilder/donkey.jpg"class="lego" alt = "scary lego">
         <h3>Elsa Tärnbrant</h3>
         <p>
-        Favorite set:
+        Favorite set: Mulan's training area 
         <break>
         E-post: @student.liu.se
         </p>
