@@ -367,6 +367,7 @@ font-family: funwork2;
   border-radius: 1.5vw;
   margin:auto;
   margin-top: 5vw;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /*********************************/
@@ -383,8 +384,16 @@ a:link, a:hover, a:visited {
   color: black;
 }
 
-.partname {
- 
+#setinfo, .partinfo{
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: funwork2;
+  padding: 1vw;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+#setinfo:hover, .partinfo:hover{
+  background:rgb(189, 213, 226);
 }
 
 .container {
@@ -398,16 +407,17 @@ a:link, a:hover, a:visited {
   border: solid 1px black;
   height: 6vw;
   border-radius: 1vw;
-  position: absolute;
-  left: 18%;
+  margin-left: 1vw;
+  
 }
 
 .part, .set {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 4vw;
+  padding: 1vw;
   flex-basis: 70%;
   height: 7.5vw;
   background-color:#8fbbd2;
@@ -421,15 +431,9 @@ a:link, a:hover, a:visited {
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-  #legopartpic, #setImg{
-    width: 8vw;
-    border: solid 1px black;
-    height: 6vw;
-    border-radius: 1vw;
-    position: absolute;
-    left: 18%;
-  }
-
+.part p, .set p{
+  padding-right: 1vw;
+}
 
 /*********************************/
 /* ABOUT US */
@@ -506,29 +510,35 @@ h3{
 /*********************************/
 /* SET PAGE */
 /*********************************/
+.container-setpage{
+  display:flex;
+  justify-content:center;
+  margin:auto;
+  background-color: #79a3b9;
+  width: 65vw;
+  height: 30vw;
+  align-items: center;
+  border: solid 2px black;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2vw;
+  justify-content: space-evenly;
+}
 .setpic {
-  position: absolute;
-  left: 15vw;
-  top: 12vw;
   border-radius: 2vw;
   border: solid 2px black;
   height: 20vw;
   width: 30vw;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 
 .setinfo {
-  width: 20vw;
-  height: 20vw;
-  float: left;
+  width: 25vw;
+  height: 25vw;
   border-radius: 2vw;
   border: solid 2px black;
   padding: 5px;
   background-color: #8fbbd2;
-  position: absolute;
-  left: 55vw;
-  top: 12vw;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 
 h4 {

@@ -27,7 +27,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 <?php include('../txt/header.txt'); ?>
     <div class="searchContainer">
-        <form action="debug.php" method="POST">
+        <form action="searchpagepart.php" method="POST">
             <input class="searchBox" type="search" name="search" placeholder="Search...">
         </form>
     </div>
@@ -85,7 +85,7 @@ while($row = mysqli_fetch_array($contents)) {
     print("
         <a href='searchpagecolor.php?part=$parts'>
             <div class='part'>
-                <img src='$prefix$filename' alt='legopart' id='legopartpic'><br><div class='partname'>$partname<br></div><p>ID: $parts</p>  
+                <img src='$prefix$filename' alt='legopart' id='legopartpic'><br><div class='partinfo'>$partname</div><br><p>ID: $parts</p>  
             </div>
         </a>");
 }

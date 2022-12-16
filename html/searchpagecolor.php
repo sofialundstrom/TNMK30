@@ -72,7 +72,7 @@ while($colorRow = mysqli_fetch_array($colorContents)) {
     print("
         <a href='searchset.php?part=$item&color=$imagecolor'>
             <div class='part'>
-                <img src='$prefix$filename' alt='legopart' id='legopartpic'><br><div class='partname'>$partname<br></div><p> ID: $item</p>
+                <img src='$prefix$filename' alt='legopart' id='legopartpic'><br><div class='partinfo'>$partname</div><br><p> ID: $item</p>
             </div>
         </a>");
     }

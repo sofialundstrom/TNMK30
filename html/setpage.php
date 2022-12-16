@@ -44,9 +44,10 @@ print("
         <div class='setimage'>
             <img src='$prefix/SL/$set.jpg' class='setpic' alt='Set picture'>
         </div> 
-    </div>
     <div class='setinfo'>
-    <h4 class='settitle'> Set: $setname</h4><br><p> ID: $set</p><br><p> Relesed $year</p><br><p> Category: $catName</p><br><p> Amount of $partname pices needed: $quantity</p>
+    <h4 class='settitle'> Set: $setname</h4><br><p> ID: $set</p><br><p> Released $year</p><br><p> Category: $catName</p><br><p> Amount of $partname pieces needed: $quantity</p>
+    
+    </div>
     </div>
     ");
 
