@@ -7,6 +7,8 @@ if (isset($_GET['page'])) {
   $currentPage = 1;//default page
 }
 */
+session_start();
+
 if (isset($_GET['itemsperpage'])) {
   $itemsPerPage = htmlspecialchars($_GET['itemsperpage']);
 }else {
@@ -17,10 +19,20 @@ $connection = mysqli_connect("mysql.itn.liu.se","lego","","lego");
 if(!$connection){
     die('MySQL connection error');
 }
+
+$offset = 0;
+if(isset($_GET["offset"])){
+    $offset = $_GET["offset"];
+}
+
 $prefix = 'https://weber.itn.liu.se/~stegu/img.bricklink.com/';
 $search = "";
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $search = mysqli_real_escape_string($connection, $_POST['search']);
+    $_SESSION['search'] = mysqli_real_escape_string($connection, $_POST['search']);
+}
+
+if (isset($_SESSION['search'])) {
+    $search = $_SESSION['search'];
 }
 
 ?>
@@ -37,8 +49,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 
 
-$sql_qurry = "SELECT * FROM parts WHERE (Partname LIKE '%".$search."%' OR PartID LIKE '%".$search."%')
-ORDER BY length(Partname) ASC LIMIT $itemsPerPage";
+$sql_qurry = "SELECT DISTINCT * FROM parts WHERE (Partname LIKE '%".$search."%' OR PartID LIKE '%".$search."%')
+ORDER BY length(Partname) ASC LIMIT $offset, 5";
 
 
 $contents = mysqli_query ($connection, $sql_qurry );
@@ -70,14 +82,6 @@ while($row = mysqli_fetch_array($contents)) {
     else if($info['has_gif'] == 1) {
         $filename = "$prefix$itemtype/$imagecolor/$parts.gif";
     }
-    /*
-    else if($info['has_largejpg'] == 1) {
-        $filename = "$prefix$itemtype/$parts.jpg";
-    }
-    else if($info['has_largegif'] == 1) {
-        $filename = "$prefix$itemtype/$parts.gif";
-    }
-    */
     else {
         $filename = "../bilder/donkey.jpg";
     } 
@@ -93,7 +97,15 @@ while($row = mysqli_fetch_array($contents)) {
 }
 print "</div>";
 
+print "<div id='pagination'>";
+$offsetPrev = $offset - 5;
+print("<a id='prev' href='searchpagepart.php?search=$search&offset=$offsetPrev'> Prev </a>");
+$offsetNext = $offset + 5;
+print("<a id='next' href='searchpagepart.php?search=$search&offset=$offsetNext'> Next </a>");
+print "</div>";
 mysqli_close($connection);
+
+
 
 
 include('../txt/footer.txt'); ?>
