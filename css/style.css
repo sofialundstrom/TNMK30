@@ -366,6 +366,11 @@ input[type=text]:hover {
 /* SEARCH PAGE */
 /*********************************/
 
+.searchContainer{
+  display: flex;
+  justify-content: center;
+  padding-top: 1vw;
+}
 
 a:link, a:hover, a:visited {
   font-family: funwork2;
