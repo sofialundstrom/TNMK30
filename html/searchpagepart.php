@@ -1,19 +1,6 @@
 <?php
-/*
-$tableName = htmlspecialchars($_GET['table']);
-if (isset($_GET['page'])) {
-  $currentPage = htmlspecialchars($_GET['page']);
-}else {
-  $currentPage = 1;//default page
-}
-*/
-session_start();
 
-if (isset($_GET['itemsperpage'])) {
-  $itemsPerPage = htmlspecialchars($_GET['itemsperpage']);
-}else {
-  $itemsPerPage = 5;//default limit
-}
+session_start();
 
 $connection = mysqli_connect("mysql.itn.liu.se","lego","","lego");
 if(!$connection){
@@ -40,7 +27,7 @@ if (isset($_SESSION['search'])) {
 <?php include('../txt/header.txt'); ?>
     <div class="searchContainer">
         <form class="searchform" action="searchpagepart.php" method="POST">
-            <input class="search" type="search" name="search" placeholder="Search...">
+            <input class="search" type="search" name="search" placeholder="Search..." required>
             <button class="button" type="submit">Search</button>
         </form>
     </div>
@@ -61,8 +48,10 @@ if(mysqli_fetch_array($contents) == null){
  */
 $contents = mysqli_query ($connection, $sql_qurry );
 print "<div class='container'>";
+$counter = 0;
 while($row = mysqli_fetch_array($contents)) {
     
+    $counter++;
     
 
     $parts = $row['PartID'];
@@ -98,10 +87,14 @@ while($row = mysqli_fetch_array($contents)) {
 print "</div>";
 
 print "<div id='pagination'>";
-$offsetPrev = $offset - 5;
-print("<a id='prev' href='searchpagepart.php?search=$search&offset=$offsetPrev'> Prev </a>");
-$offsetNext = $offset + 5;
-print("<a id='next' href='searchpagepart.php?search=$search&offset=$offsetNext'> Next </a>");
+if ($offset > 0) {
+    $offsetPrev = $offset - 5;
+    print("<a id='prev' href='searchpagepart.php?search=$search&offset=$offsetPrev'> Prev </a>");
+}
+if ($counter == 5) {
+    $offsetNext = $offset + 5;
+    print("<a id='next' href='searchpagepart.php?search=$search&offset=$offsetNext'> Next </a>");
+}
 print "</div>";
 mysqli_close($connection);
 

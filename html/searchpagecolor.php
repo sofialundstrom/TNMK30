@@ -1,7 +1,7 @@
 <?php include('../txt/header.txt'); ?>
 <div class="searchContainer">
         <form class="searchform" action="searchpagepart.php" method="POST">
-            <input class="search" type="search" name="search" placeholder="Search...">
+            <input class="search" type="search" name="search" placeholder="Search..." required>
             <button class="button" type="submit">Search</button>
         </form>
     </div>
@@ -24,7 +24,7 @@ if(isset($_GET["part"])) {
 
 
 $sql_qurry = "SELECT inventory.Quantity, colors.Colorname, parts.Partname, inventory.ColorID, inventory.ItemtypeID, inventory.ItemID
-FROM inventory, colors, parts WHERE inventory.ItemID='$part' AND inventory.ItemtypeID='P' AND parts.PartID=inventory.ItemID
+FROM inventory, colors, parts WHERE inventory.ColorID=colors.ColorID AND inventory.ItemID=parts.PartID AND inventory.ItemID='$part' AND inventory.ItemtypeID='P' AND parts.PartID=inventory.ItemID
 ORDER BY ColorID ASC";
 
 
@@ -32,11 +32,13 @@ $contents = mysqli_query ($connection, $sql_qurry );
 
 $row = mysqli_fetch_array($contents);
 
+
 $quantity = $row['Quantity'];
 $itemtype = $row['ItemtypeID'];
 $item = $row['ItemID'];
 $parts = $row['PartID'];
 $partname = $row['Partname'];
+print "$numb_rows";
 
 print "<div class='container'>";
 
@@ -44,7 +46,7 @@ $sqlColor = "SELECT DISTINCT ColorID FROM inventory WHERE ItemID = '$part' LIMIT
 
 $colorContents = mysqli_query($connection, $sqlColor);
 
-
+$counter = 0;
 
 while($colorRow = mysqli_fetch_array($colorContents)) {
    
@@ -56,7 +58,7 @@ while($colorRow = mysqli_fetch_array($colorContents)) {
 
     $info = mysqli_fetch_array($imagesearch);
   
-
+    $counter++;
  
     if($info['has_jpg'] == 1) {
     
@@ -68,10 +70,10 @@ while($colorRow = mysqli_fetch_array($colorContents)) {
     else {
         $filename = "../bilder/donkey.jpg";
     } 
-    
    
 
     print("
+        
         <a href='searchset.php?part=$item&color=$imagecolor'>
             <div class='part'>
                 <img src='$filename' alt='legopart' id='legopartpic'><br><div class='partinfo'>$partname</div><br><p> ID: $item</p>
@@ -82,10 +84,14 @@ while($colorRow = mysqli_fetch_array($colorContents)) {
 print "</div>";
 
 print "<div id='pagination'>";
-$offsetPrev = $offset - 5;
-print("<a id='prev' href='searchpagecolor.php?part=$item&offset=$offsetPrev'> Prev </a>");
-$offsetNext = $offset + 5;
-print("<a id='next' href='searchpagecolor.php?part=$item&offset=$offsetNext'> Next </a>");
+if ($offset > 0) {
+    $offsetPrev = $offset - 5;
+    print("<a id='prev' href='searchpagecolor.php?part=$item&offset=$offsetPrev'> Prev </a>");
+}
+if ($counter == 5) {
+    $offsetNext = $offset + 5;
+    print("<a id='next' href='searchpagecolor.php?part=$item&offset=$offsetNext'> Next </a>");
+}
 print "</div>";
 mysqli_close($connection);
 

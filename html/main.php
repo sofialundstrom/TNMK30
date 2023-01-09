@@ -7,7 +7,7 @@
           <h1 id="header_main">LEGO BANK</h1>
         </div>
             <form class="searchform" action="searchpagepart.php" method="POST">
-                <input type="search" name="search" id="search" placeholder="Search your lego piece">
+                <input type="search" name="search" id="search" placeholder="Search your lego piece" required>
                 <button class="button" type="submit">Search</button>
                 <div class="button" id="help_btn">?</div>
             </form>

@@ -2,7 +2,7 @@
 
 <div class="searchContainer">
         <form class="searchform" action="searchpagepart.php" method="POST">
-            <input class="search" type="search" name="search" placeholder="Search...">
+            <input class="search" type="search" name="search" placeholder="Search..." required>
             <button class="button" type="submit">Search</button>
         </form>
     </div>
@@ -34,7 +34,7 @@ ORDER BY Quantity DESC LIMIT $offset,  5";
 
 
 $contents = mysqli_query ($connection, $sql_qurry );
-
+$counter = 0;
 print "<div class='container'>";
 while($row = mysqli_fetch_array($contents)) {
     $itemtype = $row['ItemtypeID'];
@@ -46,7 +46,7 @@ while($row = mysqli_fetch_array($contents)) {
 
     $imagesearch = mysqli_query($connection, $sqlImg);
 
-
+    $counter++;
 
 
     $info = mysqli_fetch_array($imagesearch);
@@ -74,10 +74,14 @@ while($row = mysqli_fetch_array($contents)) {
 print "</div>";
 
 print "<div id='pagination'>";
-$offsetPrev = $offset - 5;
-print("<a id='prev' href='searchset.php?part=$item&color=$color&offset=$offsetPrev'> Prev </a>");
-$offsetNext = $offset + 5;
-print("<a id='next' href='searchset.php?part=$item&color=$color&offset=$offsetNext'> Next </a>");
+if ($offset > 0) {
+    $offsetPrev = $offset - 5;
+    print("<a id='prev' href='searchset.php?part=$item&color=$color&offset=$offsetPrev'> Prev </a>");
+}
+if ($counter == 5) {
+    $offsetNext = $offset + 5;
+    print("<a id='next' href='searchset.php?part=$item&color=$color&offset=$offsetNext'> Next </a>");
+}
 print "</div>";
 mysqli_close($connection);
 

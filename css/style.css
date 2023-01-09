@@ -471,7 +471,7 @@ a:link, a:hover, a:visited {
 }
 
 #prev, #next{
-  background-color: #8fbbd2;
+  background-color: #79a3b9;
   border-radius: 1vw;
   border: solid 2px black;
   display:flex;
@@ -593,9 +593,6 @@ h3{
   border: solid 2px black;
   padding: 5px;
   background-color: #8fbbd2;
-  position: absolute;
-  left: 55vw;
-  top: 12vw;
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
@@ -645,7 +642,7 @@ body.dark-mode {
   background-color: #544aaf;
 }
 
-.dark-mode .aboutusbutton, .dark-mode .helpbutton, .dark-mode #overlay-search, .dark-mode #accept-cookies-btn {
+.dark-mode .aboutusbutton, .dark-mode .helpbutton, .dark-mode #accept-cookies-btn {
   background-color: #6f65ca;
 }
 
