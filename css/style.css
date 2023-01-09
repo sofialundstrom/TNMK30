@@ -24,7 +24,7 @@
   float: left;
   color: black;
   text-align: center;
-  padding: 12px;
+  padding: 1vw;
   text-decoration: none;
   font-size: 2vw;
   font-weight: bold;
@@ -640,7 +640,7 @@ h4 {
   background-color: #615fad;
 }
 
-.Dbg-image{
+.dark-mode .Dbg-image{
   background-image: url(../bilder/lego_background_dark.jpg);
   filter: blur(3px);
   height: 100vh;
