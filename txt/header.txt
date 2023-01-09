@@ -27,5 +27,4 @@
         </div>
     </div>
 
-        <div class="bg-image"></div> 
-        <div class="Dbg-image"></div> 
+   
