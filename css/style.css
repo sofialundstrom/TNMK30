@@ -205,7 +205,7 @@ body{
   display:flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(../bilder/lego_background.png);
+  background-image: url(../bilder/lego_background.jpg);
   background-repeat: repeat;
 }
 
@@ -623,21 +623,19 @@ h4 {
 
 /**** MAIN PAGE DARK ****/
 .dark-mode #toggle-mode-button, .dark-mode .headerButton {
-
   background-color: #8381df;
-
 }
 
 .dark-mode #headerlink1, .dark-mode #headerlink2, .dark-mode #prev, .dark-mode #next {
   background-color: #8381df
 }
 
-.dark-mode .header #headerlink1:hover, .dark-mode #headerlink2:hover, .dark-mode #toggle-mode-button:hover {
+.dark-mode .button:hover, .dark-mode #headerlink1:hover, .dark-mode #headerlink2:hover, .dark-mode #toggle-mode-button:hover, .dark-mode #header-logo:hover {
   background-color: #615fad;
 }
 
 body.dark-mode {
-  background-image: url(../bilder/lego_background_dark.jpg);
+  background-image: url(../bilder/lego_background_dark.png);
   background-repeat: repeat;
 }
 
@@ -656,6 +654,5 @@ body.dark-mode {
 .dark-mode #box1, .dark-mode #box2, .dark-mode #box3, .dark-mode #box4, .dark-mode #box5{
   background-color: #7865ca;
 }
-
 
 /*https://www.w3schools.com/howto/howto_css_fullscreen_search.asp*/
