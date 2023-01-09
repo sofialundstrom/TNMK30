@@ -6,12 +6,10 @@
 .header {
   overflow: hidden;
   background-color: #8fbbd2;
-  padding: 10px 10px;
+  padding: 0.5vw 0.5vw;
   border-bottom: solid 2px black;
   position: relative;
 }
-
-
 
 /*include fonts used for links BYT FONT*/ 
 @font-face {
@@ -24,20 +22,28 @@
   float: left;
   color: black;
   text-align: center;
-  padding: 12px;
+  padding: 1vw;
   text-decoration: none;
   font-size: 2vw;
   font-weight: bold;
   line-height: 25px;
-  border-radius: 4px;
+  border-radius: 0.5vw;
   font-size: 1.8vw;
   font-family: funwork2;
 }
 
 .logo{
-  width: 5vw;
+  width: 6vw;
+  height: 6vw;
   border: solid 2px black;
   border-radius: 1vw;
+  float:right;
+  padding:0;
+}
+
+#header-logo {
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -51,30 +57,30 @@
 .header-right {
   position: block;
   float: right;
-  margin-right: 5.5vw;
-  margin-top: 40px;
+  margin-right: 4.5vw;
+  margin-top: 1.8vw;
   display:flex;
   justify-content: space-between;
 }
 
 #toggle-mode-button, .headerButton {
+  cursor: pointer;
   float: left;
   background-color: #79a3b9;
   color: black;
   text-align: center;
-  padding: 12px;
+  padding: 1vw;
   text-decoration: none;
   font-size: 2vw;
-  border-radius: 4px;
+  border-radius: 0.5vw;
   font-weight: bold;
-  line-height: 25px;
-  border:solid 2px black;
+  line-height: 1vw;
+  border:solid 0.15vw black;
   font-size: 1.8vw;
   font-family: funwork2;
-  cursor: pointer;
-
 }
-#headerlink1:hover, #headerlink2:hover, #toggle-mode-button:hover{
+
+#headerlink1:hover, #headerlink2:hover, #toggle-mode-button:hover, #header-logo:hover{
 background-color: rgb(189, 213, 226);
 }
 
@@ -83,7 +89,6 @@ background-color: rgb(189, 213, 226);
   border:solid 2px black;
   
 }
-
 
 #headerlink1{
   margin-right: 1vw;
@@ -180,8 +185,9 @@ background-color: rgb(189, 213, 226);
   
   .pfoot{
     text-align: left;
-    padding: 10px 10px;
+    padding: 0.5vw 0.5vw;
     font-family: funwork2;
+    font-size: 0.9vw;
   }
 
 /*********************************/
@@ -280,7 +286,7 @@ input[type=text]:hover {
   width: 15vw;
   height: 2.5vw;
   font-family: funwork2;
-
+  font-size: 0.9vw;
 }
   /*********************************/
 /* COOKIE AND CONTENTS INSIDE IT */
@@ -314,7 +320,6 @@ input[type=text]:hover {
   display: flex;
   flex-direction: column;
   transform: translate(748px, -17px);
-
 }
 
 #cookietext{
@@ -339,6 +344,7 @@ input[type=text]:hover {
   flex-direction: column;
   font-family: legofont;
   font-size: 2vw;
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
 .ruta1, .ruta2, .ruta3, .ruta4{
@@ -354,7 +360,7 @@ input[type=text]:hover {
   margin-bottom: 3vw;
   border: solid 2px black;
   font-size: 20px;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
 .helppic1, .helppic2, .helppic3, .helppic4 {
@@ -399,6 +405,10 @@ input[type=text]:hover {
   padding-top: 1vw;
 }
 
+.search {
+  font-family: funwork2;
+}
+
 a:link, a:hover, a:visited {
   font-family: funwork2;
   font-size: 2vw;
@@ -415,15 +425,13 @@ a:link, a:hover, a:visited {
   flex-wrap: wrap;
 }
 
-
-
 #legopartpic, #setImg{
 
   width: 8vw;
   border: solid 1px black;
   height: 6vw;
   border-radius: 1vw;
- margin-left: 1vw;
+  margin-left: 1vw;
 }
 
 .set p, .part p{
@@ -446,7 +454,7 @@ a:link, a:hover, a:visited {
   width: 65vw;
   text-align: center;
   margin: 1.5vw;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
 #pagination{
@@ -468,8 +476,7 @@ a:link, a:hover, a:visited {
   border: solid 2px black;
   display:flex;
   width: 7vw;
-  box-shadow: 12px 12px 2px 1px rgb(0 0 0 / 20%);
-
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgb(0 0 0 / 20%)
 }
 
 /*********************************/
@@ -487,9 +494,9 @@ height: 10vw;
 align-items: center;
 margin: auto;
 margin-bottom: 3vw;
-border: solid 2px black;
+border: solid 0.15vw black;
 font-size: 1.2vw;
-box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
 
@@ -503,6 +510,10 @@ h3{
   flex-direction: row;
 }
 
+.info {
+  font-family: funwork2;
+}
+
 
 .container-header {
   background-color: #8fbbd2;
@@ -512,12 +523,13 @@ h3{
   margin:auto;
   margin-top: 3vw;
   margin-bottom: 3vw;
-  border: solid black 2px;
+  border: solid black 0.15vw;
   border-radius: 1.5vw;
   display: flex;
   flex-direction: column;
   font-family: legofont;
   font-size: 2vw;
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
 .aboutus-header {
@@ -533,6 +545,7 @@ h3{
 .lego {
   border-radius: 1.5vw;
   width: 8vw;
+  border: solid black 0.15vw;
 }
 
 .aboutus p {
@@ -552,7 +565,7 @@ h3{
   height: 30vw;
   align-items: center;
   border: solid 2px black;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
   border-radius: 2vw;
   justify-content: space-evenly;
 }
@@ -569,7 +582,7 @@ h3{
   border: solid 2px black;
   height: 20vw;
   width: 30vw;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
 .setinfo {
@@ -580,7 +593,10 @@ h3{
   border: solid 2px black;
   padding: 5px;
   background-color: #8fbbd2;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 55vw;
+  top: 12vw;
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
 h4 {
@@ -625,6 +641,7 @@ body.dark-mode {
   background-repeat: repeat;
 }
 
+.dark-mode .header, .dark-mode .footer, .dark-mode .container-setpage{
 .dark-mode .header, .dark-mode .footer, .dark-mode .container-setpage{
   background-color: #544aaf;
 }
