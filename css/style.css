@@ -1,3 +1,16 @@
+/*include fonts used for links BYT FONT*/ 
+@font-face {
+  font-family: funwork2;
+  src: url(../fonts/funwork-webfont.woff2);
+}
+
+/*include fon for header*/
+@font-face {
+  font-family: legofont;
+  src: url(../fonts/lego_brix-webfont.woff);
+}
+
+
 
 /*********************************/
 /* HEADER AND CONTENTS INSIDE IT */
@@ -7,14 +20,8 @@
   overflow: hidden;
   background-color: #8fbbd2;
   padding: 0.5vw 0.5vw;
-  border-bottom: solid 2px black;
+  border-bottom: solid 0.15vw black;
   position: relative;
-}
-
-/*include fonts used for links BYT FONT*/ 
-@font-face {
-  font-family: funwork2;
-  src: url(../fonts/funwork-webfont.woff2);
 }
 
 /* header links */
@@ -35,7 +42,7 @@
 .logo{
   width: 6vw;
   height: 6vw;
-  border: solid 2px black;
+  border: solid 0.15vw black;
   border-radius: 1vw;
   float:right;
   padding:0;
@@ -86,8 +93,7 @@ background-color: rgb(189, 213, 226);
 
 #headerlink1, #headerlink2{
   background-color: #79a3b9;
-  border:solid 2px black;
-  
+  border:solid 0.15vw black;
 }
 
 #headerlink1{
@@ -177,8 +183,8 @@ background-color: rgb(189, 213, 226);
 .footer{
     margin-top: auto;
     background-color: #8fbbd2;
-    padding: 20px 10px;
-    border-top: solid 2px black;
+    padding: 1vw 0.5vw;
+    border-top: solid 0.15vw black;
     margin-bottom: 0;
     overflow:auto;
   }
@@ -194,18 +200,12 @@ background-color: rgb(189, 213, 226);
 /* MAIN PAGE */
 /*********************************/
 
-/*include fon for header*/
-@font-face {
-  font-family: legofont;
-  src: url(../fonts/lego_brix-webfont.woff);
-}
-
 body{
   margin: 0px;
   display:flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(../bilder/lego_background.png);
+  background-image: url(../bilder/lego_background.jpg);
   background-repeat: repeat;
 }
 
@@ -288,6 +288,24 @@ input[type=text]:hover {
   font-family: funwork2;
   font-size: 0.9vw;
 }
+
+/*********************************/
+/* SearchBackgroundBox */
+/*********************************/
+.searchbackgroundbox {
+  background-color:#8fbbd2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33vw;
+  height: 18vw;
+  border: solid 0.15vw black;
+  border-radius: 1.5vw;
+  margin: auto;
+  margin-top: 7vw;
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
+}
+
   /*********************************/
 /* COOKIE AND CONTENTS INSIDE IT */
 /*********************************/
@@ -338,7 +356,7 @@ input[type=text]:hover {
   margin:auto;
   margin-top: 3vw;
   margin-bottom: 3vw;
-  border: solid black 2px;
+  border: solid black 0.15vw;
   border-radius: 1.5vw;
   display: flex;
   flex-direction: column;
@@ -358,8 +376,8 @@ input[type=text]:hover {
   align-items: center;
   margin: auto;
   margin-bottom: 3vw;
-  border: solid 2px black;
-  font-size: 20px;
+  border: solid 0.15vw black;
+  font-size: 1.9vw;
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
@@ -370,29 +388,13 @@ input[type=text]:hover {
   margin-bottom: 1vw;
   width: 10vw;
   height: 9vw;
-  border: solid 2px black;
+  border: solid 0.15vw black;
 }
 
 .helplist1, .helplist2, .helplist3, .helplist4 {
   flex-basis: 80%;
   text-align: center;
   font-family: funwork2;
-}
-
-/*********************************/
-/* SearchBackgroundBox */
-/*********************************/
-.searchbackgroundbox {
-  background-color:#8fbbd2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 33vw;
-  height: 18vw;
-  border: solid 2px black;
-  border-radius: 1.5vw;
-  margin:auto;
-  margin-top: 5vw;
 }
 
 /*********************************/
@@ -449,7 +451,7 @@ a:link, a:hover, a:visited {
   background-color:#8fbbd2;
   flex-grow: 0;
   flex-shrink: 0;
-  border: solid 2px black;
+  border: solid 0.15vw black;
   border-radius: 1.5vw;
   width: 65vw;
   text-align: center;
@@ -473,7 +475,7 @@ a:link, a:hover, a:visited {
 #prev, #next{
   background-color: #79a3b9;
   border-radius: 1vw;
-  border: solid 2px black;
+  border: solid 0.15 black;
   display:flex;
   width: 7vw;
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgb(0 0 0 / 20%)
@@ -488,8 +490,7 @@ background-color: #8fbbd2;
 border-radius: 2vw;
 display: flex;
 flex-direction: row;
-justify-content: space-around;
-width: 61vw;
+width: 55vw;
 height: 10vw;
 align-items: center;
 margin: auto;
@@ -499,6 +500,16 @@ font-size: 1.2vw;
 box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
+.lego-man {
+  border-radius: 2vw;
+  margin: 0.2vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  border-radius: 1.5vw;
+  width: 8vw;
+  border: solid black 0.15vw;
+  margin-left: 0.5vw;
+}
 
 h3{
   text-align: center;
@@ -510,8 +521,10 @@ h3{
   flex-direction: row;
 }
 
-.info {
+.name,.info {
   font-family: funwork2;
+  justify-content: space-around;
+  margin-left: 13vw;
 }
 
 
@@ -542,12 +555,6 @@ h3{
   text-align: center;
 }
 
-.lego {
-  border-radius: 1.5vw;
-  width: 8vw;
-  border: solid black 0.15vw;
-}
-
 .aboutus p {
   font-family: funwork2;
   font-size: 120%;
@@ -564,7 +571,7 @@ h3{
   width: 65vw;
   height: 30vw;
   align-items: center;
-  border: solid 2px black;
+  border: solid 0.15 black;
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
   border-radius: 2vw;
   justify-content: space-evenly;
@@ -579,7 +586,7 @@ h3{
 
 .setpic {
   border-radius: 2vw;
-  border: solid 2px black;
+  border: solid 0.15vw black;
   height: 20vw;
   width: 30vw;
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
@@ -620,21 +627,19 @@ h4 {
 
 /**** MAIN PAGE DARK ****/
 .dark-mode #toggle-mode-button, .dark-mode .headerButton {
-
   background-color: #8381df;
-
 }
 
 .dark-mode #headerlink1, .dark-mode #headerlink2, .dark-mode #prev, .dark-mode #next {
   background-color: #8381df
 }
 
-.dark-mode .header #headerlink1:hover, .dark-mode #headerlink2:hover, .dark-mode #toggle-mode-button:hover {
+.dark-mode .button:hover, .dark-mode #headerlink1:hover, .dark-mode #headerlink2:hover, .dark-mode #toggle-mode-button:hover, .dark-mode #header-logo:hover {
   background-color: #615fad;
 }
 
 body.dark-mode {
-  background-image: url(../bilder/lego_background_dark.jpg);
+  background-image: url(../bilder/lego_background_dark.png);
   background-repeat: repeat;
 }
 
@@ -653,6 +658,5 @@ body.dark-mode {
 .dark-mode #box1, .dark-mode #box2, .dark-mode #box3, .dark-mode #box4, .dark-mode #box5{
   background-color: #7865ca;
 }
-
 
 /*https://www.w3schools.com/howto/howto_css_fullscreen_search.asp*/
