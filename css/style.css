@@ -80,7 +80,7 @@
   cursor: pointer;
 
 }
-#headerlink1:hover, #headerlink2:hover, #toggle-mode-button:hover{
+#headerlink1:hover, #headerlink2:hover, #toggle-mode-button:hover, #header-logo:hover{
 background-color: rgb(189, 213, 226);
 }
 
@@ -512,6 +512,10 @@ h3{
   flex-direction: row;
 }
 
+.info {
+  font-family: funwork2;
+}
+
 
 .container-header {
   background-color: #8fbbd2;
@@ -521,7 +525,7 @@ h3{
   margin:auto;
   margin-top: 3vw;
   margin-bottom: 3vw;
-  border: solid black 2px;
+  border: solid black 0.15vw;
   border-radius: 1.5vw;
   display: flex;
   flex-direction: column;
@@ -543,6 +547,7 @@ h3{
 .lego {
   border-radius: 1.5vw;
   width: 8vw;
+  border: solid black 0.15vw;
 }
 
 .aboutus p {
@@ -641,7 +646,7 @@ h4 {
   background-color: #8381df
 }
 
-.dark-mode .header a:hover, .dark-mode .headerButton:hover, .dark-mode #toggle-mode-button:hover {
+.dark-mode #toggle-mode-button:hover, .dark-mode #headerlink1:hover, .dark-mode #headerlink2:hover, .dark-mode #header-logo:hover{
   background-color: #615fad;
 }
 
