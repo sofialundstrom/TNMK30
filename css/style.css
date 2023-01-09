@@ -1,3 +1,16 @@
+/*include fonts used for links BYT FONT*/ 
+@font-face {
+  font-family: funwork2;
+  src: url(../fonts/funwork-webfont.woff2);
+}
+
+/*include fon for header*/
+@font-face {
+  font-family: legofont;
+  src: url(../fonts/lego_brix-webfont.woff);
+}
+
+
 
 /*********************************/
 /* HEADER AND CONTENTS INSIDE IT */
@@ -9,12 +22,6 @@
   padding: 0.5vw 0.5vw;
   border-bottom: solid 0.15vw black;
   position: relative;
-}
-
-/*include fonts used for links BYT FONT*/ 
-@font-face {
-  font-family: funwork2;
-  src: url(../fonts/funwork-webfont.woff2);
 }
 
 /* header links */
@@ -87,7 +94,6 @@ background-color: rgb(189, 213, 226);
 #headerlink1, #headerlink2{
   background-color: #79a3b9;
   border:solid 0.15vw black;
-  
 }
 
 #headerlink1{
@@ -194,12 +200,6 @@ background-color: rgb(189, 213, 226);
 /* MAIN PAGE */
 /*********************************/
 
-/*include fon for header*/
-@font-face {
-  font-family: legofont;
-  src: url(../fonts/lego_brix-webfont.woff);
-}
-
 body{
   margin: 0px;
   display:flex;
@@ -288,6 +288,24 @@ input[type=text]:hover {
   font-family: funwork2;
   font-size: 0.9vw;
 }
+
+/*********************************/
+/* SearchBackgroundBox */
+/*********************************/
+.searchbackgroundbox {
+  background-color:#8fbbd2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33vw;
+  height: 18vw;
+  border: solid 0.15vw black;
+  border-radius: 1.5vw;
+  margin: auto;
+  margin-top: 7vw;
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
+}
+
   /*********************************/
 /* COOKIE AND CONTENTS INSIDE IT */
 /*********************************/
@@ -377,22 +395,6 @@ input[type=text]:hover {
   flex-basis: 80%;
   text-align: center;
   font-family: funwork2;
-}
-
-/*********************************/
-/* SearchBackgroundBox */
-/*********************************/
-.searchbackgroundbox {
-  background-color:#8fbbd2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 33vw;
-  height: 18vw;
-  border: solid 0.15vw black;
-  border-radius: 1.5vw;
-  margin:auto;
-  margin-top: 5vw;
 }
 
 /*********************************/
