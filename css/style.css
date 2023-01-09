@@ -57,13 +57,14 @@
 .header-right {
   position: block;
   float: right;
-  margin-right: 5.5vw;
+  margin-right: 4.5vw;
   margin-top: 1.8vw;
   display:flex;
   justify-content: space-between;
 }
 
 #toggle-mode-button, .headerButton {
+  cursor: pointer;
   float: left;
   background-color: #79a3b9;
   color: black;
@@ -73,13 +74,12 @@
   font-size: 2vw;
   border-radius: 0.5vw;
   font-weight: bold;
-  line-height: 25px;
-  border:solid 2px black;
+  line-height: 1vw;
+  border:solid 0.15vw black;
   font-size: 1.8vw;
   font-family: funwork2;
-  cursor: pointer;
-
 }
+
 #headerlink1:hover, #headerlink2:hover, #toggle-mode-button:hover, #header-logo:hover{
 background-color: rgb(189, 213, 226);
 }
@@ -411,6 +411,10 @@ input[type=text]:hover {
   padding-top: 1vw;
 }
 
+.search {
+  font-family: funwork2;
+}
+
 a:link, a:hover, a:visited {
   font-family: funwork2;
   font-size: 2vw;
@@ -433,7 +437,7 @@ a:link, a:hover, a:visited {
   border: solid 1px black;
   height: 6vw;
   border-radius: 1vw;
- margin-left: 1vw;
+  margin-left: 1vw;
 }
 
 .set p, .part p{
@@ -627,6 +631,7 @@ h4 {
 
 /**** MAIN PAGE DARK ****/
 .dark-mode #toggle-mode-button, .dark-mode .headerButton {
+  cursor: pointer;
   float: left;
   background-color: #8381df;
   color: black;
@@ -637,7 +642,7 @@ h4 {
   border-radius: 0.5vw;
   font-weight: bold;
   line-height: 1vw;
-  border:solid 2px black;
+  border:solid 0.15vw black;
   font-size: 1.8vw;
   font-family: funwork2;
 }
@@ -646,7 +651,7 @@ h4 {
   background-color: #8381df
 }
 
-.dark-mode #toggle-mode-button:hover, .dark-mode #headerlink1:hover, .dark-mode #headerlink2:hover, .dark-mode #header-logo:hover{
+.dark-mode .button:hover, .dark-mode #toggle-mode-button:hover, .dark-mode #headerlink1:hover, .dark-mode #headerlink2:hover, .dark-mode #header-logo:hover{
   background-color: #615fad;
 }
 
@@ -657,10 +662,9 @@ h4 {
   width: 100vw;
   position: absolute;
   z-index: -1;
-  
 }
 
-.dark-mode .header, .dark-mode .footer{
+.dark-mode .header, .dark-mode .footer, .dark-mode .container-setpage{
   background-color: #544aaf;
 }
 
