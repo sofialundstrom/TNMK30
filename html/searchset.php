@@ -66,7 +66,7 @@ while($row = mysqli_fetch_array($contents)) {
     print("
         <a href='setpage.php?set=$set&quantity=$quantity&part=$part'>
             <div class='set'>
-                <img id='setImg' src='$prefix/SL/$set.jpg' alt='image'><br><div id='setinfo'>$setname</div><br><p>Amount:$quantity<br> ID: $set</p>
+                <img id='setImg' src='$prefix/SL/$set.jpg' alt='image'><br><div id='setname'>$setname</div><br><p>Amount:$quantity<br> ID: $set</p>
             </div>
         </a>");
   

@@ -431,7 +431,7 @@ a:link, a:hover, a:visited {
   justify-content: center;
   flex-wrap: wrap;
 }
-.partinfo, #setinfo{
+.partinfo, #setname{
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
   padding: 1vw;
 }
@@ -626,6 +626,7 @@ h4 {
   font-size: 1.5vw;
   font-family: funwork2;
   padding-left: 1vw;
+  box-shadow: rgb(17 17 26 / 10%) 0px 1px 0px;
 }
 
 
@@ -659,7 +660,7 @@ body.dark-mode {
   background-color: #ccc0ff;;
 }
 
-.dark-mode .help-header, .dark-mode .setinfo, .dark-mode .aboutus, .dark-mode .container-header, .dark-mode .searchbackgroundbox, .dark-mode .ruta1, .dark-mode .ruta2, .dark-mode .ruta3, .dark-mode .ruta4, .dark-mode .part, .dark-mode .set{
+.dark-mode .help-header, .dark-mode .setinfo, .dark-mode .aboutus, .dark-mode .container-header, .dark-mode .searchbackgroundbox, .dark-mode .ruta1, .dark-mode .ruta2, .dark-mode .ruta3, .dark-mode .ruta4, .dark-mode .ruta5 ,.dark-mode .part, .dark-mode .set{
   background-color: #ccc0ff;
 }
 
