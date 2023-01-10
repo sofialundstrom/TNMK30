@@ -87,8 +87,8 @@
   font-family: funwork2;
 }
 
-#headerlink1:hover, #headerlink2:hover, #toggle-mode-button:hover, #header-logo:hover{
-background-color: rgb(189, 213, 226);
+#headerlink1:hover, #headerlink2:hover, #toggle-mode-button:hover, #header-logo:hover, .part:hover, .set:hover, #prev:hover, #next:hover{
+  background-color: rgb(189, 213, 226);
 }
 
 #headerlink1, #headerlink2{
@@ -136,8 +136,10 @@ background-color: rgb(189, 213, 226);
   margin: 15% auto;
   padding: 20px;
   border: 1.5px solid rgb(0, 0, 0);
-  width: 80%; 
+  border-radius: 1.5vw;
+  width: 40vw; 
   font-family: funwork2;
+
 }
 
 .help-header {
@@ -183,7 +185,7 @@ background-color: rgb(189, 213, 226);
 .footer{
     margin-top: auto;
     background-color: #8fbbd2;
-    padding: 1vw 0.5vw;
+    padding: 1em 0.5em;
     border-top: solid 0.15vw black;
     margin-bottom: 0;
     overflow:auto;
@@ -365,7 +367,8 @@ input[type=text]:hover {
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
-.ruta1, .ruta2, .ruta3, .ruta4{
+.ruta1, .ruta2, .ruta3, .ruta4, .ruta5{
+  box-sizing: border-box;
   background-color: #8fbbd2;
   border-radius: 2vw;
   display: flex;
@@ -381,17 +384,19 @@ input[type=text]:hover {
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
-.helppic1, .helppic2, .helppic3, .helppic4 {
+.helppic1, .helppic2, .helppic3, .helppic4, .helppic5 {
+  box-sizing: border-box;
   border-radius: 2vw;
   margin: 0.2vw;
   margin-top: 1vw;
   margin-bottom: 1vw;
-  width: 10vw;
+  width: 18vw;
   height: 9vw;
   border: solid 0.15vw black;
 }
 
-.helplist1, .helplist2, .helplist3, .helplist4 {
+.helplist1, .helplist2, .helplist3, .helplist4, .helplist5 {
+  box-sizing: border-box;
   flex-basis: 80%;
   text-align: center;
   font-family: funwork2;
@@ -425,6 +430,10 @@ a:link, a:hover, a:visited {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+.partinfo, #setinfo{
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  padding: 1vw;
 }
 
 #legopartpic, #setImg{
@@ -475,7 +484,7 @@ a:link, a:hover, a:visited {
 #prev, #next{
   background-color: #79a3b9;
   border-radius: 1vw;
-  border: solid 0.15 black;
+  border: solid 0.15vw black;
   display:flex;
   width: 7vw;
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgb(0 0 0 / 20%)
@@ -505,7 +514,6 @@ box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
   margin: 0.2vw;
   margin-top: 1vw;
   margin-bottom: 1vw;
-  border-radius: 1.5vw;
   width: 8vw;
   border: solid black 0.15vw;
   margin-left: 0.5vw;
@@ -571,7 +579,7 @@ h3{
   width: 65vw;
   height: 30vw;
   align-items: center;
-  border: solid 0.15 black;
+  border: solid 0.15vw black;
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
   border-radius: 2vw;
   justify-content: space-evenly;
@@ -615,7 +623,7 @@ h4 {
 
 .setinfo p {
   margin:auto;
-  font-size: 1vw;
+  font-size: 1.5vw;
   font-family: funwork2;
   padding-left: 1vw;
 }
@@ -627,15 +635,15 @@ h4 {
 
 /**** MAIN PAGE DARK ****/
 .dark-mode #toggle-mode-button, .dark-mode .headerButton {
-  background-color: #8381df;
+  background-color: #ccc0ff;;
 }
 
 .dark-mode #headerlink1, .dark-mode #headerlink2, .dark-mode #prev, .dark-mode #next {
-  background-color: #8381df
+  background-color: #ccc0ff;
 }
 
-.dark-mode .button:hover, .dark-mode #headerlink1:hover, .dark-mode #headerlink2:hover, .dark-mode #toggle-mode-button:hover, .dark-mode #header-logo:hover {
-  background-color: #615fad;
+.dark-mode .button:hover, .dark-mode #headerlink1:hover, .dark-mode #headerlink2:hover, .dark-mode #toggle-mode-button:hover, .dark-mode #header-logo:hover, .dark-mode .part:hover, .dark-mode .set:hover, .dark-mode #prev:hover, .dark-mode #next:hover{
+  background-color: #817ec7;
 }
 
 body.dark-mode {
@@ -648,15 +656,15 @@ body.dark-mode {
 }
 
 .dark-mode .aboutusbutton, .dark-mode .helpbutton, .dark-mode #accept-cookies-btn {
-  background-color: #6f65ca;
+  background-color: #ccc0ff;;
 }
 
 .dark-mode .help-header, .dark-mode .setinfo, .dark-mode .aboutus, .dark-mode .container-header, .dark-mode .searchbackgroundbox, .dark-mode .ruta1, .dark-mode .ruta2, .dark-mode .ruta3, .dark-mode .ruta4, .dark-mode .part, .dark-mode .set{
-  background-color: #7865ca;
+  background-color: #ccc0ff;
 }
 
 .dark-mode #box1, .dark-mode #box2, .dark-mode #box3, .dark-mode #box4, .dark-mode #box5{
-  background-color: #7865ca;
+  background-color: #ccc0ff;
 }
 
 /*https://www.w3schools.com/howto/howto_css_fullscreen_search.asp*/
