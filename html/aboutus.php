@@ -5,7 +5,7 @@
     </div>
         <div class="container-aboutus">
             <div id="box1">
-            <img src="../bilder/donkey.jpg" class="lego-man" alt = "scary lego">
+            <img src="../bilder/Sofia.png" class="lego-man" alt = "scary lego">
                 <div>
                 <h3 class="name">Sofia Lundström</h3>
                 <p class="info">Favorite set: Hillside House</p>
@@ -14,7 +14,7 @@
                 </div> 
                 </div>
                     <div id="box2">
-                    <img src="../bilder/donkey.jpg" class="lego-man" alt = "scary lego">
+                    <img src="../bilder/Abdiladiif.png" class="lego-man" alt = "scary lego">
                         <div>
                             <h3 class="name">Abdiladiif Musse</h3>
                             <p class="info">Favorite set: Bird of Paradise</p> 
@@ -23,7 +23,7 @@
                         </div>
                    </div>
                     <div id="box3">
-                    <img src="../bilder/donkey.jpg" class="lego-man" alt = "scary lego">
+                    <img src="../bilder/Vanessa.png" class="lego-man" alt = "scary lego">
                         <div>
                         <h3 class="name">Vanessa Ivarsson</h3>
                         <p class="info">Favorite set: Flower Bouquet</p>
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                     <div id="box4">
-                    <img src="../bilder/donkey.jpg" class="lego-man" alt = "scary lego">
+                    <img src="../bilder/Hanna.png" class="lego-man" alt = "scary lego">
                         <div>
                         <h3 class="name">Hanna Sjöström</h3>    
                         <p class="info">Favorite set: The First Night </p>
@@ -41,7 +41,7 @@
                     </div>   
                 </div>
                     <div id="box5">
-                    <img src="../bilder/donkey.jpg"class="lego-man" alt = "scary lego">
+                    <img src="../bilder/Elsa.png"class="lego-man" alt = "scary lego">
                         <div>
                         <h3 class="name">Elsa Tärnbrant</h3>
                         <p class="info">Favorite set: Mulan's training area </p>
