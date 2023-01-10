@@ -72,7 +72,7 @@ while($row = mysqli_fetch_array($contents)) {
         $filename = "$prefix$itemtype/$imagecolor/$parts.gif";
     }
     else {
-        $filename = "../bilder/donkey.jpg";
+        $filename = "../bilder/itemnotfound.jpg";
     } 
     
     
