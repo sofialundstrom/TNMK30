@@ -17,7 +17,7 @@
     <div id="mymodal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p class="helpbox">Press HELP for help</p>
+            <p class="helpbox"> Want guidlines? Press HELP</p>
         </div>
     </div>
    <?php
