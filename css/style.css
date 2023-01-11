@@ -489,19 +489,54 @@ input[type=text]:hover {
 
 #helpHeader {
   background-color: #8fbbd2;
-  width: 30vw;
+  width: 30%;
   height: 5vw;
   display: flex;
   margin:auto;
-  margin-top: 3vw;
-  margin-bottom: 3vw;
+  margin-top: 4%;
+  margin-bottom: 4%;
   border: solid black 0.15vw;
   border-radius: 1.5vw;
   display: flex;
   flex-direction: column;
   font-family: legofont;
-  font-size: 2vw;
+  font-size: calc(1rem + 1.5vw);
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px){
+  #helpHeader {
+    width: 36%;
+    height: 2.1em;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px){
+  #helpHeader {
+    width: 38%;
+    height: 2.2em;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 600px) {
+  #helpHeader {
+    width: 41%;
+    height: 2em;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 500px) {
+  #helpHeader {
+    width: 46%;
+    height: 2em;
+  }
+}
+
+@media screen and (max-width: 500px){
+  #helpHeader {
+    width: 55%;
+    height: 2em;
+  }
 }
 
 .helpBox{
@@ -511,25 +546,111 @@ input[type=text]:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 61vw;
-  height: 10vw;
+  width: 67%;
+  height: 7em;
   align-items: center;
   margin: auto;
-  margin-bottom: 3vw;
+  margin-bottom: 3.5%;
   border: solid 0.15vw black;
-  font-size: 1.9vw;
+  font-size: calc(0.5rem + 1.3vw);
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  .helpBox {
+    width: 69%;
+    height: 6em;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  .helpBox {
+    width: 71%;
+    height: 5.8em;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) {
+  .helpBox {
+    width: 73%;
+    height: 6em;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 600px){
+  .helpBox {
+    width: 75%;
+    height: 6.5em;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 500px){
+  .helpBox {
+    width: 77%;
+    height: 7.2em;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .helpBox {
+    width: 70%;
+    height: 6em;
+  }
 }
 
 .helpPic {
   box-sizing: border-box;
   border-radius: 2vw;
   margin: 0.2vw;
-  margin-top: 1vw;
-  margin-bottom: 1vw;
-  width: 18vw;
-  height: 9vw;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 2%;
+  width: 25%;
+  height: 5.8em;
   border: solid 0.15vw black;
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  .helpPic {
+    width: 25%;
+    height: 5em;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  .helpPic {
+    width: 26%;
+    height: 5em;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) {
+  .helpPic {
+    width: 26%;
+    height: 5em;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 600px){
+  .helpPic {
+    width: 26%;
+    height: 4.9em;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 500px){
+  .helpPic {
+    width: 26%;
+    height: 4.9em;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .helpPic {
+    width: 30%;
+    height: 4.5em;
+  }
 }
 
 .helpList{
