@@ -3,7 +3,7 @@
 
 <!-- Code for search box -->   
 <div class="searchContainer">
-    <form class="searchform" action="searchpagepart.php" method="POST">
+    <form class="searchForm" action="searchpagepart.php" method="POST">
         <!-- Required means user can't search if search bar empty -->
         <input class="search" type="search" name="search" placeholder="Search..." required>
         <button class="button" type="submit">Search</button>
@@ -81,7 +81,7 @@
             print("
                 <a href='setpage.php?set=$set&quantity=$quantity&part=$part'>
                     <div class='set'>
-                        <img id='setImg' src='$prefix/SL/$set.jpg' alt='image'><br><div id='setname'>$setname</div><br><p>Amount:$quantity<br> ID: $set</p>
+                        <img id='setImg' src='$prefix/SL/$set.jpg' alt='image'><br><div id='setName'>$setname</div><br><p>Amount:$quantity<br> ID: $set</p>
                     </div>
                 </a>");
         
