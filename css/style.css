@@ -48,7 +48,7 @@
   padding:0;
 }
 
-#headerLogo {
+#header-logo {
   padding-top: 0.5vw;
   padding-bottom: 0.5vw;
 }
@@ -87,16 +87,20 @@
   font-family: funwork2;
 }
 
+<<<<<<< Updated upstream
 #headerHelpLink:hover, #headerAboutUsLink:hover, #toggle-mode-button:hover, #headerLogo:hover, .part:hover, .set:hover, #prev:hover, #next:hover{
+=======
+#headerlink1:hover, #headerlink2:hover, #toggle-mode-button:hover, #header-logo:hover, .part:hover, .set:hover, #prev:hover, #next:hover{
+>>>>>>> Stashed changes
   background-color: rgb(189, 213, 226);
 }
 
-#headerHelpLink, #headerAboutUsLink{
+#headerlink1, #headerlink2{
   background-color: #79a3b9;
   border:solid 0.15vw black;
 }
 
-#headerHelpLink{
+#headerlink1{
   margin-right: 1vw;
   display:flex;
   margin-left: 1vw;
@@ -142,7 +146,7 @@
 
 }
 
-#helpHeader {
+.help-header {
   background-color: #8fbbd2;
   width: 40vw;
   height: 4,7vw;
@@ -191,7 +195,7 @@
     overflow:auto;
   }
   
-  .pFoot{
+  .pfoot{
     text-align: left;
     padding: 0.5vw 0.5vw;
     font-family: funwork2;
@@ -350,7 +354,7 @@ input[type=text]:hover {
 /* HELP PAGE */
 /*********************************/
 
-#helpHeader {
+.help-header {
   background-color: #8fbbd2;
   width: 30vw;
   height: 5vw;
@@ -367,7 +371,7 @@ input[type=text]:hover {
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
-.helpBox{
+.ruta1, .ruta2, .ruta3, .ruta4, .ruta5{
   box-sizing: border-box;
   background-color: #8fbbd2;
   border-radius: 2vw;
@@ -384,7 +388,7 @@ input[type=text]:hover {
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
-.helpPic {
+.helppic1, .helppic2, .helppic3, .helppic4, .helppic5 {
   box-sizing: border-box;
   border-radius: 2vw;
   margin: 0.2vw;
@@ -395,7 +399,7 @@ input[type=text]:hover {
   border: solid 0.15vw black;
 }
 
-.helpList{
+.helplist1, .helplist2, .helplist3, .helplist4, .helplist5 {
   box-sizing: border-box;
   flex-basis: 80%;
   text-align: center;
@@ -494,7 +498,7 @@ a:link, a:hover, a:visited {
 /* ABOUT US */
 /*********************************/
 
-.aboutUsBox {
+#box1, #box2, #box3, #box4, #box5 {
 background-color: #8fbbd2;
 border-radius: 2vw;
 display: flex;
@@ -509,7 +513,7 @@ font-size: 1.2vw;
 box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
-.legoMan {
+.lego-man {
   border-radius: 2vw;
   margin: 0.2vw;
   margin-top: 1vw;
@@ -529,14 +533,14 @@ h3{
   flex-direction: row;
 }
 
-.name,.personalInfo {
+.name,.info {
   font-family: funwork2;
   justify-content: space-around;
   margin-left: 13vw;
 }
 
 
-.containerHeader {
+.container-header {
   background-color: #8fbbd2;
   width: 30vw;
   height: 5vw;
@@ -553,7 +557,7 @@ h3{
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
-.aboutUsHeader {
+.aboutus-header {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -639,11 +643,15 @@ h4 {
   background-color: #ccc0ff;;
 }
 
-.dark-mode #headerHelpLink, .dark-mode #headerAboutUsLink, .dark-mode #prev, .dark-mode #next {
+.dark-mode #headerlink1, .dark-mode #headerlink2, .dark-mode #prev, .dark-mode #next {
   background-color: #ccc0ff;
 }
 
+<<<<<<< Updated upstream
 .dark-mode .button:hover, .dark-mode #headerHelpLink:hover, .dark-mode #headerAboutUsLink:hover, .dark-mode #toggle-mode-button:hover, .dark-mode #headerLogo:hover, .dark-mode .part:hover, .dark-mode .set:hover, .dark-mode #prev:hover, .dark-mode #next:hover{
+=======
+.dark-mode .button:hover, .dark-mode #headerlink1:hover, .dark-mode #headerlink2:hover, .dark-mode #toggle-mode-button:hover, .dark-mode #header-logo:hover, .dark-mode .part:hover, .dark-mode .set:hover, .dark-mode #prev:hover, .dark-mode #next:hover{
+>>>>>>> Stashed changes
   background-color: #817ec7;
 }
 
@@ -660,11 +668,15 @@ body.dark-mode {
   background-color: #ccc0ff;;
 }
 
+<<<<<<< Updated upstream
 .dark-mode #helpHeader, .dark-mode .setinfo, .dark-mode .aboutus, .dark-mode .containerHeader, .dark-mode .searchBackgroundBox, .dark-mode .helpBox,.dark-mode .part, .dark-mode .set{
+=======
+.dark-mode .help-header, .dark-mode .setinfo, .dark-mode .aboutus, .dark-mode .container-header, .dark-mode .searchbackgroundbox, .dark-mode .ruta1, .dark-mode .ruta2, .dark-mode .ruta3, .dark-mode .ruta4, .dark-mode .ruta5 ,.dark-mode .part, .dark-mode .set{
+>>>>>>> Stashed changes
   background-color: #ccc0ff;
 }
 
-.dark-mode .aboutUsBox{
+.dark-mode #box1, .dark-mode #box2, .dark-mode #box3, .dark-mode #box4, .dark-mode #box5{
   background-color: #ccc0ff;
 }
 
