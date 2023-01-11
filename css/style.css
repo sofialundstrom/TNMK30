@@ -103,7 +103,7 @@
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .header a {
     float: none;
     display: block;
@@ -216,11 +216,7 @@ body{
   justify-content: center;
 }
 
-<<<<<<< HEAD
-#header_main {
-=======
-#mainHeader{
->>>>>>> 206c901832d3416431984b91a2b1acb7c4403782
+#header_main{
   text-align:center;
   text-shadow: 2px 2px rgb(255, 255, 255) ;
   font-size: calc(1.2rem + 3vw);
@@ -252,15 +248,9 @@ input[type=text]:hover {
 }
 
 /* Style the submit button */
-<<<<<<< HEAD
 .button{
   width: 35%;
   height: 100%;
-=======
-.button {
-  width: 5vw;
-  height: 2.5vw;
->>>>>>> 206c901832d3416431984b91a2b1acb7c4403782
   background: #ddd;
   font-size: calc(0.3rem + 0.5vw);
   font-weight: bold;
@@ -338,7 +328,7 @@ input[type=text]:hover {
 }
 
 @media screen and (max-width: 500px){
-  .searchform {
+  .searchForm {
     width: 75%;
   }
 }
@@ -408,7 +398,7 @@ input[type=text]:hover {
 }
 
 @media screen and (max-width: 1400px) and (min-width: 1200px) {
-  .searchbackgroundbox {
+  .searchBackgroundBox {
     width: 44%;
     height: 19em;
     margin-top: 10em;
@@ -416,7 +406,7 @@ input[type=text]:hover {
 }
 
 @media screen and (max-width: 1200px) and (min-width: 900px) {
-  .searchbackgroundbox {
+  .searchBackgroundBox {
     width: 43%;
     height: 15em;
     margin-top: 13em;
@@ -424,7 +414,7 @@ input[type=text]:hover {
 }
 
 @media screen and (max-width: 900px) and (min-width: 700px) {
-  .searchbackgroundbox {
+  .searchBackgroundBox {
     width: 48%;
     height: 13em;
     margin-top: 13em;
@@ -432,7 +422,7 @@ input[type=text]:hover {
 }
 
 @media screen and (max-width: 700px) and (min-width: 600px){
-  .searchbackgroundbox {
+  .searchBackgroundBox {
     width: 49%;
     height: 11em;
     margin-top: 13em;
@@ -440,7 +430,7 @@ input[type=text]:hover {
 }
 
 @media screen and (max-width: 600px) and (min-width: 500px){
-  .searchbackgroundbox {
+  .searchBackgroundBox {
     width: 53%;
     height: 10em;
     margin-top: 12em;
@@ -448,13 +438,12 @@ input[type=text]:hover {
 }
 
 @media screen and (max-width: 500px){
-  .searchbackgroundbox {
+  .searchBackgroundBox {
     width: 65%;
     height: 9em;
     margin-top: 8.5em;
   }
 }
-
 
   /*********************************/
 /* COOKIE AND CONTENTS INSIDE IT */
@@ -681,7 +670,6 @@ h3{
   font-family: funwork2;
   justify-content: space-around;
   margin-left: 13vw;
-  
 }
 
 
@@ -702,7 +690,7 @@ h3{
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
-.aboutUsHeader {
+.aboutus-header {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -721,7 +709,7 @@ h3{
 /*********************************/
 /* SET PAGE */
 /*********************************/
-.setPageBackground{
+.container-setpage{
   display:flex;
   justify-content:center;
   background-color: #79a3b9;
@@ -734,14 +722,14 @@ h3{
   justify-content: space-evenly;
 }
 
-#setPageContainer{
+#overallcontainer{
   width:100%;
   display: flex;
   justify-content: center;
   padding-top: 2vw;
 }
 
-#setPic {
+.setpic {
   border-radius: 2vw;
   border: solid 0.15vw black;
   height: 20vw;
@@ -749,7 +737,7 @@ h3{
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
-#setInfo {
+.setinfo {
   width: 20vw;
   height: 20vw;
   float: left;
