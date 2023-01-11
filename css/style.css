@@ -451,44 +451,6 @@ input[type=text]:hover {
   }
 }
 
-  /*********************************/
-/* COOKIE AND CONTENTS INSIDE IT */
-/*********************************/
-#accept-cookies-btn {
-  background-color: #8fbbd2 ; /* Green background */
-  border: none; /* Remove default border */
-  color: white; /* White text on green background */
-  padding: 15px 32px; /* Some padding */
-  text-align: center; /* Center the text */
-  text-decoration: none; /* Remove default text decoration */
-  display: inline-block; /* Make the button an inline element */
-  font-size: 16px; /* Set the font size */
-  width: 10vw;
-  height: 2.5vw;
-  /*font-family: sublima; */
-  margin-top: auto; /* Push the button to the bottom of the container */
-  transform: translate( 0px, -17px);
-  font-family: funwork2;
-}
-
-#Cookiebox{
-  background-color:#ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 315px;
-  height: 279px;
-  margin: auto;
-  margin-top: 5vw;
-  display: flex;
-  flex-direction: column;
-  transform: translate(748px, -17px);
-}
-
-#cookietext{
-  padding: 15px;
-}
-
 /*********************************/
 /* HELP PAGE */
 /*********************************/
