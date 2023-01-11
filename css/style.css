@@ -219,7 +219,7 @@ body{
 #mainHeader{
   text-align:center;
   text-shadow: 2px 2px rgb(255, 255, 255) ;
-  font-size: calc(1.2rem + 3vw);
+  font-size: calc(1.2rem + 2.5vw);
   font-family: legofont;
   margin-block-start: 0em;
   margin-block-end: 0em;
@@ -244,13 +244,19 @@ input[type=text]:hover {
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 10%;
+  margin-top: 11%;
+}
+
+@media screen and (max-width: 500px){
+  #searchContainer {
+    margin-top: 8%;
+  }
 }
 
 /* Style the submit button */
 .button{
   width: 35%;
-  height: 100%;
+  height: 3.2em;
   background: #ddd;
   font-size: calc(0.3rem + 0.5vw);
   font-weight: bold;
@@ -324,6 +330,7 @@ input[type=text]:hover {
 .searchForm{
   display:flex;
   margin-bottom: 0.05vw;
+  width: 75%;
 }
 
 @media screen and (max-width: 500px){
@@ -335,7 +342,7 @@ input[type=text]:hover {
 /* style searchbar */
 #search {
   width: 100%;
-  height: 2.5vw;
+  height: 3.2em;
   font-family: funwork2;
   font-size: calc(0.3rem + 0.5vw);
   border: 0.05em solid black;
@@ -387,26 +394,26 @@ input[type=text]:hover {
   /*display: flex;*/
   justify-content: center;
   align-items: center;
-  width: 38%;
+  width: 36%;
   height: 21.5em;
   border: solid 0.15vw black;
   border-radius: 1.5vw;
   margin: auto;
-  margin-top: 7em;
+  margin-top: 8%;
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 1400px) and (min-width: 1200px) {
   .searchBackgroundBox {
-    width: 44%;
-    height: 19em;
+    width: 38%;
+    height: 18em;
     margin-top: 10em;
   }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 900px) {
   .searchBackgroundBox {
-    width: 43%;
+    width: 40%;
     height: 15em;
     margin-top: 13em;
   }
@@ -414,7 +421,7 @@ input[type=text]:hover {
 
 @media screen and (max-width: 900px) and (min-width: 700px) {
   .searchBackgroundBox {
-    width: 48%;
+    width: 44%;
     height: 13em;
     margin-top: 13em;
   }
@@ -488,19 +495,54 @@ input[type=text]:hover {
 
 #helpHeader {
   background-color: #8fbbd2;
-  width: 30vw;
+  width: 30%;
   height: 5vw;
   display: flex;
   margin:auto;
-  margin-top: 3vw;
-  margin-bottom: 3vw;
+  margin-top: 4%;
+  margin-bottom: 4%;
   border: solid black 0.15vw;
   border-radius: 1.5vw;
   display: flex;
   flex-direction: column;
   font-family: legofont;
-  font-size: 2vw;
+  font-size: calc(1rem + 1.5vw);
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px){
+  #helpHeader {
+    width: 36%;
+    height: 2.1em;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px){
+  #helpHeader {
+    width: 38%;
+    height: 2.2em;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 600px) {
+  #helpHeader {
+    width: 41%;
+    height: 2em;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 500px) {
+  #helpHeader {
+    width: 46%;
+    height: 2em;
+  }
+}
+
+@media screen and (max-width: 500px){
+  #helpHeader {
+    width: 55%;
+    height: 2em;
+  }
 }
 
 .helpBox{
@@ -510,25 +552,111 @@ input[type=text]:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 61vw;
-  height: 10vw;
+  width: 67%;
+  height: 7em;
   align-items: center;
   margin: auto;
-  margin-bottom: 3vw;
+  margin-bottom: 3.5%;
   border: solid 0.15vw black;
-  font-size: 1.9vw;
+  font-size: calc(0.5rem + 1.3vw);
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  .helpBox {
+    width: 69%;
+    height: 6em;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  .helpBox {
+    width: 71%;
+    height: 5.8em;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) {
+  .helpBox {
+    width: 73%;
+    height: 6em;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 600px){
+  .helpBox {
+    width: 75%;
+    height: 6.5em;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 500px){
+  .helpBox {
+    width: 77%;
+    height: 7.2em;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .helpBox {
+    width: 70%;
+    height: 6em;
+  }
 }
 
 .helpPic {
   box-sizing: border-box;
   border-radius: 2vw;
   margin: 0.2vw;
-  margin-top: 1vw;
-  margin-bottom: 1vw;
-  width: 18vw;
-  height: 9vw;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 2%;
+  width: 25%;
+  height: 5.8em;
   border: solid 0.15vw black;
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  .helpPic {
+    width: 25%;
+    height: 5em;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  .helpPic {
+    width: 26%;
+    height: 5em;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) {
+  .helpPic {
+    width: 26%;
+    height: 5em;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 600px){
+  .helpPic {
+    width: 26%;
+    height: 4.9em;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 500px){
+  .helpPic {
+    width: 26%;
+    height: 4.9em;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .helpPic {
+    width: 30%;
+    height: 4.5em;
+  }
 }
 
 .helpList{
@@ -541,6 +669,30 @@ input[type=text]:hover {
 /*********************************/
 /* SEARCH PAGE */
 /*********************************/
+.error {
+  background-color: #8fbbd2;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 25vw;
+  border: solid 0.15vw black;
+  border-radius: 1.5vw;
+  margin: auto;
+  margin-top: 7vw;
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
+}
+
+.headerError {
+  text-align: center;
+  font-family: funwork2;
+  font-size: 5vw;
+}
+
+.pError {
+  font-size: 3vw;
+  text-align: center;
+  font-family: funwork2;
+}
 
 .searchContainer{
   display: flex;
@@ -793,11 +945,11 @@ body.dark-mode {
   background-color: #544aaf;
 }
 
-.dark-mode .aboutusbutton, .dark-mode .helpButton, .dark-mode #accept-cookies-btn {
+.dark-mode .aboutusbutton, .dark-mode .helpButton {
   background-color: #ccc0ff;;
 }
 
-.dark-mode #helpHeader, .dark-mode #setInfo, .dark-mode .aboutus, .dark-mode .containerHeader, .dark-mode .searchBackgroundBox, .dark-mode .helpBox,.dark-mode .part, .dark-mode .set{
+.dark-mode #helpHeader, .dark-mode #setInfo, .dark-mode .aboutus, .dark-mode .containerHeader, .dark-mode .searchBackgroundBox, .dark-mode .helpBox,.dark-mode .part, .dark-mode .set, .dark-mode .error{
   background-color: #ccc0ff;
 }
 
