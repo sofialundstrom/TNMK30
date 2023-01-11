@@ -331,6 +331,7 @@ input[type=text]:hover {
   display:flex;
   margin-bottom: 0.05vw;
   width: 75%;
+  margin-right: 0%;
 }
 
 @media screen and (max-width: 500px){
@@ -674,11 +675,33 @@ input[type=text]:hover {
   display: flex;
   justify-content: center;
   padding-top: 1vw;
+  margin-top: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media screen and (max-width: 500px){
+  .searchContainer {
+    margin-bottom: 3%;
+  }
+}
+
+#searchButton {
+  width: 30%;
+  height: 3em;
+  border-right: solid 0.05em black;
+  border-bottom: solid 0.05em black;
+  border-top: solid 0.05em black;
+  font-size: calc(0.3rem + 0.5vw);
+  font-weight: bold;
 }
 
 .search {
   font-family: funwork2;
-  
+  border: solid 0.05em black;
+  width: 30em;
 }
 
 a:link, a:hover, a:visited {
@@ -696,18 +719,60 @@ a:link, a:hover, a:visited {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 #partInfo, #setName{
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
   padding: 1vw;
 }
 
 #legoPartPic, #setImg{
-
-  width: 8vw;
+  width: 12%;
   border: solid 1px black;
   height: 6vw;
   border-radius: 1vw;
-  margin-left: 1vw;
+  margin-left: 2%;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  #legoPartPic, #setImg {
+    width: 11%;
+    height: 3.4em;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  #legoPartPic, #setImg {
+    width: 14%;
+    height: 3.8em;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) {
+  #legoPartPic, #setImg {
+    width: 14%;
+    height: 4.2em;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 600px){
+  #legoPartPic, #setImg {
+    width: 15%;
+    height: 5.3em;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 500px){
+  #legoPartPic, #setImg {
+    width: 16%;
+    height: 5.8em;
+  }
+}
+
+@media screen and (max-width: 500px){
+  #legoPartPic, #setImg {
+    width: 17%;
+    height: 6em;
+  }
 }
 
 .set p, .part p{
@@ -721,16 +786,59 @@ a:link, a:hover, a:visited {
   align-items: center;
   margin: 4vw;
   flex-basis: 70%;
-  height: 7.5vw;
+  height: 4em;
   background-color:#8fbbd2;
   flex-grow: 0;
   flex-shrink: 0;
   border: solid 0.15vw black;
   border-radius: 1.5vw;
-  width: 65vw;
+  width: 35em;
   text-align: center;
   margin: 1.5vw;
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  .part, .set {
+    width: 39em;
+    height: 4em;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  .part, .set {
+    width: 39em;
+    height: 5.2em;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) {
+  .part, .set {
+    width: 40em;
+    height: 6em;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 600px){
+  .part, .set {
+    width: 42em;
+    height: 6.8em;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 500px){
+  .part, .set {
+    width: 44em;
+    height: 7.8em;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .part, .set{
+    width: 45em;
+    height: 8em;
+    margin-top: 3%;
+  }
 }
 
 #pagination{
@@ -739,7 +847,6 @@ a:link, a:hover, a:visited {
   justify-content: center;
   margin: auto;
   padding: 2vw;
-
 }
 
 #prev{
@@ -747,7 +854,7 @@ a:link, a:hover, a:visited {
 }
 
 #prev, #next{
-  background-color: #79a3b9;
+  background-color: #8fbbd2;
   border-radius: 1vw;
   border: solid 0.15vw black;
   display:flex;
