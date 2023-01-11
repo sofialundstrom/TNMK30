@@ -62,7 +62,6 @@
 
 /* Float the link section to the right */
 .header-right {
-  position: block;
   float: right;
   margin-right: 4.5vw;
   margin-top: 1.8vw;
@@ -102,8 +101,8 @@
   margin-left: 1vw;
 }
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
+/* Add media queries for responsiveness - when the screen is 400px wide or less, stack the links on top of each other */
+@media screen and (max-width: 400px) {
   .header a {
     float: none;
     display: block;
@@ -145,7 +144,7 @@
 #helpHeader {
   background-color: #8fbbd2;
   width: 40vw;
-  height: 4,7vw;
+  height: 5vw;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -452,44 +451,6 @@ input[type=text]:hover {
   }
 }
 
-  /*********************************/
-/* COOKIE AND CONTENTS INSIDE IT */
-/*********************************/
-#accept-cookies-btn {
-  background-color: #8fbbd2 ; /* Green background */
-  border: none; /* Remove default border */
-  color: white; /* White text on green background */
-  padding: 15px 32px; /* Some padding */
-  text-align: center; /* Center the text */
-  text-decoration: none; /* Remove default text decoration */
-  display: inline-block; /* Make the button an inline element */
-  font-size: 16px; /* Set the font size */
-  width: 10vw;
-  height: 2.5vw;
-  /*font-family: sublima; */
-  margin-top: auto; /* Push the button to the bottom of the container */
-  transform: translate( 0px, -17px);
-  font-family: funwork2;
-}
-
-#Cookiebox{
-  background-color:#ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 315px;
-  height: 279px;
-  margin: auto;
-  margin-top: 5vw;
-  display: flex;
-  flex-direction: column;
-  transform: translate(748px, -17px);
-}
-
-#cookietext{
-  padding: 15px;
-}
-
 /*********************************/
 /* HELP PAGE */
 /*********************************/
@@ -670,6 +631,30 @@ input[type=text]:hover {
 /*********************************/
 /* SEARCH PAGE */
 /*********************************/
+.error {
+  background-color: #8fbbd2;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 25vw;
+  border: solid 0.15vw black;
+  border-radius: 1.5vw;
+  margin: auto;
+  margin-top: 7vw;
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
+}
+
+.headerError {
+  text-align: center;
+  font-family: funwork2;
+  font-size: 5vw;
+}
+
+.pError {
+  font-size: 3vw;
+  text-align: center;
+  font-family: funwork2;
+}
 
 .searchContainer{
   display: flex;
@@ -925,12 +910,12 @@ h3{
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
-.aboutus-header {
+.aboutUsHeader {
   text-align: center;
   display: flex;
   justify-content: center;
   font-size: 2vw;
-  margin:auto;
+  margin: auto;
   font-family: legofont;
   text-align: center;
 }
@@ -941,10 +926,102 @@ h3{
   padding-left: 5%;
 }
 
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  .aboutUsBox {
+    font-size: 2vw;
+    width: 80vw;
+    height: 15vw;
+  }
+  .legoMan {
+  width: 12vw;
+  }
+  .containerHeader {
+  width: 35vw;
+  height: 5vw;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  .aboutUsBox {
+    font-size: 2vw;
+    width: 77vw;
+    height: 15vw;
+  }
+  .legoMan {
+  width: 12vw;
+  }
+  .containerHeader {
+  width: 35vw;
+  height: 5vw;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) {
+  .aboutUsBox {
+    font-size: 2vw;
+    width: 75vw;
+    height: 13vw;
+    margin-top: 5vw;
+  }
+  .legoMan {
+    width: 10.5vw;
+  }
+  .containerHeader {
+    width: 35vw;
+    height: 5vw;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 600px) {
+  .aboutUsBox {
+    font-size: 2vw;
+    width: 75vw;
+    height: 15vw;
+    margin-top: 5vw;
+  }
+.legoMan {
+  width: 12vw;
+}
+.containerHeader {
+  width: 38vw;
+  height: 7vw;
+}
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 500px){
+  .aboutUsBox {
+    font-size: 2vw;
+    width: 75vw;
+    height: 15vw;
+    margin-top: 5vw;
+  }
+  .legoMan {
+    width: 12vw;
+  }
+  .containerHeader {
+    width: 40vw;
+    height: 8vw;
+  }
+  }
+
+@media screen and (max-width: 500px){
+  .aboutUsBox {
+    font-size: 2vw;
+    width: 80vw;
+    height: 15vw;
+    margin-top: 5vw;
+  }
+  .legoMan {
+    width: 12vw;
+  }
+}
+
+
 /*********************************/
 /* SET PAGE */
 /*********************************/
-.container-setpage{
+.setPageBackground{
   display:flex;
   justify-content:center;
   background-color: #79a3b9;
@@ -957,14 +1034,14 @@ h3{
   justify-content: space-evenly;
 }
 
-#overallcontainer{
+#setPageContainer{
   width:100%;
   display: flex;
   justify-content: center;
   padding-top: 2vw;
 }
 
-.setpic {
+#setPic {
   border-radius: 2vw;
   border: solid 0.15vw black;
   height: 20vw;
@@ -972,7 +1049,7 @@ h3{
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
-.setinfo {
+#setInfo {
   width: 20vw;
   height: 20vw;
   float: left;
@@ -1028,11 +1105,11 @@ body.dark-mode {
   background-color: #544aaf;
 }
 
-.dark-mode .aboutusbutton, .dark-mode .helpButton, .dark-mode #accept-cookies-btn {
+.dark-mode .aboutusbutton, .dark-mode .helpButton {
   background-color: #ccc0ff;;
 }
 
-.dark-mode #helpHeader, .dark-mode #setInfo, .dark-mode .aboutus, .dark-mode .containerHeader, .dark-mode .searchBackgroundBox, .dark-mode .helpBox,.dark-mode .part, .dark-mode .set{
+.dark-mode #helpHeader, .dark-mode #setInfo, .dark-mode .aboutus, .dark-mode .containerHeader, .dark-mode .searchBackgroundBox, .dark-mode .helpBox,.dark-mode .part, .dark-mode .set, .dark-mode .error{
   background-color: #ccc0ff;
 }
 

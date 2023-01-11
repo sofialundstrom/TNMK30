@@ -25,10 +25,9 @@
     if (isset($_SESSION['search'])) {
         $search = $_SESSION['search'];
     }
-?>
 
-<!-- Include css, javascript, head and start of body -->
-<?php include('../txt/header.txt'); ?>
+// Include css, javascript, head and start of body
+include('../txt/header.txt'); ?>
 
 <!-- Code for search box -->    
 <div class="searchContainer">
@@ -47,6 +46,16 @@
 
     $contents = mysqli_query ($connection, $sql_qurry );
 
+    // Writes an error message if there are no results
+    if (!$contents || mysqli_num_rows($contents) == 0) {
+        print("
+            <div class=error>
+                <p class='headerError'>There are no results!</p>
+                <p class='pError'>Try checking your spelling</p>
+            </div>
+        ");
+    }
+
     // Container to use flex box on the information boxes
     print "<div class='container'>";
 
@@ -55,12 +64,13 @@
         // Does this loop while there is content to display
         while($row = mysqli_fetch_array($contents)) {
             
-            // Counts how many objects are displayed to help with pagination
-            $counter++;
-            
             // Define variabels
             $parts = $row['PartID'];
             $partname = $row['Partname'];
+
+            // Ask to see each color for the current part
+            $sqlColor = "SELECT DISTINCT ColorID FROM inventory WHERE ItemID = '$parts'";
+            $colorContents = mysqli_query($connection, $sqlColor);
 
             // Selects everything from images
             $sqlImg = "SELECT * FROM images WHERE ItemtypeID = 'P' AND ItemID = '$parts'";
@@ -78,20 +88,26 @@
             else if($info['has_gif'] == 1) {
                 $filename = "$prefix$itemtype/$imagecolor/$parts.gif";
             }
-            // If there is no picture show a standard lego picture
+            // If there is no picture show thisas a standard picture
             else {
-                $filename = "../bilder/noneitem.lego.jpg";
+                $filename = "../bilder/noneitem.lego.png";
             } 
             
-            
-            // Prints out a information box with info about PartID and partname, and a picture of the part
-            // There is also a link on the whole box to new site where color for part is chosen
-            print("
-                <a href='searchpagecolor.php?part=$parts'>
-                    <div class='part'>
-                        <img src='$filename' alt='legopart' id='legoPartPic'><br><div id='partInfo'>$partname</div><br><p>ID: $parts</p>  
-                    </div>
-                </a>");
+            // If there are no colors for current parts do not display
+            if(!$contents || mysqli_num_rows($colorContents) != 0)  {
+                
+                // Counts how many objects are displayed to help with pagination
+                $counter++;
+
+                // Prints out a information box with info about PartID and partname, and a picture of the part
+                // There is also a link on the whole box to new site where color for part is chosen
+                print("
+                    <a href='searchpagecolor.php?part=$parts'>
+                        <div class='part'>
+                            <img src='$filename' alt='legopart' id='legoPartPic'><br><div id='partInfo'>$partname</div><br><p>ID: $parts</p>  
+                        </div>
+                    </a>");
+            }
         }
     print "</div>";
 

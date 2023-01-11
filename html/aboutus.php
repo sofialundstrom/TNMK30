@@ -2,8 +2,10 @@
 <?php include('../txt/header.txt'); ?>
 
     <!-- Title -->
+    <div class="containerAllHeader">
     <div class="containerHeader">
         <h2 class="aboutUsHeader">ABOUT US</h2>
+    </div>
     </div>
 
     <!-- Container for information boxes to use flex box -->
@@ -49,7 +51,7 @@
         </div>
 
         <div class="aboutUsBox">
-            <img src="../bilder/Elsa.png"class="legoMan" alt = "Lego Elsa">
+            <img src="../bilder/Elsa.png" class="legoMan" alt = "Lego Elsa">
             <div>
                 <h3 class="name">Elsa Tärnbrant</h3>
                 <p class="personalInfo">Favorite set: Mulan's training area </p>

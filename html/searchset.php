@@ -63,25 +63,13 @@
             // Counts how many objects are displayed
             $counter++;
 
-            // Create link to each colors picture on another website, depending on if it is a gif or jpg
-            if($info['has_jpg'] == 1) {
-                $filename = "SL/$set.jpg";
-                echo("$prefix$filename");
-            }
-            else if($info['has_gif'] == 1) {
-                $filename = "SL/$set.gif";
-            }
-            // If there is no picture show this as a standard lego picture
-            else {
-                $filename = "noimage_small.png";
-            } 
-            
+
             // Print out information box with info about current set
             // There is a link on the whole box to a site with information about the specific set
             print("
                 <a href='setpage.php?set=$set&quantity=$quantity&part=$part'>
                     <div class='set'>
-                        <img id='setImg' src='$prefix/SL/$set.jpg' alt='image'><br><div id='setName'>$setname</div><br><p>Amount:$quantity<br> ID: $set</p>
+                        <img id='setImg' src='$prefix/SL/$set.jpg' alt='image' onerror=this.src='../bilder/noneitem.lego.png'><br><div id='setName'>$setname</div><br><p>Amount:$quantity<br> ID: $set</p>
                     </div>
                 </a>");
         
