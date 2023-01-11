@@ -91,7 +91,7 @@
             }
             // If there is no picture show a standard lego picture
             else {
-                $filename = "../bilder/donkey.jpg";
+                $filename = "../bilder/noneitem.lego.jpg";
             } 
             
             // If there are no colors for current parts do not display

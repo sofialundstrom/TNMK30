@@ -79,7 +79,7 @@
             }
             // If there is no picture show a standard lego picture
             else {
-                $filename = "../bilder/donkey.jpg";
+                $filename = "../bilder/nonitem.lego.jpg";
             } 
         
             // Prints out a information box with info about PartID and partname for each color
