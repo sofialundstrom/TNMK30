@@ -49,7 +49,7 @@
         </div>
 
         <div class="aboutUsBox">
-            <img src="../bilder/Elsa.png"class="legoMan" alt = "Lego Elsa">
+            <img src="../bilder/Elsa.png" class="legoMan" alt = "Lego Elsa">
             <div>
                 <h3 class="name">Elsa Tärnbrant</h3>
                 <p class="personalInfo">Favorite set: Mulan's training area </p>

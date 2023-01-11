@@ -62,7 +62,6 @@
 
 /* Float the link section to the right */
 .header-right {
-  position: block;
   float: right;
   margin-right: 4.5vw;
   margin-top: 1.8vw;
@@ -145,7 +144,7 @@
 #helpHeader {
   background-color: #8fbbd2;
   width: 40vw;
-  height: 4,7vw;
+  height: 5vw;
   display: flex;
   justify-content: center;
   text-align: center;

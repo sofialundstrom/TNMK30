@@ -25,10 +25,9 @@
     if (isset($_SESSION['search'])) {
         $search = $_SESSION['search'];
     }
-?>
 
-<!-- Include css, javascript, head and start of body -->
-<?php include('../txt/header.txt'); ?>
+// Include css, javascript, head and start of body
+include('../txt/header.txt'); ?>
 
 <!-- Code for search box -->    
 <div class="searchContainer">
