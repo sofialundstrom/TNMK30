@@ -87,11 +87,7 @@
   font-family: funwork2;
 }
 
-<<<<<<< Updated upstream
-#headerHelpLink:hover, #headerAboutUsLink:hover, #toggle-mode-button:hover, #headerLogo:hover, .part:hover, .set:hover, #prev:hover, #next:hover{
-=======
 #headerlink1:hover, #headerlink2:hover, #toggle-mode-button:hover, #header-logo:hover, .part:hover, .set:hover, #prev:hover, #next:hover{
->>>>>>> Stashed changes
   background-color: rgb(189, 213, 226);
 }
 
@@ -107,7 +103,7 @@
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .header a {
     float: none;
     display: block;
@@ -135,7 +131,7 @@
 }
 
 /* help box */
-.modalContent {
+.modal-content {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
@@ -161,7 +157,7 @@
 }
 
 /* style pop up help box text*/
-#modalHelpBox {
+.helpbox {
   text-align: center;
   font-size: 3vw;
   font-family: funwork2;
@@ -215,12 +211,12 @@ body{
   background-repeat: repeat;
 }
 
-.legoText {
+.legotext {
   display: flex;
   justify-content: center;
 }
 
-#mainHeader{
+#header_main{
   text-align:center;
   text-shadow: 2px 2px rgb(255, 255, 255) ;
   font-size: 3.5vw;
@@ -245,7 +241,7 @@ input[type=text]:hover {
   background: #d4d4d4;
 }
 
-#overlaySearch {
+#overlay-search {
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -254,7 +250,7 @@ input[type=text]:hover {
 
 
 /* Style the submit button */
-.button {
+.button{
   width: 5vw;
   height: 2.5vw;
   background: #ddd;
@@ -269,7 +265,7 @@ input[type=text]:hover {
 }
 
 /* questionmark button */
-#helpButton {
+#help_btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,7 +277,7 @@ input[type=text]:hover {
   background: rgb(189, 213, 226);
 }
 
-.searchForm{
+.searchform{
   display:flex;
   margin-bottom: 0.05vw;
   border: 0.05vw solid black;
@@ -296,9 +292,9 @@ input[type=text]:hover {
 }
 
 /*********************************/
-/* searchBackgroundBox */
+/* SearchBackgroundBox */
 /*********************************/
-.searchBackgroundBox {
+.searchbackgroundbox {
   background-color:#8fbbd2;
   display: flex;
   justify-content: center;
@@ -435,12 +431,12 @@ a:link, a:hover, a:visited {
   justify-content: center;
   flex-wrap: wrap;
 }
-#partInfo, #setName{
+.partinfo, #setname{
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
   padding: 1vw;
 }
 
-#legoPartPic, #setImg{
+#legopartpic, #setImg{
 
   width: 8vw;
   border: solid 1px black;
@@ -647,11 +643,7 @@ h4 {
   background-color: #ccc0ff;
 }
 
-<<<<<<< Updated upstream
-.dark-mode .button:hover, .dark-mode #headerHelpLink:hover, .dark-mode #headerAboutUsLink:hover, .dark-mode #toggle-mode-button:hover, .dark-mode #headerLogo:hover, .dark-mode .part:hover, .dark-mode .set:hover, .dark-mode #prev:hover, .dark-mode #next:hover{
-=======
 .dark-mode .button:hover, .dark-mode #headerlink1:hover, .dark-mode #headerlink2:hover, .dark-mode #toggle-mode-button:hover, .dark-mode #header-logo:hover, .dark-mode .part:hover, .dark-mode .set:hover, .dark-mode #prev:hover, .dark-mode #next:hover{
->>>>>>> Stashed changes
   background-color: #817ec7;
 }
 
@@ -664,15 +656,11 @@ body.dark-mode {
   background-color: #544aaf;
 }
 
-.dark-mode .aboutusbutton, .dark-mode .helpButton, .dark-mode #accept-cookies-btn {
+.dark-mode .aboutusbutton, .dark-mode .helpbutton, .dark-mode #accept-cookies-btn {
   background-color: #ccc0ff;;
 }
 
-<<<<<<< Updated upstream
-.dark-mode #helpHeader, .dark-mode .setinfo, .dark-mode .aboutus, .dark-mode .containerHeader, .dark-mode .searchBackgroundBox, .dark-mode .helpBox,.dark-mode .part, .dark-mode .set{
-=======
 .dark-mode .help-header, .dark-mode .setinfo, .dark-mode .aboutus, .dark-mode .container-header, .dark-mode .searchbackgroundbox, .dark-mode .ruta1, .dark-mode .ruta2, .dark-mode .ruta3, .dark-mode .ruta4, .dark-mode .ruta5 ,.dark-mode .part, .dark-mode .set{
->>>>>>> Stashed changes
   background-color: #ccc0ff;
 }
 
