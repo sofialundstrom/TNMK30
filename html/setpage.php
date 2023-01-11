@@ -29,6 +29,9 @@
     $sql_qurry = "SELECT sets.Setname, sets.Year, sets.CatID FROM sets WHERE sets.SetID='$set'";
     $contents = mysqli_query ($connection, $sql_qurry );
     $row = mysqli_fetch_array($contents);
+    
+    // Define variabel
+    $catID = $row['CatID'];
 
     // Ask for information about categories
     $sql_qurry2 = "SELECT categories.Categoryname FROM categories WHERE categories.CatID='$catID'";
@@ -44,7 +47,6 @@
     $prefix = 'https://weber.itn.liu.se/~stegu/img.bricklink.com/';
     $setname = $row['Setname'];
     $year = $row['Year'];
-    $catID = $row['CatID'];
     $catName = $row2['Categoryname']; 
     $partname = $row3['Partname'];
     
