@@ -54,7 +54,7 @@
     print("
         <div id='setPageContainer'>
             <div class='setPageBackground'>
-                <div class='setimage'>
+                <div class='setImage'>
                     <img src='$prefix/SL/$set.jpg' id='setPic' alt='Set picture'>
                 </div> 
                 <div id='setInfo'>

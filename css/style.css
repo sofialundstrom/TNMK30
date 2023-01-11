@@ -823,7 +823,7 @@ h3{
 /*********************************/
 /* SET PAGE */
 /*********************************/
-.container-setpage{
+.setPageBackground{
   display:flex;
   justify-content:center;
   background-color: #79a3b9;
@@ -836,14 +836,14 @@ h3{
   justify-content: space-evenly;
 }
 
-#overallcontainer{
+#setPageContainer{
   width:100%;
   display: flex;
   justify-content: center;
   padding-top: 2vw;
 }
 
-.setpic {
+#setPic {
   border-radius: 2vw;
   border: solid 0.15vw black;
   height: 20vw;
@@ -851,7 +851,7 @@ h3{
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
-.setinfo {
+#setInfo {
   width: 20vw;
   height: 20vw;
   float: left;

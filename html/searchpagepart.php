@@ -89,9 +89,9 @@
             else if($info['has_gif'] == 1) {
                 $filename = "$prefix$itemtype/$imagecolor/$parts.gif";
             }
-            // If there is no picture show a standard lego picture
+            // If there is no picture show thisas a standard picture
             else {
-                $filename = "../bilder/noneitem.lego.jpg";
+                $filename = "../bilder/noneitem.lego.png";
             } 
             
             // If there are no colors for current parts do not display
