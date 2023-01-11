@@ -19,10 +19,10 @@
 </head>
 <body>
     <div class="header">
-        <a href="../html/main.php" id="header-logo"><img src="../bilder/logo-light.png" id="imageId" class="logo" alt="LOGO"></a>
+        <a href="../html/index.php" id="header-logo"><img src="../bilder/logo-light.png" id="imageId" class="logo" alt="LOGO"></a>
         <div class="header-right">
           <button id="toggle-mode-button">Dark Mode</button>
-          <a class="headerButton" id="headerHelpLink" href="../html/help1.php">HELP</a>
+          <a class="headerButton" id="headerHelpLink" href="../html/help.php">HELP</a>
           <a class="headerButton" id="headerAboutUsLink" href="../html/aboutus.php">ABOUT US</a>
         </div>
     </div>
