@@ -308,44 +308,6 @@ input[type=text]:hover {
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
-  /*********************************/
-/* COOKIE AND CONTENTS INSIDE IT */
-/*********************************/
-#accept-cookies-btn {
-  background-color: #8fbbd2 ; /* Green background */
-  border: none; /* Remove default border */
-  color: white; /* White text on green background */
-  padding: 15px 32px; /* Some padding */
-  text-align: center; /* Center the text */
-  text-decoration: none; /* Remove default text decoration */
-  display: inline-block; /* Make the button an inline element */
-  font-size: 16px; /* Set the font size */
-  width: 10vw;
-  height: 2.5vw;
-  /*font-family: sublima; */
-  margin-top: auto; /* Push the button to the bottom of the container */
-  transform: translate( 0px, -17px);
-  font-family: funwork2;
-}
-
-#Cookiebox{
-  background-color:#ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 315px;
-  height: 279px;
-  margin: auto;
-  margin-top: 5vw;
-  display: flex;
-  flex-direction: column;
-  transform: translate(748px, -17px);
-}
-
-#cookietext{
-  padding: 15px;
-}
-
 /*********************************/
 /* HELP PAGE */
 /*********************************/
@@ -405,6 +367,30 @@ input[type=text]:hover {
 /*********************************/
 /* SEARCH PAGE */
 /*********************************/
+.error {
+  background-color: #8fbbd2;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 25vw;
+  border: solid 0.15vw black;
+  border-radius: 1.5vw;
+  margin: auto;
+  margin-top: 7vw;
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
+}
+
+.headerError {
+  text-align: center;
+  font-family: funwork2;
+  font-size: 5vw;
+}
+
+.pError {
+  font-size: 3vw;
+  text-align: center;
+  font-family: funwork2;
+}
 
 .searchContainer{
   display: flex;
@@ -657,11 +643,11 @@ body.dark-mode {
   background-color: #544aaf;
 }
 
-.dark-mode .aboutusbutton, .dark-mode .helpButton, .dark-mode #accept-cookies-btn {
+.dark-mode .aboutusbutton, .dark-mode .helpButton {
   background-color: #ccc0ff;;
 }
 
-.dark-mode #helpHeader, .dark-mode #setInfo, .dark-mode .aboutus, .dark-mode .containerHeader, .dark-mode .searchBackgroundBox, .dark-mode .helpBox,.dark-mode .part, .dark-mode .set{
+.dark-mode #helpHeader, .dark-mode #setInfo, .dark-mode .aboutus, .dark-mode .containerHeader, .dark-mode .searchBackgroundBox, .dark-mode .helpBox,.dark-mode .part, .dark-mode .set, .dark-mode .error{
   background-color: #ccc0ff;
 }
 
