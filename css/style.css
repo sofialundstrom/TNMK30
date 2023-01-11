@@ -324,7 +324,6 @@ input[type=text]:hover {
 .searchForm{
   display:flex;
   margin-bottom: 0.05vw;
-  width: 70%;
 }
 
 @media screen and (max-width: 500px){
@@ -551,6 +550,7 @@ input[type=text]:hover {
 
 .search {
   font-family: funwork2;
+  
 }
 
 a:link, a:hover, a:visited {
