@@ -1,5 +1,5 @@
     <div class="footer">
-        <p class="pfoot" >2022</p>
+        <p class="pfoot" >© 2022</p>
     </div>
 </body>
 </html>

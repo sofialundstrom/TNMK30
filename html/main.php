@@ -9,9 +9,9 @@
         </div>
         <form class="searchform" action="searchpagepart.php" method="POST">
             <!-- Required makes sure you can't enter nothing and go to next page -->
-            <input type="search" name="search" id="search" placeholder="Search your lego piece" required>
-            <button class="button" type="submit">Search</button>
-            <div class="button" id="help_btn">?</div>
+            <input type="search" name="search" id="search" placeholder=" Search your lego piece" required>
+            <button class="button" id="submit_button" type="submit">Search</button>
+            <button class="button" id="help_btn">?</button>
         </form>
     </div>
 </div>        
