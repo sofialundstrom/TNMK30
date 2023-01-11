@@ -2,8 +2,10 @@
 <?php include('../txt/header.txt'); ?>
 
     <!-- Title -->
+    <div class="containerAllHeader">
     <div class="containerHeader">
         <h2 class="aboutUsHeader">ABOUT US</h2>
+    </div>
     </div>
 
     <!-- Container for information boxes to use flex box -->
