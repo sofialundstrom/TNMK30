@@ -46,7 +46,6 @@
     ORDER BY length(Partname) ASC LIMIT $offset, 5";
 
     $contents = mysqli_query ($connection, $sql_qurry );
-    $row = mysqli_fetch_array($contents);
 
     // Container to use flex box on the information boxes
     print "<div class='container'>";
