@@ -20,7 +20,7 @@
 <div id="mymodal" class="modal">
     <div class="modalContent">
         <span class="close">&times;</span>
-        <p class="modalHelpBox">Press HELP for help</p>
+        <p id="modalHelpBox">Press HELP for help</p>
     </div>
 </div>
 
