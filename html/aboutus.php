@@ -26,7 +26,7 @@
             <div>
                 <h3 class="name">Abdiladiif Musse</h3>
                 <p class="personalInfo">Favorite set: Bird of Paradise</p>
-                <p class="personalInfo"> E-post: adb543@student.liu.se</p>
+                <p class="personalInfo"> E-post: adbmu543@student.liu.se</p>
             </div>
         </div>
 

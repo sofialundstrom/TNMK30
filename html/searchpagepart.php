@@ -80,7 +80,7 @@
             }
             // If there is no picture show a standard lego picture
             else {
-                $filename = "../bilder/donkey.jpg";
+                $filename = "../bilder/noneitem.lego.jpg";
             } 
             
             
