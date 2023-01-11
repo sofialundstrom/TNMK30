@@ -1,7 +1,7 @@
 <?php include('../txt/header.txt'); ?>
 
 <div class="searchContainer">
-        <form class="searchform" action="searchpagepart.php" method="POST">
+        <form class="searchForm" action="searchpagepart.php" method="POST">
             <input class="search" type="search" name="search" placeholder="Search..." required>
             <button class="button" type="submit">Search</button>
         </form>
@@ -66,7 +66,7 @@ while($row = mysqli_fetch_array($contents)) {
     print("
         <a href='setpage.php?set=$set&quantity=$quantity&part=$part'>
             <div class='set'>
-                <img id='setImg' src='$prefix/SL/$set.jpg' alt='image'><br><div id='setname'>$setname</div><br><p>Amount:$quantity<br> ID: $set</p>
+                <img id='setImg' src='$prefix/SL/$set.jpg' alt='image'><br><div id='setName'>$setname</div><br><p>Amount:$quantity<br> ID: $set</p>
             </div>
         </a>");
   

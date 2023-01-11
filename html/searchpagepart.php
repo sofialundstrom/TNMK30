@@ -32,7 +32,7 @@
 
 <!-- Code for search box -->    
 <div class="searchContainer">
-    <form class="searchform" action="searchpagepart.php" method="POST">
+    <form class="searchForm" action="searchpagepart.php" method="POST">
         <input class="search" type="search" name="search" placeholder="Search..." required>
         <button class="button" type="submit">Search</button>
     </form>
@@ -89,7 +89,7 @@
         print("
             <a href='searchpagecolor.php?part=$parts'>
                 <div class='part'>
-                    <img src='$filename' alt='legopart' id='legopartpic'><br><div class='partinfo'>$partname</div><br><p>ID: $parts</p>  
+                    <img src='$filename' alt='legopart' id='legoPartPic'><br><div id='partInfo'>$partname</div><br><p>ID: $parts</p>  
                 </div>
             </a>");
     }

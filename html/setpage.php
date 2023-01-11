@@ -1,7 +1,7 @@
 <?php include('../txt/header.txt');?>
 
 <div class="searchContainer">
-        <form class="searchform" action="searchpagepart.php" method="POST">
+        <form class="searchForm" action="searchpagepart.php" method="POST">
             <input class="search" type="search" name="search" placeholder="Search..." required>
             <button class="button" type="submit">Search</button>
         </form>

@@ -87,7 +87,7 @@
   font-family: funwork2;
 }
 
-#headerHelpLink:hover, #headerAboutUsLink:hover, #toggle-mode-button:hover, #header-logo:hover, .part:hover, .set:hover, #prev:hover, #next:hover{
+#headerHelpLink:hover, #headerAboutUsLink:hover, #toggle-mode-button:hover, #headerLogo:hover, .part:hover, .set:hover, #prev:hover, #next:hover{
   background-color: rgb(189, 213, 226);
 }
 
@@ -131,7 +131,7 @@
 }
 
 /* help box */
-.modal-content {
+.modalContent {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
@@ -157,7 +157,7 @@
 }
 
 /* style pop up help box text*/
-.helpbox {
+#modalHelpBox {
   text-align: center;
   font-size: 3vw;
   font-family: funwork2;
@@ -211,12 +211,12 @@ body{
   background-repeat: repeat;
 }
 
-.legotext {
+.legoText {
   display: flex;
   justify-content: center;
 }
 
-#header_main{
+#mainHeader{
   text-align:center;
   text-shadow: 2px 2px rgb(255, 255, 255) ;
   font-size: 3.5vw;
@@ -241,7 +241,7 @@ input[type=text]:hover {
   background: #d4d4d4;
 }
 
-#overlay-search {
+#overlaySearch {
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -265,7 +265,7 @@ input[type=text]:hover {
 }
 
 /* questionmark button */
-#help_btn {
+#helpButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,7 +277,7 @@ input[type=text]:hover {
   background: rgb(189, 213, 226);
 }
 
-.searchform{
+.searchForm{
   display:flex;
   margin-bottom: 0.05vw;
   border: 0.05vw solid black;
@@ -292,9 +292,9 @@ input[type=text]:hover {
 }
 
 /*********************************/
-/* SearchBackgroundBox */
+/* searchBackgroundBox */
 /*********************************/
-.searchbackgroundbox {
+.searchBackgroundBox {
   background-color:#8fbbd2;
   display: flex;
   justify-content: center;
@@ -431,12 +431,12 @@ a:link, a:hover, a:visited {
   justify-content: center;
   flex-wrap: wrap;
 }
-.partinfo, #setname{
+#partInfo, #setName{
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
   padding: 1vw;
 }
 
-#legopartpic, #setImg{
+#legoPartPic, #setImg{
 
   width: 8vw;
   border: solid 1px black;
@@ -643,7 +643,7 @@ h4 {
   background-color: #ccc0ff;
 }
 
-.dark-mode .button:hover, .dark-mode #headerHelpLink:hover, .dark-mode #headerAboutUsLink:hover, .dark-mode #toggle-mode-button:hover, .dark-mode #header-logo:hover, .dark-mode .part:hover, .dark-mode .set:hover, .dark-mode #prev:hover, .dark-mode #next:hover{
+.dark-mode .button:hover, .dark-mode #headerHelpLink:hover, .dark-mode #headerAboutUsLink:hover, .dark-mode #toggle-mode-button:hover, .dark-mode #headerLogo:hover, .dark-mode .part:hover, .dark-mode .set:hover, .dark-mode #prev:hover, .dark-mode #next:hover{
   background-color: #817ec7;
 }
 
@@ -656,11 +656,11 @@ body.dark-mode {
   background-color: #544aaf;
 }
 
-.dark-mode .aboutusbutton, .dark-mode .helpbutton, .dark-mode #accept-cookies-btn {
+.dark-mode .aboutusbutton, .dark-mode .helpButton, .dark-mode #accept-cookies-btn {
   background-color: #ccc0ff;;
 }
 
-.dark-mode #helpHeader, .dark-mode .setinfo, .dark-mode .aboutus, .dark-mode .containerHeader, .dark-mode .searchbackgroundbox, .dark-mode .helpBox,.dark-mode .part, .dark-mode .set{
+.dark-mode #helpHeader, .dark-mode .setinfo, .dark-mode .aboutus, .dark-mode .containerHeader, .dark-mode .searchBackgroundBox, .dark-mode .helpBox,.dark-mode .part, .dark-mode .set{
   background-color: #ccc0ff;
 }
 
