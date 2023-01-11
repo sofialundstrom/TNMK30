@@ -38,5 +38,5 @@
     </div>
 </div>
 
-<?php include('../txt/footer.txt'); ?>
 <!-- Include footer where body is closed -->
+<?php include('../txt/footer.txt'); ?>
