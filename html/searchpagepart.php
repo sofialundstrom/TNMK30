@@ -32,7 +32,7 @@
 
 <!-- Code for search box -->    
 <div class="searchContainer">
-    <form class="searchform" action="searchpagepart.php" method="POST">
+    <form class="searchForm" action="searchpagepart.php" method="POST">
         <!-- Required means user can't search if search bar empty -->
         <input class="search" type="search" name="search" placeholder="Search..." required>
         <button class="button" type="submit">Search</button>

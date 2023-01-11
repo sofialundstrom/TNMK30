@@ -8,7 +8,7 @@ var darkMode = localStorage.getItem('darkMode');
 if (darkMode === 'true') {
   document.body.classList.add('dark-mode');
   toggleModeButton.innerText = 'Light Mode';
-  document.getElementById("imageid").src="../bilder/logo-dark.png";
+  document.getElementById("imageId").src="../bilder/logo-dark.png";
 }
 
 toggleModeButton.addEventListener('click', function() {
@@ -17,13 +17,13 @@ toggleModeButton.addEventListener('click', function() {
     toggleModeButton.innerText = 'Dark Mode';
     darkMode = 'false';
     localStorage.setItem('darkMode', 'false');
-    document.getElementById("imageid").src="../bilder/logo-light.png";
+    document.getElementById("imageId").src="../bilder/logo-light.png";
   } else {
     document.body.classList.add('dark-mode');
     toggleModeButton.innerText = 'Light Mode';
     darkMode = 'true';
     localStorage.setItem('darkMode', 'true');
-    document.getElementById("imageid").src="../bilder/logo-dark.png";
+    document.getElementById("imageId").src="../bilder/logo-dark.png";
   }
 });
 
