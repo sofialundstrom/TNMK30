@@ -216,7 +216,7 @@ body{
   justify-content: center;
 }
 
-#header_main{
+#mainHeader{
   text-align:center;
   text-shadow: 2px 2px rgb(255, 255, 255) ;
   font-size: calc(1.2rem + 3vw);
@@ -240,7 +240,7 @@ input[type=text]:hover {
   background: #d4d4d4;
 }
 
-#overlaySearch {
+#searchContainer {
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -303,7 +303,7 @@ input[type=text]:hover {
   }
 }
 
-#submit_button {
+#submitButton {
   border-top: 0.05em solid black;
   border-bottom: 0.05em solid black;
 }
