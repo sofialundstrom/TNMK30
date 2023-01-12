@@ -167,7 +167,7 @@
     border: solid 2px black;
     grid-column: 1;
   }
-  .header-right {
+  .headerRight {
     margin-top: 1%;
     grid-column: 2;
     display:grid;
