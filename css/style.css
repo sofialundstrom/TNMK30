@@ -82,7 +82,7 @@
   border-radius: 0.5vw;
   font-weight: bold;
   line-height: 1vw;
-  border:solid 2px black;
+  border:solid 0.15vw black;
   font-family: funwork2;
 }
 
@@ -92,7 +92,7 @@
 
 #headerHelpLink, #headerAboutUsLink{
   background-color: #79a3b9;
-  border:solid 2px black;
+  border:solid 0.15vw black;
   font-size: calc(1rem + 0.7vw)
 }
 
