@@ -812,12 +812,11 @@ h3{
   flex-direction: row;
 }
 
-.name,.personalInfo {
+.name, .personalSet, .personalInfo {
   font-family: funwork2;
   justify-content: space-around;
   margin-left: 13vw;
 }
-
 
 .containerHeader {
   background-color: #8fbbd2;
@@ -840,7 +839,7 @@ h3{
   text-align: center;
   display: flex;
   justify-content: center;
-  font-size: 2vw;
+  font-size: 2.5vw;
   margin: auto;
   font-family: legofont;
   text-align: center;
