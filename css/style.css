@@ -243,13 +243,7 @@ input[type=text]:hover {
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 11%;
-}
-
-@media screen and (max-width: 500px){
-  #searchContainer {
-    margin-top: 8%;
-  }
+  margin-top: 6%;
 }
 
 /* Style the submit button */
@@ -264,48 +258,6 @@ input[type=text]:hover {
   font-family: funwork2;
   border: none;
   font-weight: bold;
-}
-
-@media screen and (max-width: 1400px) and (min-width: 1200px) {
-  .button {
-    width: 30%;
-    height: 210%;
-  }
-}
-
-@media screen and (max-width: 1200px) and (min-width: 900px) {
-  .button {
-    width: 30%;
-    height: 210%;
-  }
-}
-
-@media screen and (max-width: 900px) and (min-width: 700px) {
-  .button {
-    width: 30%;
-    height: 210%;
-  }
-}
-
-@media screen and (max-width: 700px) and (min-width: 600px) {
-  .button {
-    height: 210%;
-    width: 28%;
-  }
-}
-
-@media screen and (max-width: 600px) and (min-width: 500px){
-  .button {
-    height: 220%;
-    width: 25%;
-  }
-}
-
-@media screen and (max-width: 500px){
-  .button {
-    width: 23%;
-    height: 230%;
-  }
 }
 
 #submitButton {
@@ -333,12 +285,6 @@ input[type=text]:hover {
   margin-right: 0%;
 }
 
-@media screen and (max-width: 500px){
-  .searchForm {
-    width: 75%;
-  }
-}
-
 /* style searchbar */
 #search {
   width: 100%;
@@ -352,10 +298,18 @@ input[type=text]:hover {
   #search {
     height: 210%;
   }
+  .button {
+    width: 30%;
+    height: 210%;
+  }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 900px) {
   #search {
+    height: 210%;
+  }
+  .button {
+    width: 30%;
     height: 210%;
   }
 }
@@ -364,11 +318,19 @@ input[type=text]:hover {
   #search {
     height: 210%;
   }
+  .button {
+    width: 30%;
+    height: 210%;
+  }
 }
 
 @media screen and (max-width: 700px) and (min-width: 600px) {
   #search {
     height: 210%;
+  }
+  .button {
+    height: 210%;
+    width: 28%;
   }
 }
 
@@ -376,12 +338,26 @@ input[type=text]:hover {
   #search {
     height: 220%;
   }
+  .button {
+    height: 220%;
+    width: 25%;
+  }
 }
 
 @media screen and (max-width: 500px){
   #search {
     width: 70%;
     height: 230%;
+  }
+  .button {
+    width: 23%;
+    height: 230%;
+  }
+  #searchContainer {
+    margin-top: 8%;
+  }
+  .searchForm {
+    width: 75%;
   }
 }
 
@@ -417,6 +393,7 @@ input[type=text]:hover {
     height: 15em;
     margin-top: 13em;
   }
+  
 }
 
 @media screen and (max-width: 900px) and (min-width: 700px) {
@@ -472,41 +449,6 @@ input[type=text]:hover {
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 1200px) and (min-width: 900px){
-  #helpHeader {
-    width: 36%;
-    height: 2.1em;
-  }
-}
-
-@media screen and (max-width: 900px) and (min-width: 700px){
-  #helpHeader {
-    width: 38%;
-    height: 2.2em;
-  }
-}
-
-@media screen and (max-width: 700px) and (min-width: 600px) {
-  #helpHeader {
-    width: 41%;
-    height: 2em;
-  }
-}
-
-@media screen and (max-width: 600px) and (min-width: 500px) {
-  #helpHeader {
-    width: 46%;
-    height: 2em;
-  }
-}
-
-@media screen and (max-width: 500px){
-  #helpHeader {
-    width: 55%;
-    height: 2em;
-  }
-}
-
 .helpBox{
   box-sizing: border-box;
   background-color: #8fbbd2;
@@ -529,12 +471,24 @@ input[type=text]:hover {
     width: 69%;
     height: 6em;
   }
+  .helpPic {
+    width: 25%;
+    height: 5em;
+  }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 900px) {
   .helpBox {
     width: 71%;
     height: 5.8em;
+  }
+  #helpHeader {
+    width: 36%;
+    height: 2.1em;
+  }
+  .helpPic {
+    width: 26%;
+    height: 5em;
   }
 }
 
@@ -543,12 +497,28 @@ input[type=text]:hover {
     width: 73%;
     height: 6em;
   }
+  #helpHeader {
+    width: 38%;
+    height: 2.2em;
+  }
+  .helpPic {
+    width: 26%;
+    height: 5em;
+  }
 }
 
 @media screen and (max-width: 700px) and (min-width: 600px){
   .helpBox {
     width: 75%;
     height: 6.5em;
+  }
+  #helpHeader {
+    width: 41%;
+    height: 2em;
+  }
+  .helpPic {
+    width: 26%;
+    height: 4.9em;
   }
 }
 
@@ -557,12 +527,28 @@ input[type=text]:hover {
     width: 77%;
     height: 7.2em;
   }
+  #helpHeader {
+    width: 46%;
+    height: 2em;
+  }
+  .helpPic {
+    width: 26%;
+    height: 4.9em;
+  }
 }
 
 @media screen and (max-width: 500px){
   .helpBox {
     width: 70%;
     height: 6em;
+  }
+  #helpHeader {
+    width: 55%;
+    height: 2em;
+  }
+  .helpPic {
+    width: 30%;
+    height: 4.5em;
   }
 }
 
@@ -577,48 +563,6 @@ input[type=text]:hover {
   height: 5.8em;
   border: solid 0.15vw black;
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (max-width: 1400px) and (min-width: 1200px) {
-  .helpPic {
-    width: 25%;
-    height: 5em;
-  }
-}
-
-@media screen and (max-width: 1200px) and (min-width: 900px) {
-  .helpPic {
-    width: 26%;
-    height: 5em;
-  }
-}
-
-@media screen and (max-width: 900px) and (min-width: 700px) {
-  .helpPic {
-    width: 26%;
-    height: 5em;
-  }
-}
-
-@media screen and (max-width: 700px) and (min-width: 600px){
-  .helpPic {
-    width: 26%;
-    height: 4.9em;
-  }
-}
-
-@media screen and (max-width: 600px) and (min-width: 500px){
-  .helpPic {
-    width: 26%;
-    height: 4.9em;
-  }
-}
-
-@media screen and (max-width: 500px){
-  .helpPic {
-    width: 30%;
-    height: 4.5em;
-  }
 }
 
 .helpList{
@@ -669,7 +613,7 @@ input[type=text]:hover {
 
 @media screen and (max-width: 500px){
   .searchContainer {
-    margin-bottom: 3%;
+    margin-bottom: 2%;
   }
 }
 
@@ -718,48 +662,6 @@ a:link, a:hover, a:visited {
   margin-left: 2%;
 }
 
-@media screen and (max-width: 1400px) and (min-width: 1200px) {
-  #legoPartPic, #setImg {
-    width: 11%;
-    height: 3.4em;
-  }
-}
-
-@media screen and (max-width: 1200px) and (min-width: 900px) {
-  #legoPartPic, #setImg {
-    width: 14%;
-    height: 3.8em;
-  }
-}
-
-@media screen and (max-width: 900px) and (min-width: 700px) {
-  #legoPartPic, #setImg {
-    width: 14%;
-    height: 4.2em;
-  }
-}
-
-@media screen and (max-width: 700px) and (min-width: 600px){
-  #legoPartPic, #setImg {
-    width: 15%;
-    height: 5.3em;
-  }
-}
-
-@media screen and (max-width: 600px) and (min-width: 500px){
-  #legoPartPic, #setImg {
-    width: 16%;
-    height: 5.8em;
-  }
-}
-
-@media screen and (max-width: 500px){
-  #legoPartPic, #setImg {
-    width: 17%;
-    height: 6em;
-  }
-}
-
 .set p, .part p{
   margin-right: 1vw;
 }
@@ -788,12 +690,20 @@ a:link, a:hover, a:visited {
     width: 39em;
     height: 4em;
   }
+  #legoPartPic, #setImg {
+    width: 11%;
+    height: 3.4em;
+  }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 900px) {
   .part, .set {
     width: 39em;
     height: 5.2em;
+  }
+  #legoPartPic, #setImg {
+    width: 14%;
+    height: 3.8em;
   }
 }
 
@@ -802,12 +712,20 @@ a:link, a:hover, a:visited {
     width: 40em;
     height: 6em;
   }
+  #legoPartPic, #setImg {
+    width: 14%;
+    height: 4.2em;
+  }
 }
 
 @media screen and (max-width: 700px) and (min-width: 600px){
   .part, .set {
     width: 42em;
     height: 6.8em;
+  }
+  #legoPartPic, #setImg {
+    width: 15%;
+    height: 5.3em;
   }
 }
 
@@ -816,6 +734,10 @@ a:link, a:hover, a:visited {
     width: 44em;
     height: 7.8em;
   }
+  #legoPartPic, #setImg {
+    width: 16%;
+    height: 5.8em;
+  }
 }
 
 @media screen and (max-width: 500px){
@@ -823,6 +745,10 @@ a:link, a:hover, a:visited {
     width: 45em;
     height: 8em;
     margin-top: 3%;
+  }
+  #legoPartPic, #setImg {
+    width: 17%;
+    height: 6em;
   }
 }
 
@@ -988,7 +914,6 @@ h3{
 }
 }
 
-
 @media screen and (max-width: 600px) and (min-width: 500px){
   .aboutUsBox {
     font-size: 2vw;
@@ -1025,8 +950,8 @@ h3{
   display:flex;
   justify-content:center;
   background-color: #79a3b9;
-  width: 65vw;
-  height: 30vw;
+  width: 65%;
+  height: 32em;
   align-items: center;
   border: solid 0.15vw black;
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
@@ -1035,7 +960,7 @@ h3{
 }
 
 #setPageContainer{
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding-top: 2vw;
@@ -1044,14 +969,14 @@ h3{
 #setPic {
   border-radius: 2vw;
   border: solid 0.15vw black;
-  height: 20vw;
-  width: 30vw;
+  height: 21em;
+  width: 100%;
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
 #setInfo {
-  width: 20vw;
-  height: 20vw;
+  width: 30%;
+  height: 21em;
   float: left;
   border-radius: 2vw;
   border: solid 2px black;
@@ -1072,12 +997,136 @@ h4 {
 
 #setInfo p {
   margin:auto;
-  font-size: 1.5vw;
+  font-size: calc(0.5rem + 1vw);
   font-family: funwork2;
   padding-left: 1vw;
   box-shadow: rgb(17 17 26 / 10%) 0px 1px 0px;
 }
 
+@media screen and (max-width: 1600px) and (min-width: 1400px) {
+  .setPageBackground {
+    width: 67%;
+    height: 28.5em;
+    margin-top: 3%;
+  }
+  #setPic {
+  height: 20em;
+  width: 105%;
+  }
+  #setInfo {
+    width: 31%;
+    height: 20em;
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  .setPageBackground {
+    width: 70%;
+    height: 27em;
+    margin-top: 4.5%;
+  }
+  #setPic {
+    height: 20em;
+    width: 100%;
+  }
+  #setInfo {
+    width: 31%;
+    height: 20em;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  .setPageBackground {
+    width: 75%;
+    height: 25em;
+    margin-top: 5%;
+  }
+  #setPic {
+    height: 19em;
+    width: 95%;
+  }
+  #setInfo {
+    width: 30%;
+    height: 19em;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) {
+  .setPageBackground {
+    width: 79%;
+    height: 24em;
+    margin-top: 5%;
+  }
+  #setPic {
+    height: 17em;
+    width: 85%;
+  }
+  #setInfo {
+    width: 27%;
+    height: 16em;
+  }
+
+}
+
+@media screen and (max-width: 700px) and (min-width: 600px){
+  .setPageBackground {
+    width: 80%;
+    height: 33em;
+    margin-top: 6%;
+    display: grid;
+  }
+  #setPic {
+    height: 15em;
+    width: 120%;
+    grid-row: 1
+;
+  }
+  #setInfo {
+    width: 140%;
+    height:12em;
+    grid-row: 2;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 500px){
+  .setPageBackground {
+    width: 80%;
+    height: 35em;
+    margin-top: 6%;
+    display: grid;
+  }
+  #setPic {
+    height: 15em;
+    width: 120%;
+    grid-row: 1 / 2;
+  }
+  #setInfo {
+    width: 140%;
+    height:12em;
+    grid-row: 2;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .setPageBackground {
+    width: 80%;
+    height: 35em;
+    margin-top: 7%;
+    display: grid;
+  }
+  #setPic {
+    height: 15em;
+    width: 120%;
+    grid-row: 1 / 2;
+  }
+  #setInfo {
+    width: 140%;
+    height:12em;
+    grid-row: 2;
+    text-align: center;
+  }
+}
 
 /*********************************/
 /* DARK/LIGHT MODE AND CONTENTS INSIDE IT */
