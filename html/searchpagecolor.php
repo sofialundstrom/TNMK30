@@ -33,11 +33,11 @@
     }
 
     // Ask for information related to part orded by ColorID
-    $sql_qurry = "SELECT inventory.Quantity, colors.Colorname, parts.Partname, inventory.ColorID, inventory.ItemtypeID, inventory.ItemID
+    $sqlQuery = "SELECT inventory.Quantity, colors.Colorname, parts.Partname, inventory.ColorID, inventory.ItemtypeID, inventory.ItemID
     FROM inventory, colors, parts WHERE inventory.ColorID=colors.ColorID AND inventory.ItemID=parts.PartID AND inventory.ItemID='$part' AND inventory.ItemtypeID='P' AND parts.PartID=inventory.ItemID
     ORDER BY ColorID ASC";
 
-    $contents = mysqli_query ($connection, $sql_qurry );
+    $contents = mysqli_query ($connection, $sqlQuery );
     $row = mysqli_fetch_array($contents);
 
     // Define current variabels
@@ -47,12 +47,16 @@
     $parts = $row['PartID'];
     $partname = $row['Partname'];
 
+    // Ask for information to be able to count how many colors there are
+    $sqlCounter = "SELECT DISTINCT ColorID FROM inventory WHERE ItemID = '$part'";
+    $contentsCounter = mysqli_query ($connection, $sqlCounter);
+
+    // Retrive all distinct colors that the part has, this will later be displayed
+    $sqlColor = "SELECT DISTINCT ColorID FROM inventory WHERE ItemID = '$part' LIMIT $offset, 5";
+    $colorContents = mysqli_query($connection, $sqlColor);
+    
     // Container to use flex box on information boxes
     print "<div class='container'>";
-
-        // Retrive all distinct colors that the part has
-        $sqlColor = "SELECT DISTINCT ColorID FROM inventory WHERE ItemID = '$part' LIMIT $offset, 5";
-        $colorContents = mysqli_query($connection, $sqlColor);
 
         $counter = 0;
 
@@ -101,8 +105,8 @@
             $offsetPrev = $offset - 5;
             print("<a id='prev' href='searchpagecolor.php?part=$item&offset=$offsetPrev'> Prev </a>");
         }
-        // Only show next if the page is "full" of information boxes
-        if ($counter == 5) {
+        // Only show next on the page if there are more colors left than used previous
+        if (mysqli_num_rows($contentsCounter) - ($offset + $counter) > 0) {
             $offsetNext = $offset + 5;
             print("<a id='next' href='searchpagecolor.php?part=$item&offset=$offsetNext'> Next </a>");
         }
