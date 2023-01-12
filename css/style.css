@@ -288,6 +288,7 @@ input[type=text]:hover {
   display:flex;
   margin-bottom: 1vw;
   margin-right: 0%;
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 /* style searchbar */
 #search {
@@ -664,6 +665,7 @@ a:link, a:hover, a:visited {
   height: 6vw;
   border-radius: 1vw;
   margin-left: 2%;
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
 .set p, .part p{
