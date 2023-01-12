@@ -162,21 +162,20 @@
     display: grid;
   }
   .logo{
-    width: 13em;
-    height: 13em;
+    width: 13.5em;
+    height: 13.5em;
     border: solid 2px black;
     grid-column: 1;
   }
   .headerRight {
-    margin-top: 1%;
+    margin-top: 3%;
     grid-column: 2;
     display:grid;
-    margin-right: 5%;
+    margin-right: 2em;
   }
   #toggle-mode-button {
     grid-row: 3;
     height: 1.7em;
-    width: 8em;
     margin-top: 5%;
     text-align: center;
   }
@@ -185,7 +184,7 @@
   }
   #headerAboutUsLink {
     grid-row: 2;
-    width: 7em;
+    text-align: center;
   }
 }
 
@@ -508,7 +507,7 @@ input[type=text]:hover {
   .searchBackgroundBox {
     width: 53%;
     height: 10em;
-    margin-top: 12em;
+    margin-top: 10em;
   }
 }
 
@@ -516,7 +515,7 @@ input[type=text]:hover {
   .searchBackgroundBox {
     width: 65%;
     height: 9em;
-    margin-top: 8.5em;
+    margin-top: 8em;
   }
 }
 
