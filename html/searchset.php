@@ -5,7 +5,7 @@
 <div class="searchContainer">
     <form class="searchForm" action="searchpagepart.php" method="POST">
         <!-- Required means user can't search if search bar empty -->
-        <input class="search" type="search" name="search" placeholder="    Search..." required>
+        <input class="search" type="search" name="search" placeholder="Search..." required>
         <button class="button" id="searchButton" type="submit">Search</button>
     </form>
 </div>

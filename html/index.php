@@ -9,7 +9,7 @@
         </div>
         <form class="indexSearchForm" action="searchpagepart.php" method="POST">
             <!-- Required makes sure you can't enter nothing and go to next page -->
-            <input type="search" name="search" id="search" placeholder="    Search your lego piece" required>
+            <input type="search" name="search" id="search" placeholder="Search your lego piece" required>
             <button class="button" id="submitButton" type="submit">Search</button>
             <button class="button" id="helpButton">?</button>
         </form>

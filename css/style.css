@@ -1003,10 +1003,11 @@ h4 {
 
 #setInfo p {
   margin:auto;
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(0.25rem + 1vw);
   font-family: funwork2;
   padding-left: 1vw;
   box-shadow: rgb(17 17 26 / 10%) 0px 1px 0px;
+  overflow:auto;
 }
 
 @media screen and (max-width: 1600px) and (min-width: 1400px) {
