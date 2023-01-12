@@ -60,13 +60,13 @@ toggleModeButton.addEventListener('click', function () {
 /*********************************/
 // The search input element
 const searchInput = document.getElementById('search');
-console.log(searchInput)
+console.log(searchInput);
 // Add an event listener to the search input element to listen for when the user inputs text
 searchInput.addEventListener('input', ASB);
   // Get the value of the search input
- function ASB (evt){ 
+ function ASB (){ 
   let value = this.value.trim();
-  console.log(value)
+  console.log(value);
   // If the search input is empty, reset the list of suggestions
   if (value.length === 0) {
     //searchInput;
@@ -81,7 +81,6 @@ searchInput.addEventListener('input', ASB);
   xhttp.onload = function(){
     //Store the response from the server as a variable
     const searchdata = xhttp.response;
-    
     //Use jQuery's autocomplete function to add autocomplete functionality to the search input field
     $("#search").autocomplete({
       //Use the server's resoinse as the source for the autocomplete options
@@ -94,7 +93,7 @@ searchInput.addEventListener('input', ASB);
   };
   //Send the request
   xhttp.send();
-};
+}
 
 /*********/
 /* MODAL */
@@ -112,19 +111,19 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
 
 
 /*********/

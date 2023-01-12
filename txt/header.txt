@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE  php>
 <html lang="en">
 <head>
     <link href="../css/style.css" media="screen" rel="stylesheet" type="text/css">
@@ -18,11 +18,11 @@
 </head>
 <body>
     <div class="header">
-        <a href="../html/index.php" id="headerLogo"><img src="../bilder/logo-light.png" id="imageId" class="logo" alt="LOGO"></a>
+        <a href="../php/index.php" id="headerLogo"><img src="../bilder/logo-light.png" id="imageId" class="logo" alt="LOGO"></a>
         <div class="headerRight">
           <button id="toggle-mode-button">Dark Mode</button>
-          <a class="headerButton" id="headerHelpLink" href="../html/help.php">HELP</a>
-          <a class="headerButton" id="headerAboutUsLink" href="../html/aboutus.php">ABOUT US</a>
+          <a class="headerButton" id="headerHelpLink" href="../php/help.php">HELP</a>
+          <a class="headerButton" id="headerAboutUsLink" href="../php/aboutus.php">ABOUT US</a>
         </div>
     </div>
 
