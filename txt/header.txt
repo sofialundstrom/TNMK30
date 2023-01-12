@@ -20,7 +20,7 @@
 <body>
     <div class="header">
         <a href="../html/index.php" id="headerLogo"><img src="../bilder/logo-light.png" id="imageId" class="logo" alt="LOGO"></a>
-        <div class="header-right">
+        <div class="headerRight">
           <button id="toggle-mode-button">Dark Mode</button>
           <a class="headerButton" id="headerHelpLink" href="../html/help.php">HELP</a>
           <a class="headerButton" id="headerAboutUsLink" href="../html/aboutus.php">ABOUT US</a>
