@@ -6,7 +6,7 @@
     <form class="searchForm" action="searchpagepart.php" method="POST">
         <!-- Required means user can't search if search bar empty -->
         <input class="search" type="search" name="search" placeholder="Search..." required>
-        <button class="button" type="submit">Search</button>
+        <button class="button" id="searchButton" type="submit">Search</button>
     </form>
 </div>
 
@@ -33,12 +33,19 @@
         $offset = $_GET["offset"];
     }
 
-    // Ask for information about parts and sets orded by quantity of parts
-    $sql_qurry = "SELECT inventory.ColorID, inventory.SetID, inventory.Quantity, inventory.ItemtypeID, inventory.ItemID, sets.Setname FROM inventory, sets
+    // Ask for information to be able to count how many sets there are
+    $sqlCounter = "SELECT inventory.ColorID, inventory.SetID, inventory.ItemID, sets.Setname FROM inventory, sets
+    WHERE inventory.ItemID='$part' AND inventory.ColorID='$color' AND sets.SetID=inventory.SetID
+    ORDER BY Quantity DESC";
+
+    $contentsCounter = mysqli_query ($connection, $sqlCounter);
+
+    // Ask for information about parts and sets orded by quantity of parts, this will later be displayed
+    $sqlQuery = "SELECT inventory.ColorID, inventory.SetID, inventory.Quantity, inventory.ItemtypeID, inventory.ItemID, sets.Setname FROM inventory, sets
     WHERE inventory.ItemID='$part' AND inventory.ColorID='$color' AND sets.SetID=inventory.SetID
     ORDER BY Quantity DESC LIMIT $offset,  5";
 
-    $contents = mysqli_query ($connection, $sql_qurry );
+    $contents = mysqli_query ($connection, $sqlQuery);
 
     // Container to use flex box on information boxes
     print "<div class='container'>";
@@ -63,7 +70,6 @@
             // Counts how many objects are displayed
             $counter++;
 
-
             // Print out information box with info about current set
             // There is a link on the whole box to a site with information about the specific set
             print("
@@ -84,8 +90,8 @@
             $offsetPrev = $offset - 5;
             print("<a id='prev' href='searchset.php?part=$item&color=$color&offset=$offsetPrev'> Prev </a>");
         }
-        // Only show next if the page is "full" of information boxes
-        if ($counter == 5) {
+        // Only show next on the page if there are more sets left than used previous
+        if (mysqli_num_rows($contentsCounter) - ($offset + $counter) > 0) {
             $offsetNext = $offset + 5;
             print("<a id='next' href='searchset.php?part=$item&color=$color&offset=$offsetNext'> Next </a>");
         }

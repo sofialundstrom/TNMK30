@@ -6,7 +6,7 @@
     <form class="searchForm" action="searchpagepart.php" method="POST">
         <!-- Required means user can't search if search bar empty -->    
         <input class="search" type="search" name="search" placeholder="Search..." required>
-        <button class="button" type="submit">Search</button>
+        <button class="button" id="searchButton" type="submit">Search</button>
     </form>
 </div>
 
@@ -55,7 +55,7 @@
         <div id='setPageContainer'>
             <div class='setPageBackground'>
                 <div class='setImage'>
-                    <img src='$prefix/SL/$set.jpg' id='setPic' alt='Set picture'>
+                    <img src='$prefix/SL/$set.jpg' id='setPic' alt='Set picture' onerror=this.src='../bilder/noneitem.lego.png'>
                 </div> 
                 <div id='setInfo'>
                     <h4 class='settitle'> Set: $setname</h4><br><p> ID: $set</p><br><p> Released $year</p><br><p> Category: $catName</p><br><p> Amount of $partname pieces needed: $quantity</p>

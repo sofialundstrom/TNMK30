@@ -31,9 +31,9 @@
             <div>
                 <h3 class="name">Abdiladiif Musse</h3>
                 <p class="personalSet">Favorite set: Bird of Paradise</p>
-                    <div class="popup" style="display:none;" >
-                    <img src="../bilder/set.bird.jpg.jpg" alt="Popup Image">
-                    </div>
+                <div class="popup" style="display:none;" >
+                    <img src="../bilder/set.flower.jpg" alt="Popup Image">
+                </div>
                 <p class="personalInfo"> E-post: adbmu543@student.liu.se</p>
             </div>
         </div>

@@ -1,5 +1,5 @@
     <div class="footer">
-        <p id="pFoot" >Ⓒ2023 Sweden, All Rights Reserved</p>
+        <p id="pFoot" >&copy; 2023<br><br>Ivarsson Vanessa, Lundström Sofia, Abdiladiif Mousse, Sjöström Hanna, Tärnbrant Elsa  </p>
     </div>
 </body>
 </html>
