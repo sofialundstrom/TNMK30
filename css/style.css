@@ -82,7 +82,7 @@
   border-radius: 0.5vw;
   font-weight: bold;
   line-height: 1vw;
-  border:solid 2px black;
+  border:solid 0.15vw black;
   font-family: funwork2;
 }
 
@@ -92,7 +92,7 @@
 
 #headerHelpLink, #headerAboutUsLink{
   background-color: #79a3b9;
-  border:solid 2px black;
+  border:solid 0.15vw black;
   font-size: calc(1rem + 0.7vw)
 }
 
@@ -180,19 +180,26 @@
     grid-column: 2;
     display:grid;
     margin-right: 2em;
+    justify-items: center;
+    align-items: baseline;
+    justify-content: space-around;
+    align-content: space-evenly;
   }
   #toggle-mode-button {
     grid-row: 3;
     height: 1.7em;
-    margin-top: 5%;
     text-align: center;
   }
   #headerHelpLink {
     grid-row: 1;
+    padding-left: 1.7em;
+    padding-right: 1.7em;
   }
   #headerAboutUsLink {
     grid-row: 2;
     text-align: center;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
   }
 }
 
