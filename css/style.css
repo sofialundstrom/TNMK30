@@ -279,13 +279,18 @@ input[type=text]:hover {
   background: rgb(189, 213, 226);
 }
 
-.searchForm{
+.indexSearchForm{
   display:flex;
   margin-bottom: 0.05vw;
   width: 75%;
   margin-right: 0%;
 }
 
+.searchForm{
+  display:flex;
+  margin-bottom: 0.05vw;
+  margin-right: 0%;
+}
 /* style searchbar */
 #search {
   width: 100%;
@@ -357,7 +362,7 @@ input[type=text]:hover {
   #searchContainer {
     margin-top: 8%;
   }
-  .searchForm {
+  .indexSearchForm {
     width: 75%;
   }
 }
