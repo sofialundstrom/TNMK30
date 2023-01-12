@@ -17,6 +17,7 @@
 /*********************************/
 
 .header {
+  display: table;
   overflow: hidden;
   background-color: #8fbbd2;
   padding: 0.5vw 0.5vw;
@@ -44,7 +45,7 @@
   height: 3em;
   border: solid 0.07em black;
   border-radius: 1vw;
-  float:right;
+  float:left;
   padding:0;
   
 }
@@ -66,7 +67,7 @@
   float: right;
   margin-right: 4.5em;
   display:flex;
-  margin-top: 2em;
+  margin-top:2em;
 }
 
 #toggle-mode-button, .headerButton {
@@ -382,6 +383,7 @@ input[type=text]:hover {
   display:flex;
   margin-bottom: 1vw;
   margin-right: 0%;
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
 /* style searchbar */
@@ -759,6 +761,7 @@ a:link, a:hover, a:visited {
   height: 6vw;
   border-radius: 1vw;
   margin-left: 2%;
+  box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
 .set p, .part p{
@@ -1095,10 +1098,11 @@ h4 {
 
 #setInfo p {
   margin:auto;
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(0.25rem + 1vw);
   font-family: funwork2;
   padding-left: 1vw;
   box-shadow: rgb(17 17 26 / 10%) 0px 1px 0px;
+  overflow:auto;
 }
 
 @media screen and (max-width: 1600px) and (min-width: 1400px) {
