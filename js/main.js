@@ -125,3 +125,16 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+/*********/
+/* HIHI */
+/*********/
+document.getElementById("hillsideHouse").addEventListener("mouseover", function(){
+    document.getElementById("hillsideHousePicture").style.visibility = "visible";
+    document.getElementById("hillsideHousePicture").style.opacity = "1";
+});
+document.getElementById("hillsideHouse").addEventListener("mouseout", function(){
+    document.getElementById("hillsideHousePicture").style.visibility = "hidden";
+    document.getElementById("hillsideHousePicture").style.opacity = "0";
+});
