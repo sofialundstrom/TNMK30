@@ -100,6 +100,13 @@
   margin-right: 1vw;
   display:flex;
   margin-left: 1vw;
+  padding-left: 2em;
+  padding-right:2em;
+}
+
+#headerAboutUsLink{
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 /* Add media queries for responsiveness - when the screen is 400px wide or less, stack the links on top of each other */
@@ -155,11 +162,11 @@
 
 @media screen and (max-width: 600px) and (min-width: 500px)  {
   .header {
-    height: 9.5em;
+    height: 8em;
   }
   .logo{
-    width: 11em;
-    height: 11em;
+    width: 8.5em;
+    height: 8.5em;
     border: solid 0.15vw black;
   }
 }
