@@ -13,6 +13,7 @@
             <button class="button" id="submitButton" type="submit">Search</button>
             <button class="button" id="helpButton">?</button>
         </form>
+        
     </div>
 </div>        
 

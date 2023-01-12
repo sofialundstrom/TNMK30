@@ -587,7 +587,7 @@ input[type=text]:hover {
     width: 69%;
     height: 6em;
   }
-  .helpPic {
+  #helpPic1 ,#helpPic2,#helpPic3,#helpPic4,#helpPic5 {
     width: 25%;
     height: 5em;
   }
@@ -602,7 +602,7 @@ input[type=text]:hover {
     width: 36%;
     height: 2.1em;
   }
-  .helpPic {
+  #helpPic1 ,#helpPic2,#helpPic3,#helpPic4,#helpPic5 {
     width: 26%;
     height: 5em;
   }
@@ -617,7 +617,7 @@ input[type=text]:hover {
     width: 38%;
     height: 2.2em;
   }
-  .helpPic {
+  #helpPic1 ,#helpPic2,#helpPic3,#helpPic4,#helpPic5 {
     width: 26%;
     height: 5em;
   }
@@ -632,7 +632,7 @@ input[type=text]:hover {
     width: 41%;
     height: 2em;
   }
-  .helpPic {
+  #helpPic1 ,#helpPic2,#helpPic3,#helpPic4,#helpPic5 {
     width: 26%;
     height: 4.9em;
   }
@@ -647,7 +647,7 @@ input[type=text]:hover {
     width: 46%;
     height: 2em;
   }
-  .helpPic {
+  #helpPic1 ,#helpPic2,#helpPic3,#helpPic4,#helpPic5 {
     width: 26%;
     height: 4.9em;
   }
@@ -662,13 +662,13 @@ input[type=text]:hover {
     width: 55%;
     height: 2em;
   }
-  .helpPic {
+  #helpPic1 ,#helpPic2,#helpPic3,#helpPic4,#helpPic5 {
     width: 30%;
     height: 4.3em;
   }
 }
 
-.helpPic {
+#helpPic1 ,#helpPic2,#helpPic3,#helpPic4,#helpPic5{
   box-sizing: border-box;
   border-radius: 2vw;
   margin: 0.2vw;

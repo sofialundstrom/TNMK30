@@ -7,31 +7,31 @@
 <!-- A container for all information boxes -->
 <div>
     <div class="helpBox">
-        <img src="../bilder/light.helppic1.jpg" class="helpPic" alt="bild">
+        <img src="../bilder/light.helppic1.jpg" id="helpPic1" alt="bild">
         <div class="helpList">
             <p>1. Enter your piece in the searchbox</p>
         </div>
     </div>
     <div class="helpBox">
-        <img src="../bilder/light.helppic2.jpg" class="helpPic" alt="bild">
+        <img src="../bilder/light.helppic2.jpg" id="helpPic2" alt="bild">
         <div class="helpList">
             <p>2. Click on your piece</p>  
         </div>
     </div>
     <div class="helpBox">
-        <img src="../bilder/light.helppic3.jpg" class="helpPic" alt="bild">
+        <img src="../bilder/light.helppic3.jpg" id="helpPic3" alt="bild">
         <div class="helpList">
             <p>3. Click on the color of your choice.</p>  
         </div>
     </div>
     <div class="helpBox">
-        <img src="../bilder/light.helppic4.jpg" class="helpPic" alt="bild">
+        <img src="../bilder/light.helppic4.jpg" id="helpPic4" alt="bild">
         <div class="helpList">
             <p>4. Chose a set</p>  
         </div>
     </div>
     <div class="helpBox">
-        <img src="../bilder/light.helppic5.jpg" class="helpPic" alt="bild">
+        <img src="../bilder/light.helppic5.jpg" id="helpPic5" alt="bild">
         <div class="helpList">
             <p>5. See info about set containing piece</p>  
         </div>

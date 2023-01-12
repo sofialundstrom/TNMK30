@@ -16,6 +16,11 @@ if (darkMode === 'true') {
   toggleModeButton.innerText = 'Light Mode';
   //Change the source of the image with id 'ImageId' to the dark mode logo
   document.getElementById("imageId").src="../bilder/logo-dark.png";
+  document.getElementById("helpPic1").src="../bilder/dark.helppic1.jpg";
+  document.getElementById("helpPic2").src="../bilder/dark.helppic2.jpg";
+  document.getElementById("helpPic3").src="../bilder/dark.helppic3.jpg";
+  document.getElementById("helpPic4").src="../bilder/dark.helppic4.jpg";
+  document.getElementById("helpPic5").src="../bilder/dark.helppic5.jpg";
 }
 
 //Add an event listener to the toggle mode button
@@ -28,6 +33,11 @@ toggleModeButton.addEventListener('click', function() {
     darkMode = 'false';
     localStorage.setItem('darkMode', 'false');
     document.getElementById("imageId").src="../bilder/logo-light.png";
+    document.getElementById("helpPic1").src="../bilder/light.helppic1.jpg";
+    document.getElementById("helpPic2").src="../bilder/light.helppic2.jpg";
+    document.getElementById("helpPic3").src="../bilder/light.helppic3.jpg";
+    document.getElementById("helpPic4").src="../bilder/light.helppic4.jpg";
+    document.getElementById("helpPic5").src="../bilder/light.helppic5.jpg";
   } else {
     // For when darkMode is enable
     document.body.classList.add('dark-mode');
@@ -35,6 +45,11 @@ toggleModeButton.addEventListener('click', function() {
     darkMode = 'true';
     localStorage.setItem('darkMode', 'true');
     document.getElementById("imageId").src="../bilder/logo-dark.png";
+    document.getElementById("helpPic1").src="../bilder/dark.helppic1.jpg";
+    document.getElementById("helpPic2").src="../bilder/dark.helppic2.jpg";
+    document.getElementById("helpPic3").src="../bilder/dark.helppic3.jpg";
+    document.getElementById("helpPic4").src="../bilder/dark.helppic4.jpg";
+    document.getElementById("helpPic5").src="../bilder/dark.helppic5.jpg";
   }
 });
 
@@ -78,3 +93,33 @@ searchInput.addEventListener('input', ASB);
   //Send the request
   xhttp.send();
 };
+
+/*********/
+/* MODAL */
+/*********/
+
+// Get the modal
+var modal = document.getElementById("mymodal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("helpButton");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
