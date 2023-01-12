@@ -479,12 +479,13 @@ input[type=text]:hover {
   justify-content: center;
   align-items: center;
   width: 36%;
-  height: 27.5em;
+  height: 22.5em;
   border: solid 0.15vw black;
   border-radius: 1.5vw;
   margin: auto;
   margin-top: 8%;
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
+  padding-top: 1.5%;
 }
 
 @media screen and (max-width: 1400px) and (min-width: 1200px) {
