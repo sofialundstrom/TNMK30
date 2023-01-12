@@ -174,19 +174,26 @@
     grid-column: 2;
     display:grid;
     margin-right: 2em;
+    justify-items: center;
+    align-items: baseline;
+    justify-content: space-around;
+    align-content: space-evenly;
   }
   #toggle-mode-button {
     grid-row: 3;
     height: 1.7em;
-    margin-top: 5%;
     text-align: center;
   }
   #headerHelpLink {
     grid-row: 1;
+    padding-left: 1.7em;
+    padding-right: 1.7em;
   }
   #headerAboutUsLink {
     grid-row: 2;
     text-align: center;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
   }
 }
 
