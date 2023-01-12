@@ -21,7 +21,7 @@
   overflow: hidden;
   background-color: #8fbbd2;
   padding: 0.5vw 0.5vw;
-  border-bottom: solid 2px black;
+  border-bottom: solid 0.15vw black;
   position: relative;
   height: 8.5em;
 }
@@ -110,7 +110,7 @@
   .logo{
     width: 4em;
     height: 4em;
-    border: solid 2px black;
+    border: solid 0.15vw black;
   }
   .headerRight {
     margin-top: 2.5em;
@@ -124,7 +124,7 @@
   .logo{
     width: 4em;
     height: 4em;
-    border: solid black 2px;
+    border: solid black 0.15vw;
   }
   .headerRight {
     margin-top: 2.5em;
@@ -138,7 +138,7 @@
   .logo{
     width: 7em;
     height: 7em;
-    border: solid 2px black;
+    border: solid 0.15vw black;
   }
 }
 
@@ -149,7 +149,7 @@
   .logo{
     width: 9.5em;
     height: 9.5em;
-    border: solid 2px black;
+    border: solid 0.15vw black;
   }
 }
 
@@ -160,7 +160,7 @@
   .logo{
     width: 11em;
     height: 11em;
-    border: solid 2px black;
+    border: solid 0.15vw black;
   }
 }
 
@@ -172,7 +172,7 @@
   .logo{
     width: 13.5em;
     height: 13.5em;
-    border: solid 2px black;
+    border: solid 0.15vw black;
     grid-column: 1;
   }
   .headerRight {
@@ -252,7 +252,7 @@
   margin:auto;
   margin-top: 1vw;
   margin-bottom: 1.5vw;
-  border: solid black 2px;
+  border: solid black 0.15vw;
   border-radius: 1.5vw;
 }
 
@@ -286,7 +286,7 @@
     margin-top: auto;
     background-color: #8fbbd2;
     padding: 1em 0.5em;
-    border-top: solid 2px black;
+    border-top: solid 0.15vw black;
     margin-bottom: 0;
     overflow:auto;
   }
@@ -318,7 +318,7 @@ body{
 
 #mainHeader{
   text-align:center;
-  text-shadow: 2px 2px rgb(255, 255, 255) ;
+  text-shadow: 0.15vw  rgb(255, 255, 255) ;
   font-size: calc(1.2rem + 2.5vw);
   font-family: legofont;
   margin-block-start: 0em;
@@ -479,8 +479,8 @@ input[type=text]:hover {
   justify-content: center;
   align-items: center;
   width: 36%;
-  height: 21.5em;
-  border: solid 2px black;
+  height: 27.5em;
+  border: solid 0.15vw black;
   border-radius: 1.5vw;
   margin: auto;
   margin-top: 8%;
@@ -1072,13 +1072,14 @@ h3{
   display: flex;
   justify-content: center;
   padding-top: 2vw;
+  margin-bottom:2em;
 }
 
 #setPic {
   border-radius: 2vw;
   border: solid 0.15vw black;
-  height: 25em;
-  width: 110%;
+  height: 21em;
+  width: 100%;
   box-shadow: 0.5vw 0.5vw 0.1vw 0.05vw rgba(0, 0, 0, 0.2);
 }
 
@@ -1184,13 +1185,15 @@ h4 {
     margin-top: 6%;
     display: grid;
     align-content: space-evenly;
+    justify-items: center;
   }
   #setPic {
     height: 15em;
     grid-row: 1;
+    width:100%;
   }
   #setInfo {
-    width: 100%;
+    width: 90%;
     height:12em;
     grid-row: 2;
   }
@@ -1203,13 +1206,16 @@ h4 {
     margin-top: 6%;
     display: grid;
     align-content: space-evenly;
+    justify-items: center;
   }
   #setPic {
     height: 15em;
     grid-row: 1 / 2;
+    width:80%;
+    margin-left: 2.3em;
   }
   #setInfo {
-    width: 97%;
+    width: 80%;
     height:12em;
     grid-row: 2;
     text-align: center;
