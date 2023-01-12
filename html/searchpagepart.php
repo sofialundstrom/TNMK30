@@ -1,4 +1,5 @@
 <?php
+
     // Start session
     session_start();
 
@@ -41,10 +42,16 @@ include('../txt/header.txt'); ?>
 <?php
 
     // Selects distinct parts and information related to search
-    $sql_qurry = "SELECT DISTINCT * FROM parts WHERE (Partname LIKE '%".$search."%' OR PartID LIKE '%".$search."%')
+    $sqlQuery = "SELECT DISTINCT * FROM parts WHERE (Partname LIKE '%".$search."%' OR PartID LIKE '%".$search."%')
     ORDER BY length(Partname) ASC LIMIT $offset, 5";
 
-    $contents = mysqli_query ($connection, $sql_qurry );
+    $contents = mysqli_query ($connection, $sqlQuery);
+
+    // Ask for information to be able to count how many parts there are
+    $sqlCounter = "SELECT DISTINCT * FROM parts WHERE (Partname LIKE '%".$search."%' OR PartID LIKE '%".$search."%')
+    ORDER BY length(Partname) ASC";
+
+    $contentsCounter = mysqli_query ($connection, $sqlCounter);
 
     // Writes an error message if there are no results
     if (!$contents || mysqli_num_rows($contents) == 0) {
@@ -60,6 +67,7 @@ include('../txt/header.txt'); ?>
     print "<div class='container'>";
 
         $counter = 0;
+        $notDisplayed = 0;
 
         // Does this loop while there is content to display
         while($row = mysqli_fetch_array($contents)) {
@@ -99,6 +107,7 @@ include('../txt/header.txt'); ?>
                 // Counts how many objects are displayed to help with pagination
                 $counter++;
 
+
                 // Prints out a information box with info about PartID and partname, and a picture of the part
                 // There is also a link on the whole box to new site where color for part is chosen
                 print("
@@ -108,7 +117,10 @@ include('../txt/header.txt'); ?>
                         </div>
                     </a>");
             }
-        }
+            else {
+                $notDisplayed++;
+            }
+        } 
     print "</div>";
 
     // So you can press prev or next if it exists
@@ -119,8 +131,8 @@ include('../txt/header.txt'); ?>
             $offsetPrev = $offset - 5;
             print("<a id='prev' href='searchpagepart.php?search=$search&offset=$offsetPrev'> Prev </a>");
         }
-        // Only show next if the page is "full" of information boxes
-        if ($counter == 5) {
+        // Only show next on the page if there are more parts left than used previous 
+        if (mysqli_num_rows($contentsCounter) - ($offset + $counter + $notDisplayed) > 0) {
             $offsetNext = $offset + 5;
             print("<a id='next' href='searchpagepart.php?search=$search&offset=$offsetNext'> Next </a>");
         }
