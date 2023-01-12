@@ -61,7 +61,8 @@
 
 
 /* Float the link section to the right */
-.header-right {
+.headerRight {
+  position: block;
   float: right;
   margin-right: 4.5vw;
   margin-top: 1.8vw;
@@ -108,7 +109,7 @@
     display: block;
     text-align: left;
   }
-  .header-right {
+  .headerRight {
     float: none;
   }
 }
