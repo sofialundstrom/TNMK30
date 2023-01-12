@@ -16,11 +16,7 @@ if (darkMode === 'true') {
   toggleModeButton.innerText = 'Light Mode';
   //Change the source of the image with id 'ImageId' to the dark mode logo
   document.getElementById("imageId").src="../bilder/logo-dark.png";
-  document.getElementById("helpPic1").src="../bilder/dark.helppic1.jpg";
-  document.getElementById("helpPic2").src="../bilder/dark.helppic2.jpg";
-  document.getElementById("helpPic3").src="../bilder/dark.helppic3.jpg";
-  document.getElementById("helpPic4").src="../bilder/dark.helppic4.jpg";
-  document.getElementById("helpPic5").src="../bilder/dark.helppic5.jpg";
+
 }
 
 //Add an event listener to the toggle mode button
