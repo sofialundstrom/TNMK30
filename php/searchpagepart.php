@@ -117,6 +117,7 @@ include('../txt/header.txt'); ?>
                         </div>
                     </a>");
             }
+            // Counts items not showed to help pagination
             else {
                 $notDisplayed++;
             }

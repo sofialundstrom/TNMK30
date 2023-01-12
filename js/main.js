@@ -10,13 +10,14 @@ var darkMode = localStorage.getItem('darkMode');
 
 //Check if  the dark mode is enabled
 if (darkMode === 'true') {
-  //Add the 'dark-mode' class to the body element
+    //Add the 'dark-mode' class to the body element
     document.body.classList.add('dark-mode');
-  //Change the text of the toggle mode button to 'Light Mode'
+    //Change the text of the toggle mode button to 'Light Mode'
     toggleModeButton.innerText = 'Light Mode';
-  //Change the source of the image with id 'ImageId' to the dark mode logo
+    //Change the source of the image with id 'ImageId' to the dark mode logo
     document.getElementById("imageId").src = "../bilder/logo-dark.png";
 
+    //Change the source of the image with ID "helppic.." to the dark picture
     document.getElementById("helpPic1").src = "../bilder/dark.helppic1.jpg";
     document.getElementById("helpPic2").src = "../bilder/dark.helppic2.jpg";
     document.getElementById("helpPic3").src = "../bilder/dark.helppic3.jpg";
@@ -46,7 +47,7 @@ toggleModeButton.addEventListener('click', function () {
         toggleModeButton.innerText = 'Light Mode';
         darkMode = 'true';
         localStorage.setItem('darkMode', 'true');
-        document.getElementById("imageId").src= "../bilder/logo-dark.png";
+        document.getElementById("imageId").src = "../bilder/logo-dark.png";
         document.getElementById("helpPic1").src = "../bilder/dark.helppic1.jpg";
         document.getElementById("helpPic2").src = "../bilder/dark.helppic2.jpg";
         document.getElementById("helpPic3").src = "../bilder/dark.helppic3.jpg";
@@ -125,15 +126,3 @@ window.onclick = function(event) {
   }
 };
 
-
-/*********/
-/* HIHI */
-/*********/
-document.getElementById("hillsideHouse").addEventListener("mouseover", function(){
-    document.getElementById("hillsideHousePicture").style.visibility = "visible";
-    document.getElementById("hillsideHousePicture").style.opacity = "1";
-});
-document.getElementById("hillsideHouse").addEventListener("mouseout", function(){
-    document.getElementById("hillsideHousePicture").style.visibility = "hidden";
-    document.getElementById("hillsideHousePicture").style.opacity = "0";
-});

@@ -3,12 +3,12 @@
 //Connect to the database
 $connection = mysqli_connect("mysql.itn.liu.se","lego","","lego");
 
-//Chech if the connection was successful
+//Check if the connection was successful
 if(!$connection){
     die('MySQL connection error');
 }
 
-// Checj if the 'SearchInput' parameter is set in the GET request
+// Check if the 'SearchInput' parameter is set in the GET request
 if (isset($_GET['SearchInput'])){
 
     //Escapes special characters in a string for use in a SQL statement
@@ -34,7 +34,6 @@ if (isset($_GET['SearchInput'])){
     //Return the resulting part names a a JSON encoded string
     echo json_encode($resultingPartnames);
 }
-//echo "AA";
 ?>
 
 
