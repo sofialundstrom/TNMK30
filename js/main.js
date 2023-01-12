@@ -11,42 +11,48 @@ var darkMode = localStorage.getItem('darkMode');
 //Check if  the dark mode is enabled
 if (darkMode === 'true') {
   //Add the 'dark-mode' class to the body element
-  document.body.classList.add('dark-mode');
+    document.body.classList.add('dark-mode');
   //Change the text of the toggle mode button to 'Light Mode'
-  toggleModeButton.innerText = 'Light Mode';
+    toggleModeButton.innerText = 'Light Mode';
   //Change the source of the image with id 'ImageId' to the dark mode logo
-  document.getElementById("imageId").src="../bilder/logo-dark.png";
+    document.getElementById("imageId").src = "../bilder/logo-dark.png";
+
+    document.getElementById("helpPic1").src = "../bilder/dark.helppic1.jpg";
+    document.getElementById("helpPic2").src = "../bilder/dark.helppic2.jpg";
+    document.getElementById("helpPic3").src = "../bilder/dark.helppic3.jpg";
+    document.getElementById("helpPic4").src = "../bilder/dark.helppic4.jpg";
+    document.getElementById("helpPic5").src = "../bilder/dark.helppic5.jpg";
 
 }
 
 //Add an event listener to the toggle mode button
-toggleModeButton.addEventListener('click', function() {
+toggleModeButton.addEventListener('click', function () {
   //Check if the dark mode is currently enabled
   if (darkMode === 'true') {
     // For when darkMode is NOT enable
-    document.body.classList.remove('dark-mode');
-    toggleModeButton.innerText = 'Dark Mode';
-    darkMode = 'false';
-    localStorage.setItem('darkMode', 'false');
-    document.getElementById("imageId").src="../bilder/logo-light.png";
-    document.getElementById("helpPic1").src="../bilder/light.helppic1.jpg";
-    document.getElementById("helpPic2").src="../bilder/light.helppic2.jpg";
-    document.getElementById("helpPic3").src="../bilder/light.helppic3.jpg";
-    document.getElementById("helpPic4").src="../bilder/light.helppic4.jpg";
-    document.getElementById("helpPic5").src="../bilder/light.helppic5.jpg";
-  } else {
+        document.body.classList.remove('dark-mode');
+        toggleModeButton.innerText = 'Dark Mode';
+        darkMode = 'false';
+        localStorage.setItem('darkMode', 'false');
+        document.getElementById("imageId").src = "../bilder/logo-light.png";
+        document.getElementById("helpPic1").src = "../bilder/light.helppic1.jpg";
+        document.getElementById("helpPic2").src = "../bilder/light.helppic2.jpg";
+        document.getElementById("helpPic3").src = "../bilder/light.helppic3.jpg";
+        document.getElementById("helpPic4").src = "../bilder/light.helppic4.jpg";
+        document.getElementById("helpPic5").src = "../bilder/light.helppic5.jpg";
+    } else {
     // For when darkMode is enable
-    document.body.classList.add('dark-mode');
-    toggleModeButton.innerText = 'Light Mode';
-    darkMode = 'true';
-    localStorage.setItem('darkMode', 'true');
-    document.getElementById("imageId").src="../bilder/logo-dark.png";
-    document.getElementById("helpPic1").src="../bilder/dark.helppic1.jpg";
-    document.getElementById("helpPic2").src="../bilder/dark.helppic2.jpg";
-    document.getElementById("helpPic3").src="../bilder/dark.helppic3.jpg";
-    document.getElementById("helpPic4").src="../bilder/dark.helppic4.jpg";
-    document.getElementById("helpPic5").src="../bilder/dark.helppic5.jpg";
-  }
+        document.body.classList.add('dark-mode');
+        toggleModeButton.innerText = 'Light Mode';
+        darkMode = 'true';
+        localStorage.setItem('darkMode', 'true');
+        document.getElementById("imageId").src= "../bilder/logo-dark.png";
+        document.getElementById("helpPic1").src = "../bilder/dark.helppic1.jpg";
+        document.getElementById("helpPic2").src = "../bilder/dark.helppic2.jpg";
+        document.getElementById("helpPic3").src = "../bilder/dark.helppic3.jpg";
+        document.getElementById("helpPic4").src = "../bilder/dark.helppic4.jpg";
+        document.getElementById("helpPic5").src = "../bilder/dark.helppic5.jpg";
+    }
 });
 
 /*********************************/

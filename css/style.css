@@ -55,11 +55,6 @@
   padding-bottom: 0.8%;
 }
 
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
-  font-size: cals(1rem + 1vw);
-  font-weight: bold;
-}
 
 
 /* Float the link section to the right */
@@ -325,7 +320,7 @@ body{
 
 #mainHeader{
   text-align:center;
-  text-shadow: 0.15vw  rgb(255, 255, 255) ;
+  text-shadow: 3px 3px rgb(255, 255, 255) ;
   font-size: calc(1.2rem + 2.5vw);
   font-family: legofont;
   margin-block-start: 0em;
@@ -687,6 +682,7 @@ input[type=text]:hover {
   text-align: center;
   font-family: funwork2;
 }
+
 
 /*********************************/
 /* SEARCH PAGE */
