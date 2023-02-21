@@ -55,7 +55,7 @@
         <div id='setPageContainer'>
             <div class='setPageBackground'>
                 <div class='setImage'>
-                    <img src='$prefix/SL/$set.jpg' id='setPic' alt='Set picture' onerror=this.src='../bilder/noneitem.lego.png'>
+                    <img src='$prefix/SL/$set.jpg' id='setPic' alt='Set picture'>
                 </div> 
                 <div id='setInfo'>
                     <h4 class='settitle'> Set: $setname</h4><br><p> ID: $set</p><br><p> Released $year</p><br><p> Category: $catName</p><br><p> Amount of $partname pieces needed: $quantity</p>

@@ -75,7 +75,7 @@
             print("
                 <a href='setpage.php?set=$set&quantity=$quantity&part=$part'>
                     <div class='set'>
-                        <img id='setImg' src='$prefix/SL/$set.jpg' alt='image' onerror=this.src='../bilder/noneitem.lego.png'><br><div id='setName'>$setname</div><br><p>Amount:$quantity<br> ID: $set</p>
+                        <img id='setImg' src='$prefix/SL/$set.jpg' alt='image'><br><div id='setName'>$setname</div><br><p>Amount:$quantity<br> ID: $set</p>
                     </div>
                 </a>");
         
